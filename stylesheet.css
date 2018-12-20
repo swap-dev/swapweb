@@ -1,17 +1,27 @@
-html, body{font-family: 'Lato', sans-serif;color:#6699ff;margin:0;padding:0;height:100%;width:100%;background-color: #000;}
-img{border-style:none;}
-hr{border:0;border-top:2px solid #66ccff;border-top:2px solid rgba(102, 204, 255, 0.4);}
-
-.swap-tag{font-size:22px;}
-.swap-wallet{font-size:17px;}
-.swap-wallet a{color:#6699ff; text-decoration:none; padding: 6px; padding-top:3px; padding-bottom:2px; border-radius: 10%;}
-.swap-wallet a:hover{text-decoration:underline;}
-.media img {width:5%;height:5%; border-radius: 10%;}
-.media img:hover{background-color:rgba(102, 204, 255, 0.2); border-radius: 8%;}
-.media img:active{background-color:rgba(102, 204, 255, 0.2); border-radius: 8%;}
-
-.animate-opacity{animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}}
-.animate-top{position:relative;animation:animatetop 1s}
+html, body{
+	font-family: 'Lato', sans-serif;
+	color:#fff;
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	background-color: #000;
+}
+img{
+	border-style:none;
+}
+hr{
+	border:0;
+	border-top:2px solid #fff;
+	border-top:2px solid rgba(255, 255, 255, 0.4);
+}
+.animate-opacity{
+	animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}
+}
+.animate-top{
+	position:relative;
+	animation:animatetop 1s;
+}
 @keyframes animatetop{
 	from {
 		top:-300px;
@@ -21,15 +31,14 @@ hr{border:0;border-top:2px solid #66ccff;border-top:2px solid rgba(102, 204, 255
 			opacity:1
 	  }
   }
-
 .swap-body{
+	background:#000 url(images/background5.jpg) no-repeat center center fixed;
 	opacity: 0;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-	background:#000 url(images/background2.jpg) no-repeat center center fixed;
 	background-size:cover;
 	animation-name: fadeIn;
     animation-iteration-count: 1;
@@ -47,4 +56,33 @@ hr{border:0;border-top:2px solid #66ccff;border-top:2px solid rgba(102, 204, 255
         opacity: 1;
     }
 }
-
+.swap-tag{
+	font-size:22px;
+}
+.swap-wallet{
+	font-size:17px;
+}
+.swap-wallet a{
+	color:#fff;
+	text-decoration:none;
+	padding: 6px;
+	padding-top:3px;
+	padding-bottom:2px;
+	border-radius: 10%;
+}
+.swap-wallet a:hover{
+	text-decoration:underline;
+}
+.media img{
+	width:5%;
+	height:5%;
+	border-radius: 10%;
+}
+.media img:hover{
+	background-color:rgba(255, 255, 255, 0.25);
+	border-radius: 8%;
+}
+.media img:active{
+	background-color:rgba(255, 255, 255, 0.25);
+	border-radius: 8%;
+}
