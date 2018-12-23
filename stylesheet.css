@@ -13,7 +13,7 @@ img{
 hr{
 	border:0;
 	border-top:2px solid #fff;
-	border-top:2px solid rgba(255, 255, 255, 0.4);
+	border-top:2px solid rgba(255, 255, 255, 0.6);
 }
 .animate-opacity{
 	animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}
@@ -64,21 +64,23 @@ hr{
     }
 }
 .swap-tag{
-	font-size:20px;
+	font-size:21px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
 }
 .swap-wallet{
 	font-size:16px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 .swap-wallet a{
 	color:#fff;
 	text-decoration:none;
-	padding: 6px;
-	padding-top:3px;
-	padding-bottom:2px;
-	border-radius: 10%;
+	margin:6px;
+	margin-top:3px;
+	margin-bottom:2px;
 }
 .swap-wallet a:hover{
-	text-decoration:underline;
+	text-decoration:none;
+	border-bottom:1px solid rgba(255, 255, 255, 0.8);
 }
 .media img{
 	width:50px;
