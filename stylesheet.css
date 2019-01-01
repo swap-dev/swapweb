@@ -36,11 +36,12 @@ h1{
 	padding:0;
 }
 h3{
-	font-size:19px;
+	font-size:18px;
+	text-align-last: left;
 	letter-spacing: 3px;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
 	padding:0px;
-	margin:10px 0px 5px;
+	margin:10px 0px 5px 25px;
 }
 .animate-opacity{
 	animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}
@@ -110,13 +111,14 @@ h3{
 	text-align:center;
 }
 .swap-tag{
-	font-size:16px;
+	font-size:19px;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 	padding:0;
 	margin:0px 0px 15px;
 	letter-spacing: 3px;
 }
 .swap-body{
+	text-align-last: left;
 	font-size:16px;
 	font-weight:normal;
 	letter-spacing: 3px;
