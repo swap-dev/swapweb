@@ -28,6 +28,14 @@ ul{
 ul li{
 	padding:0px 0px 7px;
 	}
+ol{
+	padding:0;
+	margin:0;
+	list-style-position: inside;
+	}
+ol li{
+	padding:0px 0px 7px;
+	}
 h1{
 	font-size:22px;
 	letter-spacing: 3px;
@@ -204,12 +212,13 @@ h1{
 		letter-spacing: .5px;
 		width:auto;
 		}
-	.swap-media{
+	.swap-media {
 		margin:15px auto 0px;
 		}
 	.swap-media img{
 		width:50px;
 		height:46px;
+		margin:2px 0px 2px;
 		}
 	.swap-body-small-left{
 	width:100%;
