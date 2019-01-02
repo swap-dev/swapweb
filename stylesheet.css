@@ -187,6 +187,7 @@ h1 {
 	}
 .swap-media li {
 	display:inline;
+	text-align: justify;
 	}
 .swap-spec {
 	padding:0px;
@@ -198,6 +199,12 @@ h1 {
 	font-weight:normal;
 	letter-spacing: 3px;
 	}
+.swap-miners li {
+	display:inline-block;
+	}
+.swap-miners {
+
+	}
 .swap-pool {
 	font-size:16px;
 	letter-spacing: 0.5px;
@@ -205,7 +212,8 @@ h1 {
 	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
 	}
 .swap-pool small {
-	font-size:10px;
+	font-size:9px;
+	vertical-align: text-top;
 	}
 @media only screen and (max-width: 600px) {
 	.logo1 {
