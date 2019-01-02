@@ -35,13 +35,15 @@ h1{
 	margin:0px 0 10px;
 	padding:0;
 	}
-h3{
+.swap-body h3{
 	font-size:18px;
+	font-weight:bold;
 	text-align-last: left;
 	letter-spacing: 3px;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
 	padding:0px;
-	margin:10px 0px 5px 25px;
+	margin:0px 0px 5px 0px;
+	display:block;
 	}
 .animate-opacity{
 	animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}
@@ -78,7 +80,7 @@ h3{
 	overflow-y:auto;
 	}
 .swap-logo img{
-	margin:0px;
+	margin:0px 0px 0px 0px;
 	}
 .logo1 img{
 	padding-right:25px;
@@ -112,9 +114,10 @@ h3{
 	}
 .swap-tag{
 	font-size:19px;
+	font-weight:bold;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 	padding:0;
-	margin:0px 0px 20px;
+	margin:15px 0px 20px;
 	letter-spacing: 3px;
 	}
 .swap-body{
@@ -124,13 +127,21 @@ h3{
 	letter-spacing: 3px;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.65);
 	padding:10px;
-	margin:15px auto 30px;
+	margin:10px auto 15px;
 	width:450px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 	border:0;
 	border-left:10px solid rgba(204, 204, 204, 0.09);
 	border-right:10px solid rgba(0, 0, 0, 0.09);
 	border-radius: 15px 50px 30px;
+	}
+.swap-body-small-left{
+	width:215px;
+	margin:10px 10px 15px auto;
+	}
+.swap-body-small-right{
+	width:215px;
+	margin:10px auto 15px 10px;
 	}
 .swap-body a{
 	color:#fff;
@@ -146,7 +157,7 @@ h3{
 	}
 .swap-media{
 	padding:0px;
-	margin:25px auto 0px;
+	margin:25px auto 25px;
 	width:auto;
 	text-align:center;
 	}
