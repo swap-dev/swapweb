@@ -116,7 +116,7 @@ h1 {
 	border:0;
 	border-left:5px solid rgba(204, 204, 204, 0.09);
 	border-right:5px solid rgba(0, 0, 0, 0.1);
-	border-radius: 0px 100px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
 	text-align:center;
 	}
 .swap-tag {
@@ -131,8 +131,8 @@ h1 {
 	}
 .swap-body, .swap-pool {
 	border:0;
-	border-left:3px solid rgba(204, 204, 204, 0.8);
-	border-right:3px solid rgba(0, 0, 0, 0.00);
+	border-left:3px solid rgba(204, 204, 204, 0);
+	border-right:3px solid rgba(0, 0, 0, 0);
 	border-radius: 15px 50px 30px;
 	background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
 	width:450px;
