@@ -112,11 +112,11 @@ h1 {
 	margin:0px auto 0px;
 	height:auto;
 	width:680px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
 	border:0;
-	border-left:10px solid rgba(204, 204, 204, 0.09);
+	border-left:5px solid rgba(204, 204, 204, 0.09);
 	border-right:5px solid rgba(0, 0, 0, 0.1);
-	border-radius: 15px 100px 30px;
+	border-radius: 0px 100px 0px 0px;
 	text-align:center;
 	}
 .swap-tag {
@@ -131,10 +131,10 @@ h1 {
 	}
 .swap-body, .swap-pool {
 	border:0;
-	border-left:6px solid rgba(204, 204, 204, 0.07);
-	border-right:3px solid rgba(0, 0, 0, 0.07);
+	border-left:3px solid rgba(204, 204, 204, 0.8);
+	border-right:3px solid rgba(0, 0, 0, 0.00);
 	border-radius: 15px 50px 30px;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0));
+	background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
 	width:450px;
 	padding:10px;
 	margin:10px auto 15px;
