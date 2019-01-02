@@ -130,10 +130,10 @@ h1 {
 	}
 .swap-body, .swap-pool {
 	border:0;
-	border-left:10px solid rgba(204, 204, 204, 0.07);
-	border-right:5px solid rgba(0, 0, 0, 0.07);
+	border-left:6px solid rgba(204, 204, 204, 0.07);
+	border-right:3px solid rgba(0, 0, 0, 0.07);
 	border-radius: 15px 50px 30px;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0));
 	width:450px;
 	padding:10px;
 	margin:10px auto 15px;
@@ -177,12 +177,13 @@ h1 {
 	height:46px;
 	padding:0px 0px;
 	margin:5px 5px 5px;
-	}
-.swap-media a, .media a:hover {
 	opacity: 0.95;
 	}
+.swap-media a, .media a:hover {
+	
+	}
 .swap-media img:hover, .swap-media img:active {
-	opacity: 0.6;
+	opacity: 0.75;
 	}
 .swap-media li {
 	display:inline;
@@ -231,11 +232,13 @@ h1 {
 		font-weight:normal;
 		padding:0;
 		margin:0px 0px 10px;
+		width:100%;
 		}
-	.swap-body {
+	.swap-body, .swap-pool {
 		font-size:16px;
 		letter-spacing: .5px;
-		width:auto;
+		width:100%;
+		margin:10px 15px 15px 15px;
 		}
 	.swap-media {
 		margin:15px auto 0px;
