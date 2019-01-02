@@ -1,4 +1,4 @@
-html, body{
+html, body {
 	font-family: 'Lato', sans-serif;
 	color:#fff;
 	margin:0;
@@ -7,43 +7,43 @@ html, body{
 	width:100%;
 	background-color: #000;
 	}
-img{
+img {
 	border-style:none;
 	}
-small{
+small {
 	letter-spacing: 0px;
 	font-weight:normal;
 	}
-hr{
+hr {
 	border:0;
 	border-top:2px solid #fff;
 	border-top:2px solid rgba(255, 255, 255, 0.6);
 	}
-ul{
+ul {
 	padding:0;
 	margin:0;
 	list-style-type:none;
 	list-style-position: inside;
 	}
-ul li{
-	padding:0px 0px 7px;
+ul li {
+	padding:0px 0px 5px;
 	}
-ol{
+ol {
 	padding:0;
 	margin:0;
 	list-style-position: inside;
 	}
-ol li{
+ol li {
 	padding:0px 0px 7px;
 	}
-h1{
+h1 {
 	font-size:22px;
 	letter-spacing: 3px;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
 	margin:0px 0 10px;
 	padding:0;
 	}
-.swap-body h3{
+.swap-body h3, .swap-pool h3 {
 	font-size:18px;
 	font-weight:bold;
 	text-align-last: left;
@@ -53,14 +53,14 @@ h1{
 	margin:0px 0px 5px 0px;
 	display:block;
 	}
-.animate-opacity{
+.animate-opacity {
 	animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}
 	}
-.animate-top{
+.animate-top {
 	position:relative;
 	animation:animatetop 1s;
 	}
-@keyframes animatetop{
+@keyframes animatetop {
 	from {
 		top:-300px;
 		opacity:0
@@ -69,11 +69,11 @@ h1{
 			opacity:1
 	  }
 	}
-.swap-position{
+.swap-position {
     position:relative;
     top:0;
 	}
-.swap-background{
+.swap-background {
 	background:#000 url(images/background6.jpg) no-repeat center center fixed;
 	opacity:0;
     display:block;
@@ -87,20 +87,20 @@ h1{
     animation-fill-mode:forwards;
 	overflow-y:auto;
 	}
-.swap-logo img{
+.swap-logo img {
 	margin:0px 0px 0px 0px;
 	}
-.logo1 img{
+.logo1 img {
 	padding-right:25px;
 	width:174px;
 	height:150px;
 	}
-.logo2 img{
+.logo2 img {
 	padding-left:25px;
 	width:306px;
 	height:150px;
 	}
-@keyframes fadeIn{
+@keyframes fadeIn {
     0% {
 		opacity: 0;
     }
@@ -108,19 +108,19 @@ h1{
         opacity: 1;
     }
 	}
-.swap-wrap{
+.swap-wrap {
 	padding:10px;
 	margin:0px auto 0px;
 	height:auto;
 	width:680px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
 	border:0;
 	border-left:20px solid rgba(204, 204, 204, 0.09);
 	border-right:10px solid rgba(0, 0, 0, 0.1);
 	border-radius: 15px 80px 30px;
 	text-align:center;
 	}
-.swap-tag{
+.swap-tag {
 	font-size:20px;
 	font-weight:bold;
 	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
@@ -128,63 +128,64 @@ h1{
 	margin:15px 0px 20px;
 	letter-spacing: 3px;
 	}
-.swap-body{
+.swap-body {
 	text-align-last:left;
 	font-size:16px;
 	font-weight:normal;
-	letter-spacing:3px;
+	letter-spacing:0.5px;
 	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
 	padding:10px;
 	margin:10px auto 15px;
 	width:450px;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
 	border:0;
 	border-left:10px solid rgba(204, 204, 204, 0.07);
 	border-right:5px solid rgba(0, 0, 0, 0.07);
 	border-radius: 15px 50px 30px;
 	}
-.swap-body-small-left{
+.swap-body-small-left {
 	width:215px;
 	margin:10px 10px 15px auto;
 	}
-.swap-body-small-right{
+.swap-body-small-right {
 	width:215px;
 	margin:10px auto 15px 10px;
 	}
-.swap-body a{
+.swap-body a, .swap-pool a {
 	color:#fff;
+	letter-spacing:3px;
 	text-decoration:none;
 	margin:6px;
 	margin-top:3px;
 	margin-bottom:2px;
 	border-bottom:1px solid rgba(255, 255, 255, 0.8);
 	}
-.swap-body a:hover{
+.swap-body a:hover, .swap-pool a:hover {
 	text-decoration:none;
 	border-bottom:1px solid rgba(255, 255, 255, 0.3);
 	}
-.swap-media{
+.swap-media {
 	padding:0px;
 	margin:10px auto 20px;
 	width:auto;
 	text-align:center;
 	}
-.swap-media img{
+.swap-media img {
 	width:50px;
 	height:46px;
 	padding:0px 0px;
 	margin:5px 5px 5px;
 	}
-.swap-media a, .media a:hover{
+.swap-media a, .media a:hover {
 	opacity: 0.95;
 	}
-.swap-media img:hover, .swap-media img:active{
+.swap-media img:hover, .swap-media img:active {
 	opacity: 0.6;
 	}
-.swap-media li{
+.swap-media li {
 	display:inline;
 	}
-.swap-spec{
+.swap-spec {
 	padding:0px;
 	margin:10px auto 15px;
 	width:auto;
@@ -194,33 +195,51 @@ h1{
 	font-weight:normal;
 	letter-spacing: 3px;
 	}
+.swap-pool {
+	font-size:16px;
+	letter-spacing: 0.5px;
+	text-align-last:left;
+	font-weight:normal;
+	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
+	padding:10px;
+	margin:10px auto 15px;
+	width:450px;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
+	border:0;
+	border-left:10px solid rgba(204, 204, 204, 0.07);
+	border-right:5px solid rgba(0, 0, 0, 0.07);
+	border-radius: 15px 50px 30px;
+	}
+.swap-pool small {
+	font-size:10px;
+	}
 @media only screen and (max-width: 600px) {
-	.logo1{
+	.logo1 {
 		width:130px;
 		height:101px;
 		}
-	.logo2{
+	.logo2 {
 		width:201px;
 		height:107px;
 		}
-	.swap-wrap{
+	.swap-wrap {
 		width:auto;
 		border-left:5px solid rgba(204, 204, 204, 0.09);
 		border-right:5px solid rgba(204, 204, 204, 0.09);
 		}
-	.swap-logo img{
+	.swap-logo img {
 		padding-left:15px;
 		padding-right:15px;
 		margin:0px;
 		}
-	.swap-tag{
+	.swap-tag {
 		font-size:17px;
 		letter-spacing: 0px;
 		font-weight:normal;
 		padding:0;
 		margin:0px 0px 10px;
 		}
-	.swap-body{
+	.swap-body {
 		font-size:16px;
 		letter-spacing: .5px;
 		width:auto;
@@ -228,16 +247,16 @@ h1{
 	.swap-media {
 		margin:15px auto 0px;
 		}
-	.swap-media img{
+	.swap-media img {
 		width:50px;
 		height:46px;
 		margin:2px 0px 2px;
 		}
-	.swap-body-small-left{
+	.swap-body-small-left {
 		width:100%;
 		margin:10px 15px 15px 15px;
 		}
-	.swap-body-small-right{
+	.swap-body-small-right {
 		width:100%;
 		margin:10px 15px 15px 15px;
 		}
