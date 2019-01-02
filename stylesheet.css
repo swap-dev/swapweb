@@ -115,9 +115,9 @@ h1 {
 	width:680px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
 	border:0;
-	border-left:20px solid rgba(204, 204, 204, 0.09);
-	border-right:10px solid rgba(0, 0, 0, 0.1);
-	border-radius: 15px 80px 30px;
+	border-left:10px solid rgba(204, 204, 204, 0.09);
+	border-right:5px solid rgba(0, 0, 0, 0.1);
+	border-radius: 15px 100px 30px;
 	text-align:center;
 	}
 .swap-tag {
@@ -128,20 +128,22 @@ h1 {
 	margin:15px 0px 20px;
 	letter-spacing: 3px;
 	}
-.swap-body {
-	text-align-last:left;
-	font-size:16px;
-	font-weight:normal;
-	letter-spacing:0.5px;
-	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
-	padding:10px;
-	margin:10px auto 15px;
-	width:450px;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
+.swap-body, .swap-pool {
 	border:0;
 	border-left:10px solid rgba(204, 204, 204, 0.07);
 	border-right:5px solid rgba(0, 0, 0, 0.07);
 	border-radius: 15px 50px 30px;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
+	width:450px;
+	padding:10px;
+	margin:10px auto 15px;
+	text-align:left;
+	}
+.swap-body {
+	font-size:16px;
+	font-weight:normal;
+	letter-spacing:0.5px;
+	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
 	}
 .swap-body-small-left {
 	width:215px;
@@ -198,17 +200,8 @@ h1 {
 .swap-pool {
 	font-size:16px;
 	letter-spacing: 0.5px;
-	text-align-last:left;
 	font-weight:normal;
 	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
-	padding:10px;
-	margin:10px auto 15px;
-	width:450px;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
-	border:0;
-	border-left:10px solid rgba(204, 204, 204, 0.07);
-	border-right:5px solid rgba(0, 0, 0, 0.07);
-	border-radius: 15px 50px 30px;
 	}
 .swap-pool small {
 	font-size:10px;
