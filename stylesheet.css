@@ -15,7 +15,7 @@ small {
 	font-weight:normal;
 }
 hr {
-	height:3px;
+	height:2px;
 	border:0;
 	border-bottom:0px solid #fff;
 	border-bottom:0px solid rgba(255, 255, 255, 0.6);
@@ -37,6 +37,12 @@ ol {
 }
 ol li {
 	padding:0px 0px 7px;
+}
+.swap-pool ol {
+	margin:0 25px 0;
+}
+.swap-pool p {
+	margin:0 25px 0;
 }
 h1 {
 	margin:0px 0 10px;
@@ -127,7 +133,7 @@ table {
 	font-size:22px;
 	font-weight:bold;
 	padding:0;
-	margin:15px 0px 20px;
+	margin:15px 0px 5px;
 	letter-spacing: 3px;
 	background: -webkit-linear-gradient(#6699ff, #9966ff);
 	-webkit-background-clip: text;
@@ -299,5 +305,8 @@ table {
 	.swap-body-small-right {
 		width:100%;
 		margin:10px 15px 15px 15px;
+		}
+	.swap-pool ol {
+		margin:0 0px 0;
 		}
 }
