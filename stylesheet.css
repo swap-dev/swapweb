@@ -28,7 +28,7 @@ ul {
 	list-style-position: inside;
 }
 ul li {
-	padding:0px 0px 5px;
+	padding:0px 0px 7px;
 }
 ol {
 	padding:0;
@@ -39,7 +39,10 @@ ol li {
 	padding:0px 0px 7px;
 }
 .swap-pool ol {
-	margin:0 25px 0;
+	margin:0 19px 0;
+}
+.swap-pool ul {
+	margin:0 36px 0;
 }
 .swap-pool p {
 	margin:0 25px 0;
@@ -122,7 +125,7 @@ table {
 	margin:0px auto 0px;
 	height:auto;
 	width:680px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
 	border:0;
 	border-left:5px solid rgba(204, 204, 204, 0.09);
 	border-right:5px solid rgba(0, 0, 0, 0.1);
@@ -171,11 +174,11 @@ table {
 	margin:6px;
 	margin-top:3px;
 	margin-bottom:2px;
-	border-bottom:1px solid rgba(255, 255, 255, 0.8);
+	border-bottom:1px solid rgba(255, 255, 255, 1.0);
 }
 .swap-body a:hover, .swap-pool a:hover {
 	text-decoration:none;
-	border-bottom:1px solid rgba(255, 255, 255, 0.3);
+	border-bottom:3px solid rgba(255, 255, 255, 1.0);
 }
 .swap-media {
 	padding:0px;
@@ -194,7 +197,7 @@ table {
 	
 }
 .swap-media img:hover, .swap-media img:active {
-	opacity: 0.75;
+	opacity: 0.65;
 }
 .swap-media li {
 	display:inline;
@@ -209,19 +212,6 @@ table {
 	font-weight:normal;
 	letter-spacing: 3px;
 }
-.swap-miners li {
-	display:inline-block;
-	padding:2px;
-}
-.swap-miners {
-	text-align:justify;
-}
-.swap-miners td {
-	border-top:0;
-}
-.swap-miners table {
-	margin-bottom:0;
-}	
 .swap-pool {
 	font-size:16px;
 	letter-spacing: 0.5px;
@@ -240,28 +230,23 @@ table {
 	border-bottom:2px solid rgba(255, 255, 255, 0.5);
 }
 @media only screen and (max-width: 600px) {
-	table {
-		width:auto;
-		padding:0px;
-		margin:0px 15px 0px 0px;
-	}
-	.logo1 {
-		width:130px;
-		height:101px;
-		}
-	.logo2 {
-		width:201px;
-		height:107px;
-		}
+
 	.swap-wrap {
 		width:auto;
 		border-left:5px solid rgba(204, 204, 204, 0.09);
 		border-right:5px solid rgba(204, 204, 204, 0.09);
 		}
-	.swap-logo img {
-		padding-left:15px;
-		padding-right:15px;
+	.swap-logo .logo1 img {
 		margin:0px;
+		padding:0px;
+		width:55%;
+		height:55%;
+		}
+	.swap-logo .logo2 img {
+		margin:0px;
+		padding:0px;
+		width:80%;
+		height:80%;
 		}
 	.swap-tag {
 		font-size:20px;
@@ -275,7 +260,7 @@ table {
 		font-size:16px;
 		letter-spacing: 0px;
 		width:100%;
-		margin:10px 15px 15px 15px;
+		margin:10px 0px 15px 0px;
 		}
 	.swap-body a, .swap-pool a{
 		font-size:16px;
@@ -308,5 +293,16 @@ table {
 		}
 	.swap-pool ol {
 		margin:0 0px 0;
+		}
+	.swap-pool ul {
+		margin:0 0px 0 15px;
+		}
+	table {
+		width:auto;
+		padding:0px;
+		margin:0px 0px 0px 0px;
+		}
+	table td {
+		text-align:center;
 		}
 }
