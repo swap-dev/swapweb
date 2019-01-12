@@ -15,11 +15,12 @@ small {
 	font-weight:normal;
 }
 hr {
-	height:2px;
+	height:1.5px;
 	border:0;
 	border-bottom:0px solid #fff;
 	border-bottom:0px solid rgba(255, 255, 255, 0.6);
 	background: -webkit-linear-gradient(#6699ff, #9966ff);
+	filter:drop-shadow(2px 2px 2px black);
 }
 ul {
 	padding:0;
@@ -32,31 +33,53 @@ ul li {
 }
 ol {
 	padding:0;
-	margin:0;
 	list-style-position: inside;
 }
 ol li {
 	padding:0px 0px 7px;
 }
-.swap-pool ol {
-	margin:0 19px 0;
+.swap-body p {
+	padding:0px 0px 7px;
 }
-.swap-pool ul {
-	margin:0 36px 0;
-}
-.swap-pool p {
-	margin:0 25px 0;
+.swap-body p, .swap-body ol, .swap-body ul, .swap-body table {
+	margin:0px 0px 0px 30px;
 }
 h1 {
 	margin:0px 0 10px;
 	padding:0;
 }
-table {
+.swap-body {
+	font-size:16px;
+	letter-spacing: 1px;
+	font-weight:normal;
+	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
+}
+.swap-body h3 {
+	display:block;
+}
+.swap-body small {
+	font-size:11px;
+	vertical-align: text-top;
+	}
+.swap-body table {
 	width:auto;
 	padding:0px;
-	margin:0px 30px 0px 30px;
+	margin:0px 0px 0px 30px;
+	}
+.swap-body td, .swap-body th {
+	border-top:0;
+	border-bottom:0px solid rgba(255, 255, 255, 0.3);
+	vertical-align:middle;
+	padding-left:0px;
+	padding-bottom:7px;
+	padding-top:0px;
+	margin-left:0px;
+	text-align:left;
 }
-.swap-body h3, .swap-pool h3 {
+.swap-body th {
+	text-align:left;
+}
+.swap-body h3, .swap-body h3 {
 	font-size:18px;
 	font-weight:bold;
 	letter-spacing: 3px;
@@ -101,6 +124,7 @@ table {
 }
 .swap-logo img {
 	margin:0px 0px 0px 0px;
+	filter:drop-shadow(2px 2px 2px black);
 }
 .logo1 img {
 	padding-right:25px;
@@ -125,10 +149,10 @@ table {
 	margin:0px auto 0px;
 	height:auto;
 	width:680px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	border:0;
-	border-left:5px solid rgba(204, 204, 204, 0.09);
-	border-right:5px solid rgba(0, 0, 0, 0.1);
+	border-left:3px solid rgba(204, 204, 204, 0.09);
+	border-right:3px solid rgba(0, 0, 0, 0.1);
 	border-radius: 0px 0px 0px 0px;
 	text-align:center;
 }
@@ -137,12 +161,13 @@ table {
 	font-weight:bold;
 	padding:0;
 	margin:15px 0px 5px;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	background: -webkit-linear-gradient(#6699ff, #9966ff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	filter:drop-shadow(2px 2px 2px black);
 }
-.swap-body, .swap-pool {
+.swap-body, .swap-body {
 	border:0;
 	border-left:3px solid rgba(204, 204, 204, 0);
 	border-right:3px solid rgba(0, 0, 0, 0);
@@ -167,16 +192,14 @@ table {
 	width:215px;
 	margin:10px auto 15px 10px;
 }
-.swap-body a, .swap-pool a {
+.swap-body a, .swap-body a {
 	color:#fff;
 	letter-spacing:3px;
 	text-decoration:none;
-	margin:6px;
-	margin-top:3px;
-	margin-bottom:2px;
+	margin-top:3px 0 2px 0;
 	border-bottom:1px solid rgba(255, 255, 255, 1.0);
 }
-.swap-body a:hover, .swap-pool a:hover {
+.swap-body a:hover, .swap-body a:hover {
 	text-decoration:none;
 	border-bottom:3px solid rgba(255, 255, 255, 1.0);
 }
@@ -191,13 +214,11 @@ table {
 	height:46px;
 	padding:0px 0px;
 	margin:5px 5px 5px;
-	opacity: 0.95;
-}
-.swap-media a, .media a:hover {
-	
+	opacity: 1.0;
+	filter:drop-shadow(2px 2px 2px black);
 }
 .swap-media img:hover, .swap-media img:active {
-	opacity: 0.65;
+	filter:brightness(300%) drop-shadow(2px 2px 2px black);
 }
 .swap-media li {
 	display:inline;
@@ -212,35 +233,47 @@ table {
 	font-weight:normal;
 	letter-spacing: 3px;
 }
-.swap-pool {
-	font-size:16px;
-	letter-spacing: 0.5px;
-	font-weight:normal;
-	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
-}
-.swap-pool h3 {
-	display:block;
-}
-.swap-pool small {
-	font-size:9px;
-	vertical-align: text-top;
-	}
-.swap-pool td, .swap-pool th {
-	border-top:0;
-	border-bottom:2px solid rgba(255, 255, 255, 0.5);
+.swap-body img {
+	filter:drop-shadow(2px 2px 2px black);
 }
 @media only screen and (max-width: 600px) {
+	.swap-wrap {
+		width:auto;
+		}
+	.swap-tag {
+		font-size:22px;
+		font-weight:bold;
+		padding:0;
+		margin:15px 0px 5px;
+		letter-spacing: 0px;
+		}
+	.swap-body, .swap-body {
+		font-size:16px;
+		width:100%;
+		margin:10px 0px 15px 0px;
+		}
+	.swap-body a, .swap-body a{
+		font-size:16px;
+		}
+	.swap-body-small-left {
+		width:100%;
+		margin:10px 15px 15px 15px;
+		}
+	.swap-body-small-right {
+		width:100%;
+		margin:10px 15px 15px 15px;
+		}
+}
+@media only screen and (max-width: 450px) {
 
 	.swap-wrap {
 		width:auto;
-		border-left:5px solid rgba(204, 204, 204, 0.09);
-		border-right:5px solid rgba(204, 204, 204, 0.09);
 		}
 	.swap-logo .logo1 img {
 		margin:0px;
 		padding:0px;
-		width:55%;
-		height:55%;
+		width:50%;
+		height:50%;
 		}
 	.swap-logo .logo2 img {
 		margin:0px;
@@ -248,23 +281,17 @@ table {
 		width:80%;
 		height:80%;
 		}
-	.swap-tag {
-		font-size:20px;
-		letter-spacing: 0px;
-		font-weight:normal;
-		padding:0;
-		margin:0px 0px 10px;
-		width:100%;
-		}
-	.swap-body, .swap-pool {
+
+	.swap-body, .swap-body {
 		font-size:16px;
 		letter-spacing: 0px;
 		width:100%;
 		margin:10px 0px 15px 0px;
 		}
-	.swap-body a, .swap-pool a{
+	.swap-body a, .swap-body a{
 		font-size:16px;
-		letter-spacing:0px;
+		letter-spacing:1px;
+		margin:0;
 		}
 	.swap-media {
 		margin:15px auto 0px;
@@ -276,7 +303,7 @@ table {
 		}
 	.swap-spec {
 		padding:0px;
-		margin:5px 0px 0px;
+		margin:15px 0px 0px;
 		width:100%;
 		text-shadow:2px 2px rgba(0, 0, 0, 0.65);
 		font-size:18px;
@@ -291,18 +318,7 @@ table {
 		width:100%;
 		margin:10px 15px 15px 15px;
 		}
-	.swap-pool ol {
-		margin:0 0px 0;
-		}
-	.swap-pool ul {
-		margin:0 0px 0 15px;
-		}
-	table {
-		width:auto;
-		padding:0px;
+	.swap-body p, .swap-body ol, .swap-body ul, .swap-body table {
 		margin:0px 0px 0px 0px;
 		}
-	table td {
-		text-align:center;
-		}
-}
+	}
