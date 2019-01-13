@@ -1,11 +1,17 @@
-html, body {
+html {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+body {
 	font-family: 'Lato', sans-serif;
 	color:#fff;
 	margin:0;
 	padding:0;
 	height:100%;
 	width:100%;
-	background-color: #000;
+	background-color: #151933;
 }
 img {
 	border-style:none;
@@ -15,7 +21,7 @@ small {
 	font-weight:normal;
 }
 hr {
-	height:1.5px;
+	height:0px;
 	border:0;
 	border-bottom:0px solid #fff;
 	border-bottom:0px solid rgba(255, 255, 255, 0.6);
@@ -109,7 +115,7 @@ h1 {
     top:0;
 }
 .swap-background {
-	background:#000 url(images/background6.jpg) no-repeat center center fixed;
+	background:#000033 url(images/background6a.jpg) no-repeat center center fixed;
 	opacity:0;
     display:block;
     height:100%;
@@ -149,11 +155,7 @@ h1 {
 	margin:0px auto 0px;
 	height:auto;
 	width:680px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	border:0;
-	border-left:3px solid rgba(204, 204, 204, 0.09);
-	border-right:3px solid rgba(0, 0, 0, 0.1);
-	border-radius: 0px 0px 0px 0px;
 	text-align:center;
 }
 .swap-tag {
@@ -272,8 +274,8 @@ h1 {
 	.swap-logo .logo1 img {
 		margin:0px;
 		padding:0px;
-		width:50%;
-		height:50%;
+		width:45%;
+		height:45%;
 		}
 	.swap-logo .logo2 img {
 		margin:0px;
