@@ -47,9 +47,18 @@ ol li {
 .swap-body p {
 	padding:0px 0px 7px;
 }
-.swap-body p, .swap-body ol, .swap-body ul, .swap-body table {
+.swap-body p, .swap-body ol, .swap-body ul, .swap-body .table {
 	margin:0px 0px 0px 0px;
-	padding:0px 0px 0px 30px;
+	padding:0px 0px 0px 35px;
+	display:block;
+}
+.swap-body h3 {
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+	padding:0px;
+	margin:0px 0px 5px 15px;
 	display:block;
 }
 h1 {
@@ -87,15 +96,7 @@ h1 {
 .swap-body th {
 	text-align:left;
 }
-.swap-body h3 {
-	font-size:18px;
-	font-weight:bold;
-	letter-spacing: 3px;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
-	padding:0px;
-	margin:0px 0px 5px 10px;
-	display:block;
-}
+
 .animate-opacity {
 	animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}
 }
@@ -184,6 +185,7 @@ h1 {
 	font-weight:normal;
 	letter-spacing:0.5px;
 	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
+	text-align:left;
 }
 .swap-body a, .swap-body a {
 	color:#fff;
