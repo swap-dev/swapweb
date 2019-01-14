@@ -49,7 +49,7 @@ ol li {
 }
 .swap-body p, .swap-body ol, .swap-body ul, .swap-body .table {
 	margin:0px 0px 0px 0px;
-	padding:0px 0px 0px 35px;
+	padding:0px 0px 0px 40px;
 	display:block;
 }
 .swap-body h3 {
@@ -58,7 +58,7 @@ ol li {
 	letter-spacing: 3px;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
 	padding:0px;
-	margin:0px 0px 5px 15px;
+	margin:0px 0px 0px 20px;
 	display:block;
 }
 h1 {
@@ -70,9 +70,7 @@ h1 {
 	letter-spacing: 1px;
 	font-weight:normal;
 	text-shadow:2px 2px rgba(0, 0, 0, 0.65);
-}
-.swap-body h3 {
-	display:block;
+	margin-bottom:10px;
 }
 .swap-body small {
 	font-size:11px;
@@ -200,7 +198,7 @@ h1 {
 }
 .swap-media {
 	padding:0px;
-	margin:10px auto 10px;
+	margin:25px auto 15px;
 	width:auto;
 	text-align:center;
 }
@@ -301,9 +299,9 @@ h1 {
 		width:100%;
 		margin:10px 15px 15px 15px;
 		}
-	.swap-body p, .swap-body ol, .swap-body ul, .swap-body table {
+	.swap-body p, .swap-body ol, .swap-body ul, .swap-body .table {
 		margin:0px 0px 0px 0px;
-		padding:0px 0px 0px 10px;
+		padding:0px 0px 0px 20px;
 		display:block;
 		}
 	}
