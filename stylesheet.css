@@ -210,7 +210,7 @@ h1 {
 .swap-spec li {
 	font-size:20px;
 	font-weight:bold;
-	letter-spacing: 3px;
+	letter-spacing:3px;
 	background: -webkit-linear-gradient(#6699ff, #9966ff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -225,8 +225,11 @@ h1 {
 		font-size:22px;
 		font-weight:bold;
 		padding:0;
-		margin:15px 0px 5px;
-		letter-spacing: 0px;
+		margin:15px 5px 5px;
+		letter-spacing:0px;
+	}
+	.swap-spec li {
+		letter-spacing:0px;
 	}
 	.swap-body, .swap-body {
 		font-size:16px;
@@ -274,14 +277,6 @@ h1 {
 		width:50px;
 		height:46px;
 		margin:3px 3px 3px;
-	}
-	.swap-spec {
-		padding:0px;
-		margin:15px 0px 0px;
-		width:100%;
-		font-size:18px;
-		font-weight:normal;
-		letter-spacing: 1px;
 	}
 	.swap-body-small-left {
 		width:100%;
