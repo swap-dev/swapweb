@@ -3,7 +3,6 @@ html {
 	padding:0;
 	height:100%;
 	width:100%;
-	scroll-behavior: smooth;
 }
 body {
 	font-family: 'Lato', sans-serif;
@@ -94,23 +93,6 @@ h1 {
 }
 .swap-body th {
 	text-align:left;
-}
-
-.animate-opacity {
-	animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}
-}
-.animate-top {
-	position:relative;
-	animation:animatetop 1s;
-}
-@keyframes animatetop {
-	from {
-		top:-300px;
-		opacity:0
-	} to {
-			top:0;
-			opacity:1
-	  }
 }
 .swap-position {
     position:relative;
