@@ -3,6 +3,7 @@ html {
 	padding:0;
 	height:100%;
 	width:100%;
+	scroll-behavior: smooth;
 }
 body {
 	font-family: 'Lato', sans-serif;
