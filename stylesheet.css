@@ -106,10 +106,12 @@ h1 {
 }
 .swap-background {
 	background:#151933 url(images/background6a.jpg) no-repeat center center fixed;
+	background-size:cover;
 	position:fixed;
+	top:0;
+	left:0;
     height:100%;
     width:100%;
-	background-size:cover;
 	z-index:-1;
 }
 .swap-logo img {
@@ -178,7 +180,7 @@ h1 {
 	color:#fff;
 	letter-spacing:3px;
 	text-decoration:none;
-	margin-top:3px 0 2px 0;
+	margin:3px 0px 2px 0px;
 	border-bottom:1px solid rgba(255, 255, 255, 1.0);
 }
 .swap-body a:hover, .swap-body a:hover {
@@ -212,7 +214,6 @@ h1 {
 	margin:0px auto 0px;
 	width:auto;
 	text-align:center;
-	text-shadow:0
 }
 .swap-spec li {
 	font-size:20px;
