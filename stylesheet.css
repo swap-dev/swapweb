@@ -12,12 +12,22 @@ body {
 	height:100%;
 	width:100%;
 	background-color: #151933;
+	background:#151933 url(images/background6a.jpg) no-repeat center center fixed;
+	background-size:cover;
 	opacity:0;
 	animation-name:fadeIn;
     animation-iteration-count:1;
     animation-timing-function:ease-in-out;
     animation-duration:1.7s;
     animation-fill-mode:forwards;
+}
+@keyframes fadeIn {
+    0% {
+		opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 img {
 	border-style:none;
@@ -104,7 +114,7 @@ h1 {
     position:relative;
     top:0;
 }
-.swap-background {
+/* .swap-background {
 	background:#151933 url(images/background6a.jpg) no-repeat center center fixed;
 	background-size:cover;
 	position:fixed;
@@ -113,7 +123,7 @@ h1 {
     height:100%;
     width:100%;
 	z-index:-1;
-}
+} */
 .swap-logo img {
 	margin:0px 0px 0px 0px;
 	filter:drop-shadow(2px 2px 2px black);
@@ -129,14 +139,6 @@ h1 {
 	margin-top:10px;
 	width:306px;
 	height:150px;
-}
-@keyframes fadeIn {
-    0% {
-		opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 .swap-wrap {
 	padding:0px;
@@ -248,7 +250,6 @@ h1 {
 	}
 }
 @media only screen and (max-width: 425px) {
-
 	.swap-wrap {
 		width:auto;
 		}
