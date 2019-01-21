@@ -12,6 +12,12 @@ body {
 	height:100%;
 	width:100%;
 	background-color: #151933;
+	opacity:0;
+	animation-name:fadeIn;
+    animation-iteration-count:1;
+    animation-timing-function:ease-in-out;
+    animation-duration:1.7s;
+    animation-fill-mode:forwards;
 }
 img {
 	border-style:none;
@@ -100,17 +106,11 @@ h1 {
 }
 .swap-background {
 	background:#151933 url(images/background6a.jpg) no-repeat center center fixed;
-	opacity:0;
-    display:block;
+	position:fixed;
     height:100%;
     width:100%;
 	background-size:cover;
-	animation-name:fadeIn;
-    animation-iteration-count:1;
-    animation-timing-function:ease-in-out;
-    animation-duration:1.7s;
-    animation-fill-mode:forwards;
-	overflow-y:scroll;
+	z-index:-1;
 }
 .swap-logo img {
 	margin:0px 0px 0px 0px;
