@@ -93,7 +93,7 @@ h1 {
 
 ul.countdown {
     list-style: none;
-    margin: 0px 0 0px;
+    margin: 25px 0px 0px;
     padding: 0;
     display: block;
     text-align: center;
@@ -104,18 +104,20 @@ ul.countdown li {
 }
 
 ul.countdown li span {
-    font-size: 4em;
+    font-size: 2.6em;
     font-weight: 300;
-    line-height: 80px;
+    line-height: 10px;
 }
 
 ul.countdown li.seperator {
-    font-size: 4em;
-    line-height: 80px;
+    font-size: 2.7em;
+    line-height: 10px;
     vertical-align: top;
 }
 
 ul.countdown li p {
+  margin:0px 0px 15px;
+  padding:0px;
 }
 
 @media only screen and (min-width: 768px) {
