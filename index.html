@@ -175,7 +175,7 @@
                         <h4 class="featured-item-title">Progressive proof of work algorithm</h4>
                         <p>Cuckaroo29s hashing improves verification speed substancially making
                             block propagation much faster.</p>
-                        <a href="#cuckaroo" class="btn btn-outline-secondary mt-3">Why Cuckaroo29s?</a>
+                        <a href="#cuckaroo" class="btn btn-outline-secondary mt-3">Why Cuckaroo29s?&ensp;<i class="fas fa-arrow-circle-right"></i></a>
                         
                     </div>
                 </div>
@@ -434,11 +434,11 @@
                             <h4>Swap.fyi Comes Online</h4>
                             <p>First Swap splash page is born with links to pools, mining software, and wallet downloads.</p>
                             <p>Swap marketing starts assembling. Social media sites are established and community outreach begins to form.</p>
-                            <a href="https://swap-forum.fyi" target="_blank"><i class="fas fa-comments" title="Forum"></i></a> &nbsp; &nbsp; 
-                            <a href="https://discord.gg/Eun5FHp" target="_blank"><i class="fab fa-discord" title="Discord"></i></a> &nbsp; &nbsp; 
-                            <a href="https://twitter.com/_realSwap" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a> &nbsp; &nbsp; 
-                            <a href="https://www.reddit.com/r/SwapProject/" target="_blank"><i class="fab fa-reddit-alien" title="Reddit"></i></a> &nbsp; &nbsp; 
-                            <a href="https://www.facebook.com/Swap-Project-626032644518401/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://swap-forum.fyi" target="_blank"><i class="fas fa-comments fa-lg" title="Forum"></i></a> &nbsp; &nbsp; 
+                            <a href="https://discord.gg/Eun5FHp" target="_blank"><i class="fab fa-discord fa-lg" title="Discord"></i></a> &nbsp; &nbsp; 
+                            <a href="https://twitter.com/_realSwap" target="_blank"><i class="fab fa-twitter fa-lg" title="Twitter"></i></a> &nbsp; &nbsp; 
+                            <a href="https://www.reddit.com/r/SwapProject/" target="_blank"><i class="fab fa-reddit-alien fa-lg" title="Reddit"></i></a> &nbsp; &nbsp; 
+                            <a href="https://www.facebook.com/Swap-Project-626032644518401/" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
 
                         </div>
                     </div>
@@ -669,7 +669,7 @@
                     </div>
                     <div class="faq__item">
                             <h4>Is Swap planning to be listed on exchanges?</h4>
-                            <p>Yes, the exchanges listing process will start after changing the current CryptoNight SuperFast PoW algorithm to the Cuckaroo Cycle PoW algorithm.
+                            <p>Yes, the exchanges listing process will start after the fork.
 
                             </p>
                     </div>
@@ -701,20 +701,21 @@
                     <div class="faq__item">
                         <h4>Simplest known PoW algorthim.</h4>
                         <p>With a 42-line complete specification, Cuckatoo Cycle is less than half the 
-                        size of either SHA256, Blake2b, or SHA3 (Keccak) as used in Bitcoin, Equihash, and ethash. Simplicity matters.
-                        White trivially verifiable, finding a 42-cycle, on the other hand, is far from trivial, requiring considerable resources.
+                        size of either SHA256, Blake2b, or SHA3 (Keccak) as used in Bitcoin, Equihash, and ethash. Simplicity matters.</p>
+                        <p>White trivially verifiable, finding a 42-cycle, on the other hand, is far from trivial, requiring considerable resources.
                         </p>
                     </div>
                     <div class="faq__item">
-                        <h4>Decreased hash confirmation time.</h4>
-                        <p>Less server overhead making processing more efficient.
-                        </p>
-                    </div>
-                    <div class="faq__item">
-                            <h4>Lorem ipsum dolor sit amet?</h4>
-                            <p>Atqui etiam ancillae pri te, illum numquam sensibus ut sit. No sumo delicata assentior eam, at exerci suscipiantur est.
+                            <h4>The most efficient known way to find cycles.</h4>
+                            <p>Start by eliminating edges that are not part of any cycle (over 99.9% of edges).
+                            This preprocessing phase is called edge trimming and actually takes the vast majority of runtime.
                             </p>
-                            <p>Atqui etiam ancillae pri te, illum numquam sensibus ut sit. No sumo delicata assentior eam, at exerci suscipiantur est.
+                            <p>After edge trimming, an standard backtracking graph traversal is run to recognise all cycles, and report those of the right length.
+                            </p>
+                    </div>
+                    <div class="faq__item">
+                            <h4>Decreased hash confirmation time.</h4>
+                            <p>Less server overhead making processing more efficient.
                             </p>
                     </div>
                 </div>
@@ -726,12 +727,16 @@
                         </p>
                     </div>
                     <div class="faq__item">
-                            <h4>Lorem ipsum dolor sit amet?</h4>
-                            <p>Atqui etiam ancillae pri te, illum numquam sensibus ut sit. No sumo delicata assentior eam, at exerci suscipiantur est.
+                            <h4>Best known graph cycle performance.</h4>
+                            <p>The runtime of a single proof attempt for a 2^29 edge graph on a 4GHz i7-4790K is 10.5 seconds with the single-threaded mean solver, using 2200MB (or 3200MB with faster solution recovery). 
+                            This reduces to 3.5 seconds with 4 threads (3x speedup).
                             </p>
+                            <p>Using an order of magnitude less memory (128MB), the lean solver takes 32.8 seconds per proof attempt. Its multi-threading performance is less impressive though, with 2 threads still taking 25.6 seconds and 4 taking 20.5 seconds.
+                            </p>
+                            <p><a href="https://github.com/tromp/cuckoo#gpu-speedup-bounty" class="btn btn-outline-secondary mt-3">GPU Speedup Bounty&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
                     </div>
                     <div class="faq__item">
-                            <h4>Lorem ipsum dolor sit amet?</h4>
+                            <h4>Differences between Cuckaroo29 and Cuckaroo29s.</h4>
                             <p>Atqui etiam ancillae pri te, illum numquam sensibus ut sit. No sumo delicata assentior eam, at exerci suscipiantur est.
 
                             </p>
