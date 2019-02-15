@@ -694,8 +694,7 @@
             <h3><i class="far fa-crow gradient-icon"></i>&ensp;Cuckaroo29s</h3>
         </div>
         <p class="lead p-3 centered-text text-center mx-auto">
-            Cuckoo Cycle is the first graph-theoretic proof-of-work, and the most memory bound, yet with instant verification. 
-            Unlike Hashcash, Cuckoo Cycle is immune from quantum speedup by Grover's search algorithm.
+            Swap is the first CryptoNote coin securing their network by implementing mining with the Cuckaroo PoW Cycle.
         </p>
         <p class="centered-text text-center mx-auto">
             Learn more about <b><a href="https://github.com/tromp/cuckoo" target="_blank">Cuckoo</a></b> from the creator 
@@ -709,20 +708,17 @@
                
                 <div class="col-12 col-md-6">
                     <div class="faq__item">
-                        <h4>Simplest known PoW algorthim.</h4>
-                        <p>With a 32-line complete specification, Cuckaroo29s Cycle is less than half the 
-                        size of either SHA256, Blake2b, or SHA3 (Keccak) as used in Bitcoin, Equihash, and ethash. Simplicity matters.</p>
-                        <p>While trivially verifiable, finding a 32-cycle, on the other hand, is far from trivial, requiring considerable resources.
+                        <h4>Simplest PoW algorthim.</h4>
+                        <p>Cuckaroo29s Cycle is more than half the size of other mining algorithms.
                         </p>
                     </div>
                     <div class="faq__item">
                             <h4>Lean and mean mining.</h4>
-                            <p>Memory efficient miners use 1 bit per edge and 1 bit per node in one partition.
-                            Accessing node bits at random creates bottlenecking, making mining memory latency bound.
-                            99% of this form of mining is done in a simple way.
+                            <p>Miners use 1 bit per edge and 1 bit per node.
+                            Finding node bits in random sequence causes a bottleneck which makes mining memory latency bound.
                             </p>
                             <p>
-                            The roughly 4x faster latency avoiding miner uses 33 bits per edge and is bottlenecked by bucket sorting, making it memory bandwidth bound.
+                            The majority of this form of mining is done in a very simple way.
                             </p>
                     </div>
                     <div class="faq__item">
@@ -732,7 +728,7 @@
                     </div>
                     <div class="faq__item">
                             <h4>The most efficient known way to find cycles.</h4>
-                            <p>Step one is eliminating edges that are not part of any cycle (over 99.9% of edges).
+                            <p>Step one is removing edges that are not part of a cycle (99.9%).
                             Edge trimming takes the majority of runtime. Swap has 32 edge trimming cycles.
                             </p>
                             <p>After edge trimming, an standard backtracking graph traversal is run to recognise all cycles, and report those of the right length.
@@ -746,7 +742,7 @@
                         <p>Swap is keeping CryptoNote for transactions with anonymity features and user friendliness. Meanwhile, for mining, adpoting Cuckaroo29s with superior network protection and stability. 
                         </p>
                         <p>CryptoNight mining is vulnerable to FPGA and ASIC network attacking.
-                        Swap is the first CryptoNote coin securing their network by implementing mining with the Cuckaroo PoW Cycle.</p>
+                        </p>
                     </div>
                     <div class="faq__item">
                             <h4>Graph cycle performance.</h4>
