@@ -729,9 +729,10 @@
                     <div class="faq__item">
                             <h4>The most efficient known way to find cycles.</h4>
                             <p>Step one is removing edges that are not part of a cycle (99.9%).
-                            Edge trimming takes the majority of runtime. Swap has 32 edge trimming cycles.
+                            Step two is a backtracking graph traversal to recognise all cycles, and report those of the right length.
                             </p>
-                            <p>After edge trimming, an standard backtracking graph traversal is run to recognise all cycles, and report those of the right length.
+                            <p>
+                            Swap uses 32 edge trimming cycles.
                             </p>
                     </div>
                 </div>
@@ -751,7 +752,7 @@
                             </p>
                             <p>Using an order of magnitude less memory (128MB), the lean solver takes 32.8 seconds per proof attempt. Its multi-threading performance is less impressive though, with 2 threads still taking 25.6 seconds and 4 taking 20.5 seconds.
                             </p>
-                            <p><a href="https://github.com/tromp/cuckoo#gpu-speedup-bounty" class="btn btn-outline-secondary mt-3" target="_blank">GPU Speedup Bounty Proposal&ensp;<i class="fab fa-github-alt"></i></a></p>
+                            <p><a href="https://github.com/tromp/cuckoo#gpu-speedup-bounty" class="btn btn-outline-secondary mt-3" target="_blank">Speedup Bounty Proposal&ensp;<i class="fab fa-github-alt"></i></a></p>
                     </div>
                     <div class="faq__item">
                             <h4>Cuckaroo29 vs Cuckaroo29s?</h4>
