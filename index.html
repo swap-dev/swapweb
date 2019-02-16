@@ -694,7 +694,7 @@
             <h3><i class="far fa-crow gradient-icon"></i>&ensp;Cuckaroo29s</h3>
         </div>
         <p class="lead p-3 centered-text text-center mx-auto">
-            Swap is the first CryptoNote coin securing their network by implementing mining with the Cuckaroo PoW Cycle.
+            Swap is the first CryptoNote coin securing their network by implementing mining with the Cuckaroo Cycle PoW.
         </p>
         <p class="lead centered-text text-center mx-auto">
             Learn more about <b><a href="https://github.com/tromp/cuckoo" target="_blank">Cuckoo</a></b> from the creator 
@@ -713,6 +713,15 @@
                         </p>
                     </div>
                     <div class="faq__item">
+                            <h4>Most efficient way to find cycles.</h4>
+                            <p>Step one is removing edges that are not part of a cycle (99.9%).
+                            Step two is a backtracking graph traversal to find all cycles.
+                            </p>
+                            <p>
+                            Swap uses 32 edge trimming cycles.
+                            </p>
+                    </div>
+                    <div class="faq__item">
                             <h4>Lean and mean mining.</h4>
                             <p>Miners use 1 bit per edge and 1 bit per node.
                             Finding node bits in random sequence causes a bottleneck which makes mining memory latency bound.
@@ -724,15 +733,6 @@
                     <div class="faq__item">
                             <h4>Decreased hash confirmation time.</h4>
                             <p>Less server overhead making processing more efficient.
-                            </p>
-                    </div>
-                    <div class="faq__item">
-                            <h4>Most efficient way to find cycles.</h4>
-                            <p>Step one is removing edges that are not part of a cycle (99.9%).
-                            Step two is a backtracking graph traversal to find all cycles.
-                            </p>
-                            <p>
-                            Swap uses 32 edge trimming cycles.
                             </p>
                     </div>
                 </div>
