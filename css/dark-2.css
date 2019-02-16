@@ -9885,6 +9885,21 @@ a:hover {
   justify-content: center;
 }
 
+.section-title.mini-title {
+  margin: 3.5rem auto 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .section-title.left-aligned {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
