@@ -4,6 +4,18 @@
   padding: 0 20px;
 }
 
+.swap-logo1 {
+  max-width:20%;
+  height: auto;
+  padding: 0;
+}
+
+.swap-logo2 {
+  max-width:18%;
+  height: auto;
+  padding: 0;
+}
+
 .swap-cuckoo-logo {
   max-width: 100%;
   height: auto;
@@ -30,7 +42,8 @@
   border-radius: 5px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+
 h1 {
   font-size:2rem;
 }
@@ -40,7 +53,6 @@ h1 {
     height: auto;
 }
 }
-
 
 .parallax-window {
     min-height: 400px;
@@ -120,6 +132,22 @@ ul.countdown li p {
   margin:0px 0px 15px;
   padding:0px;
 }
+
+@media (max-width: 1170px) {
+.swap-logo1 {
+  max-width:10%;
+  height: auto;
+  padding: 0;
+}
+}
+
+@media (max-width: 800px) {
+  .swap-logo1 {
+    max-width:20%;
+    height: auto;
+    padding: 0;
+  }
+  }
 
 @media only screen and (min-width: 768px) {
   .cd-top {
