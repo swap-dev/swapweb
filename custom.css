@@ -9,12 +9,49 @@
   height: auto;
   padding: 0;
 }
+@media (max-width: 1170px) {
+  .swap-logo1 {
+    max-width:10%;
+    height: auto;
+    padding: 0;
+  }
+  }
+  
+@media (max-width: 800px) {
+  .swap-logo1 {
+    max-width:20%;
+    height: auto;
+    padding: 0;
+    }
+    }
 
 .swap-logo2 {
-  max-width:18%;
+  max-width:16%;
   height: auto;
   padding: 0;
 }
+
+@media (max-width: 900px) {
+  .swap-logo2 {
+    max-width:23%;
+    height: auto;
+    padding: 0;
+  }
+  }
+  @media (max-width: 800px) {
+    .swap-logo2 {
+      max-width:17%;
+      height: auto;
+      padding: 0;
+    }
+    }
+    @media (max-width: 700px) {
+      .swap-logo2 {
+        max-width:16%;
+        height: auto;
+        padding: 0;
+      }
+      }
 
 .swap-cuckoo-logo {
   max-width: 100%;
@@ -133,21 +170,7 @@ ul.countdown li p {
   padding:0px;
 }
 
-@media (max-width: 1170px) {
-.swap-logo1 {
-  max-width:10%;
-  height: auto;
-  padding: 0;
-}
-}
 
-@media (max-width: 800px) {
-  .swap-logo1 {
-    max-width:20%;
-    height: auto;
-    padding: 0;
-  }
-  }
 
 @media only screen and (min-width: 768px) {
   .cd-top {
