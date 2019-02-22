@@ -9,55 +9,20 @@
   height: auto;
   padding: 0;
 }
-@media (max-width: 1170px) {
-  .swap-logo1 {
-    max-width: 4em;
-    height: auto;
-    padding: 0;
-  }
-  }
-
-@media (max-width: 800px) {
-  .swap-logo1 {
-    max-width: 4em;
-    height: auto;
-    padding: 0;
-    }
-    }
-
-.swap-logo2 {
-  max-width:16%;
-  height: auto;
-  padding: 0;
-}
-
-@media (max-width: 900px) {
-  .swap-logo2 {
-    max-width:23%;
-    height: auto;
-    padding: 0;
-  }
-  }
-  @media (max-width: 800px) {
-    .swap-logo2 {
-      max-width:17%;
-      height: auto;
-      padding: 0;
-    }
-    }
-    @media (max-width: 700px) {
-      .swap-logo2 {
-        max-width:16%;
-        height: auto;
-        padding: 0;
-      }
-      }
 
 .swap-cuckoo-logo {
   max-width: 100%;
   height: auto;
   padding: 0 0px 0px 0;
   margin: 0;
+}
+
+.blue-icon i {
+  color:#1d244a;
+}
+
+.blue-icon-dark i {
+  color:#151933;
 }
 
 .wallet-icons {
