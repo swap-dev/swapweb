@@ -153,3 +153,31 @@ ul.countdown li p {
     bottom: 30px;
   }
 }
+
+.container-team {
+  position: relative;
+}
+
+.image-team {
+  display: block;
+}
+
+.overlay-team {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #151933;
+}
+
+.container-team:hover .overlay-team {
+  opacity: .90;
+}
+
+.text-team {
+  text-align: left;
+  padding:5px;
+}
