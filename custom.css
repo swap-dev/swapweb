@@ -55,6 +55,12 @@ h1 {
     height: auto;
     margin:0 auto;
 }
+
+.text-team {
+  text-align: left;
+  padding:5px;
+  font-size:.8em;
+}
 }
 
 .parallax-window {
