@@ -40,6 +40,15 @@
   padding: 20px !important;
 }
 
+.media-logo {
+  height: 20px;
+  width: auto;
+}
+
+.media-logo2:hover img {
+  filter:brightness(200%);
+}
+
 .img-team {
   border-radius: 5px;
 }
