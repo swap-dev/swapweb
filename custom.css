@@ -53,7 +53,16 @@
 .img-team {
   border-radius: 5px;
 }
-
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+{
+  h1 {
+  font-size:1.45rem;
+}
+  }
+    }
 @media (max-width: 1024px) {
 
 h1 {
