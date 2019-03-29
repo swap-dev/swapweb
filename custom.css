@@ -47,8 +47,9 @@
 }
 
 .media-logo {
-  height: 20px;
+  height: 1em;
   width: auto;
+  vertical-align: text-bottom;
 }
 
 .media-logo2:hover img {
