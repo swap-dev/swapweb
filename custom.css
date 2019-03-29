@@ -20,7 +20,7 @@
 .copyleft {
   height: 1em;
   width: auto;
-  vertical-align:-.1em;
+  vertical-align: text-bottom;
 }
 
 .blue-icon i {
