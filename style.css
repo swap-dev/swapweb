@@ -10567,7 +10567,7 @@ h1 {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(165, 97, 229, 0.7) url(/images/top-arrow.svg) no-repeat center 50%;
+  background: rgba(165, 97, 229, 0.7) url(images/top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
@@ -10676,70 +10676,70 @@ ul.countdown li p {
 
 .container-team-sebas {
   height: 256px;
-  background: url('/images/team/team.png') -542px -1074px;
+  background: url('images/team/team.png') -542px -1074px;
   background-position: -1455px -588px;
   background-size: 450%;
 }
 
 .container-team-long {
   height: 256px;
-  background: url('/images/team/team.png') -542px -1074px;
+  background: url('images/team/team.png') -542px -1074px;
   background-position: -1734px -871px;
   background-size: 450%;
 }
 
 .container-team-kyle {
   height: 256px;
-  background: url('/images/team/team.png') -542px -1074px;
+  background: url('images/team/team.png') -542px -1074px;
   background-position: -1458px -308px;
   background-size: 450%;
 }
 
 .container-team-greg {
   height: 256px;
-  background: url('/images/team/team.png') -542px -1074px;
+  background: url('images/team/team.png') -542px -1074px;
   background-position: -1737px -304px;
   background-size: 450%;
 }
 
 .container-team-nick {
     height: 256px;
-    background: url('/images/team/team.png') -1601px -8px;
+    background: url('images/team/team.png') -1601px -8px;
     background-position: -24px -330%;
     background-size: 450%;
 }
 
 .container-team-gian {
     height: 256px;
-    background: url('/images/team/team.png') -1601px -8px;
+    background: url('images/team/team.png') -1601px -8px;
     background-position: -1733px -590px;
     background-size: 450%;
 }
 
 .container-team-pablo {
     height: 256px;
-    background: url('/images/team/team.png') -1601px -8px;
+    background: url('images/team/team.png') -1601px -8px;
     background-position: -10px -139%;
     background-size: 450%;
 }
 
 .container-team-chris {
     height: 256px;
-    background: url('/images/team/team.png') -1601px -8px;
+    background: url('images/team/team.png') -1601px -8px;
     background-position: -1447px -880px;
     background-size: 450%;
 }
 
 .container-team-tiago {
     height: 256px;
-    background: url('/images/team/team.png') -1601px -8px;
+    background: url('images/team/team.png') -1601px -8px;
     background-position: -2020px -877px;
     background-size: 450%;
 }
 
 .container-team-rich {
     height: 256px;
-    background: url('/images/team/team.png') -1601px -8px;
+    background: url('images/team/team.png') -1601px -8px;
     background-position: -13px -234%;
     background-size: 450%;
 }
