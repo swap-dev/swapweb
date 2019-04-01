@@ -721,7 +721,7 @@
 							<div class="overlay-team">
 									<div class="text-team">
 										&ensp;I got in crypto mid-2017. Now it consumes my life!
-										I enjoy writing Fiction, Photography, and an active member in the Church of Discord.<br>
+										I enjoy writing Fiction, Photography, and an active member of the Church of Discord.<br>
 										&ensp;This Project is exciting to be part of and serves as the Greatest Benchmark for other CN coins.
 										The golden apple of crypto.&ensp;<i class="fas fa-apple-alt"></i>
 									</div>
@@ -747,27 +747,27 @@
 						<div class="faq__item">
 							<i class="featured-item-icon far fa-balance-scale gradient-icon fa-4x"></i>
 							<h4>What is the current main objective for Swap?</h4>
-							<p>Our main objective is to remain an ethical, useful, and fair crypcurrency. To us, this includes robust privacy, ecosystem fairness, full transparency, secure network,
+							<p>Our main objective is to remain an ethical, useful, and fair cryptocurrency. To us, this includes robust privacy, ecosystem fairness, full transparency, secure network,
 								and ease of use.
 							</p>
 							<p>With Swap you can expect no compromises with governance fees, no premine, and no BS.
 							</p>
 						</div>
 						<div class="faq__item">
-							<h4>Is MimbleWimble Cuckoo?</h4>
-							<p>No, MimbleWimble is the protocol (like CryptoNote).</p>
-							<p>Cuckoo is the original algorithm Cuckatoo and Cuckaroo are based on.
-								Cuckatoo is the ASIC friendly algorithm and Cuckaroo is the GPU friendly algorithm.
-							</p>
+							<h4>Why do addresses start with "fh"?</h4>
+							<p>Swap started as FreeHaven (XFH). The two letters are from the initials of the first project.
+								</p>
+							<p>After the re-branding, the address was kept to simplify compatibility with legacy addresses and as a good reminder where the project originated from.
+								</p>
 						</div>
 						<div class="faq__item">
 							<i class="featured-item-icon far fa-code-branch gradient-icon fa-4x"></i>
 							<h4>Why is Swap going to fork and when?</h4>
-							<p>CryptoNight is slow on GPUs because FGPAs can use embedded RAM.
+							<p>CryptoNight is slow on GPUs because FPGAs can use embedded RAM.
 								Further variants of CryptoNight will buy time but do not solve anything long-term.
 							</p>
 							<p>Cuckaroo Cycle PoW brings superior protection and stability to the Swap network.
-								The fork is at 2/20 10:30 AM UTC.
+								The fork was at 2/20 10:30 AM UTC.
 							</p>
 						</div>
 					</div>
@@ -794,8 +794,8 @@
 						</div>
 						<div class="faq__item">
 							<i class="featured-item-icon far fa-clipboard-list-check gradient-icon fa-4x"></i>
-							<h4>Is Swap planning to be listed on exchanges?</h4>
-							<p>Yes, the exchanges listing process will start after the fork and network growth.
+							<h4>Is there plans to be listed on exchanges?</h4>
+							<p>Yes, the exchange listing process will start after the fork and network growth.
 							</p>
 						</div>
 					</div>
@@ -819,44 +819,36 @@
 				<div class="row">
 					<div class="col-12 col-md-6">
 						<div class="faq__item">
-							<h4>CryptoNote protocol</h4>
-							<p>Unlike the other traditional cryptocurrencies that predominantly use unambiguous signatures to verify the transaction, CryptoNote uses ring signatures. 
+								<i class="featured-item-icon far fa-file-signature gradient-icon fa-4x"></i>
+								<h4>Ring Confidential Transactions (RingCT)</h4>
+							<p>Unlike the other cryptocurrencies that use unambiguous signatures to verify the transaction, CryptoNote uses ring signatures. 
 								The ring signature is a more sophisticated scheme that requires several different public keys to verify a transaction.</p>
-							<p>In this case, the transaction is signated by a group of users. Thus, those verified can only identify that one of them was a signatory, but cannot identify the actual individual.</p>
-						</div>
-						<div class="faq__item">
-							<i class="featured-item-icon far fa-file-signature gradient-icon fa-4x"></i>
-							<h4>Ring Confidential Transactions (RingCT)</h4>
+							<p>In this case, the transaction is signatured by a group of users. Thus, those verified can only identify that one of them was a signatory, but cannot identify the actual individual.</p>
 							<p>Ring signatures restrict the double-spending attempt by linking transactions with the same private key. 
 								The protocol uses the key image, derived from a private key through a unidirectional function. 
 								All the users keep the list of all the images used, which are verified against a new transaction. 
 								If there is a double key image, the transaction is rejected as a double-spending try. 
-								However, the identity of the sender is still unknown, since it is impossible to get the private key from its image.
-							</p>
-						</div>
-						<div class="faq__item">
-							<i class="featured-item-icon far fa-shield-alt gradient-icon fa-4x"></i>
-							<h4>BulletProof technology</h4>
-							<p>The protocol creates automatically multiple unique and one-time addresses for each one of the payments, which are created from the unique public key. 
-								Even if the payment is sent to the same public address, in the blockchain, it appears as if sent to an one-time address. 
+								However, the identity of the sender is still unknown, since it is impossible to get the private key from the image.</p>
+							<p>The protocol automatically creates multiple unique one-time addresses for each payment created from the unique public key. 
+								Even if the payment is sent to the same public address, in the blockchain, it appears as if sent to a one-time address. 
 								The sender uses random data and the receiver's public address to calculate the one-time key of the payment. 
-								The redeem of the received funds requires the private key of the receiver since he is the only who can receive the funds sent to the one-time address. 
-								In addition, not any third party can discover the connection between the one-time key and the public address of the receiver.
-							</p>
+								The redeemable funds require the private key of the receiver since he is the only one who can receive the funds sent to the one-time address. 
+								In addition, no third party can discover the connection between the one-time key and the public address of the receiver.</p>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="faq__item">
 							<h4>Max supply and emission</h4>
-							<p>Genesis was on November 16, 2018 at 09:06:03 (UTC). Max supply is 18.4467 million.</p>
+							<p>Max supply is 18.4467 million.</p>
+							<p>Genesis on November 16, 2018, at 09:06:03 (UTC).</p>
 						</div>
 						<img src="images/media/swap-emission.png" alt="Emission Chart" class="img-fluid">
 						<div class="faq__item">
 							<h4>Tail emission phase</h4>
-							<p>Tail emission will start when the reward is below the tail emission. 
-								Tail emission is 157,680 coins each year (starting at year 8 from genesis block). 
-								Thats after about 16 million blocks or 18.2 million into emission.
-								Block reward will be constant at 0.075 Swap during the tail emission phase.
+							<p>When the block reward is below tail emission block reward, the tail emission phase will begin. Block reward will be constant at 0.075 Swap.</p>
+							
+							<p>During tail emission there will be 157,680 coins mined each year (starting at year 8 from genesis block). 
+								That is after about 16 million blocks found, or 18.2 million into emission.
 							</p>
 						</div>
 					</div>
@@ -883,7 +875,7 @@
 							</p>
 						</div>
 						<div class="faq__item">
-							<h4>Most efficient way to find cycles</h4>
+							<h4>The most efficient way to find cycles</h4>
 							<p>Step one is removing edges that are not part of a cycle (99.9%).
 								Step two is a backtracking graph traversal to find all cycles.
 							</p>
