@@ -821,21 +821,22 @@
 							<i class="featured-item-icon far fa-file-signature gradient-icon fa-4x"></i>
 							<h4>Technology overview</h4>
 							
-							<p>CryptoNote uses ring signatures. Ring signatures are a sophisticated scheme that requires several different public keys to verify a transaction.</p>
+							<p>CryptoNote uses ring signatures, a sophisticated scheme requiring several different public keys to verify a transaction.</p>
 							
-							<p>The transaction is signed by multiple users anonymously. The signing users are the only with knowledge of sender and receiver.</p>
+							<p>The transaction is signed by multiple users anonymously. Only signing users have knowledge of sender and receiver.</p>
 							
-							<p>Ring signatures restrict the double-spending attempt by linking transactions with the same private key. 
-								The protocol uses the key image, derived from a private key through a unidirectional function. 
-								All the users keep the list of all the images used, which are verified against a new transaction. 
-								If there is a double key image, the transaction is rejected as a double-spending try. 
-								However, the identity of the sender is still unknown, since it is impossible to get the private key from the image.</p>
+							<p>Ring signatures restrict double-spending attempts by linking transactions with the same private key. 
+								The protocol uses the key image, derived from a private key through an unidirectional function.</p>
 							
-							<p>The protocol automatically creates multiple unique one-time addresses for each payment created from the unique public key. 
-								Even if the payment is sent to the same public address, in the blockchain, it appears as if sent to a one-time address. 
-								The sender uses random data and the receiver's public address to calculate the one-time key of the payment. 
-								The redeemable funds require the private key of the receiver since he is the only one who can receive the funds sent to the one-time address. 
-								In addition, no third party can discover the connection between the one-time key and the public address of the receiver.</p>
+							<p>Users store all images and verify them against new transactions. 
+								If there is a double key image, the transaction is rejected as a double-spending attempt. 
+								Meanwhile the identity of the sender remains unknown, as it is impossible to get the private key from an image.</p>
+							
+							<p>The protocol generates multiple unique one-time addresses for each payment from the unique public key. 
+								The sender uses random data and the receiver's public address to generate a one-time key. 
+							</p>
+							<p>The redeemable funds require the receivers private key. They are the only one who can receive the funds sent to the one-time address. 
+								A third party can't see the connection between the one-time key and the public address of the receiver.</p>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
@@ -849,7 +850,7 @@
 							<h4>Tail emission phase</h4>
 							<p>When the block reward is below tail emission block reward, the tail emission phase will begin. Block reward will be constant at 0.075 Swap.</p>
 							
-							<p>The kickoff will be at year 8 from genesis block. This is after about 16,000,000 blocks found, or 18,200,000 into emission.
+							<p>The kickoff will be year 8 from genesis block. This is after roughly 16,000,000 blocks found, or 18,200,000 into coin emission.
 								During tail emission there will be 157,680 coins mined each year. 
 							</p>
 						</div>
