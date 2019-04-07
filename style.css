@@ -514,7 +514,7 @@ mark,
 code {
   font-size: 87.5%;
   color: #e83e8c;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 a > code {
@@ -10522,21 +10522,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', end
 }
 
 .img-team {
-  border-radius: 5px;
+  border-radius: 50%;
+  max-width: 65%;
 }
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3)
-{
-  h1 {
-  font-size:1.45rem;
-}
-  }
-    }
 @media (max-width: 1024px) {
 
-h1 {
+h2 {
   font-size:2rem;
 }
 
