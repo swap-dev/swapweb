@@ -86,7 +86,6 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  position: relative;
 }
 
 p {
@@ -559,7 +558,6 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
 }
 
 @media (min-width: 576px) {
