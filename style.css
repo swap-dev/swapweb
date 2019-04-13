@@ -7102,6 +7102,23 @@ button.bg-dark:focus {
   flex-direction: row !important;
 }
 
+.flex-row-stats {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+.flex-row-stats div {
+  border:1px solid #151933;
+  background-color: #1d244a;
+  border-color: #151933;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  flex-wrap: wrap;
+}
+
 .flex-column {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
@@ -10671,7 +10688,7 @@ ul.countdown li p {
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: #151933;
+  background-color: #1c2449;
 }
 
 .container-team:hover .overlay-team {
