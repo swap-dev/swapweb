@@ -10068,6 +10068,9 @@ a:hover {
   .flip-clock-divider.minutes .flip-clock-dot {
     display: none;
   }
+  .section-title:after {
+    left: 0;
+  }
 }
 
 /*---------------------------------------------------
