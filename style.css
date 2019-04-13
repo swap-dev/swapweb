@@ -7102,6 +7102,23 @@ button.bg-dark:focus {
   flex-direction: row !important;
 }
 
+.flex-row-stats {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+.flex-row-stats div {
+  border:1px solid #151933;
+  background-color: #1d244a;
+  border-color: #151933;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  flex-wrap: wrap;
+}
+
 .flex-column {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
@@ -9925,6 +9942,8 @@ a:hover {
   content: "";
   height: 2px;
   bottom: 0;
+  left: inherit;
+  text-align: center;
   background: -moz-linear-gradient(left, rgba(165,97,229,1) 0%, rgba(103,122,243,1) 50%, rgba(126,222,238,1) 100%);
   background: -webkit-linear-gradient(left, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
   background: linear-gradient(to right, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
@@ -10046,6 +10065,12 @@ a:hover {
   }
   .flip-clock-divider.minutes .flip-clock-dot {
     display: none;
+  }
+  .section-title:after {
+    left: 0;
+  }
+  .section-title.max-title:after {
+    width: 100%;
   }
 }
 
@@ -10671,7 +10696,7 @@ ul.countdown li p {
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: #151933;
+  background-color: #1c2449;
 }
 
 .container-team:hover .overlay-team {

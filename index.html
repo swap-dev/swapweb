@@ -31,7 +31,7 @@
 		<!-- Plugins -->
 		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 		<!-- Template CSS -->
-		<!--<link rel="stylesheet" href="fa/css/all.css">-->
+		<link rel="stylesheet" href="fa/css/all.css">
 		<link rel="stylesheet" href="style.css">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
@@ -71,10 +71,12 @@
 							<a class="dropdown-item" href="https://swap.coinscope.cc/" target="_blank"><i class="fas fa-link"></i>&ensp;Blockchain Explorer</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" data-scroll href="#wallets"><i class="far fa-wallet fa-fw"></i>&ensp;Wallets</a>
-							<a class="dropdown-item" data-scroll href="#miners"><i class="far fa-crow fa-fw"></i>&ensp;Miners</a>
-							<a class="dropdown-item" data-scroll href="#pools"><i class="far fa-chart-network fa-fw"></i>&ensp;Pools</a>
 							<div class="dropdown-divider"></div>
-                            <a class="dropdown-item" data-scroll href="#exchanges"><i class="fas fa-chart-line fa-fw"></i>&ensp;Exchanges</a>
+							<a class="dropdown-item" data-scroll href="#exchanges"><i class="fas fa-chart-line fa-fw"></i>&ensp;Exchanges</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" data-scroll href="#miners"><i class="far fa-crow fa-fw"></i>&ensp;Miners</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" data-scroll href="#pools"><i class="far fa-chart-network fa-fw"></i>&ensp;Pools</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -137,7 +139,7 @@
 				<a data-scroll href="#milestones" class="btn btn-outline-secondary">View Milestones&ensp;<i class="fas fa-arrow-circle-right"></i></a>
 			</div>
 		</div>
-		<section class="section">
+		<section class="section section-separated">
 			<div class="container">
 				<div class="section-title max-title centered-text text-center mx-auto">
 					<h3><i class="far fa-atom-alt gradient-icon"></i>&ensp;Specifications</h3>
@@ -210,7 +212,7 @@
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="feature-item">
-							<span class="wallet-icons featured-item-icon fa-stack fa-2x">
+							<span class="featured-item-icon fa-stack fa-2x">
 							<i class="far fa-ban gradient-icon fa-stack-2x"></i>
 							<i class="fas fa-coins gradient-icon fa-stack-1x"></i>
 							</span>
@@ -223,7 +225,7 @@
 			<!-- // container -->
 		</section>
 		<!-- // section -->
-		<section id="wallets" class="section section-separated">
+		<section id="wallets" class="section">
 			<div class="container">
 				<div class="section-title max-title text-center centered-text mx-auto">
 					<h3><i class="far fa-wallet gradient-icon"></i>&ensp;Swap Wallet</h3>
@@ -290,6 +292,47 @@
 			<!-- // container -->
 		</section>
 		<!-- // section -->
+		<section id="exchanges" class="section section-separated">
+				<div class="container">
+					<div class="section-title max-title text-center centered-text mx-auto">
+						<h3><i class="fas fa-chart-line gradient-icon"></i>&ensp;Exchanges</h3>
+					</div>
+					<p class="lead p-3 centered-text text-center mx-auto">Get Swap with Bitcoin.</p>
+					<div class="row align-items-center justify-content-around text-center exchange-logos">
+						<div class="col-6 col-sm-6 col-md-3">
+							<a href="https://tradeogre.com/exchange/BTC-XWP" target="_blank"><img src="images/exchanges/tradeogre-exchange.svg" alt="TradeOgre" class="img-fluid exchange-logo"></a>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3">
+							<a href="https://graviex.net/markets/xwpbtc" target="_blank"><img src="images/exchanges/graviex.png" alt="Graviex BTC Pair" class="img-fluid exchange-logo"></a>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3">
+							<a href="https://wallet.hotdex.eu/market/HOTDEX.XWP_HOTDEX.BTC" target="_blank"><img src="images/exchanges/hotdex-logo.png" alt="HotDex" class="img-fluid exchange-logo"></a>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3">
+							<a href="https://www.citex.co.kr/#/trade/2/44" target="_blank"><img src="images/exchanges/citex.png" alt="Citex BTC Pair" class="img-fluid exchange-logo"></a>
+						</div>
+					</div>
+					<p class="lead p-3 centered-text text-center mx-auto">Get Swap with Ethereum.</p>
+					<div class="row align-items-center justify-content-around text-center exchange-logos">
+						<div class="col-6 col-sm-6 col-md-3">
+							<a href="https://graviex.net/markets/xwpeth" target="_blank"><img src="images/exchanges/graviex.png" alt="Graviex ETH Pair" class="img-fluid exchange-logo"></a>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3">
+							<a href="https://www.citex.co.kr/#/trade/1/45" target="_blank"><img src="images/exchanges/citex.png" alt="Citex ETH Pair" class="img-fluid exchange-logo"></a>
+						</div>
+					</div>
+				<div class="section-title max-title text-center centered-text mx-auto">
+					<h3><i class="fas fa-chart-line gradient-icon"></i>&ensp;Rent Hashing</h3>
+				</div>
+				<div class="row align-items-center justify-content-around text-center exchange-logos">
+					<div class="col-6 col-sm-6 col-md-4">
+						<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap" target="_blank"><img src="images/exchanges/mrr.png" alt="Mining Rig Rentals" class="img-fluid exchange-logo"></a>
+					</div>
+				</div>
+			</div>
+		<!-- // container -->
+		</section>
+		<!-- // section -->
 		<section id="miners" class="section parallax-window">
 			<div class="container">
 				<div class="section-title max-title text-center centered-text mx-auto">
@@ -300,15 +343,14 @@
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-5">
 					<h4 class="featured-item-title">Grin Pro Miner</h4>
-					<p>The most powerful miner for AMD GPUs. Supports web monitoring.</p>
-						<ul class="list-group list-group-horizontal">
-								<li class="list-group-item">
-								  <i class="fab fa-windows fa-lg"></i>&ensp;
-								  <i class="fab fa-linux fa-lg"></i></li>
-							  <li class="list-group-item">AMD</li>
-							  <li class="list-group-item">Minimum 6GB VRAM</li>
-							  <li class="list-group-item">2% Fee</li>
-						  </ul>
+					<p>The most powerful miner for AMD GPUs. Supports remote web monitoring.</p>
+						<div class="d-flex flex-row-stats">
+							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+							<div class="p-2">AMD</div>
+							<div class="p-2">Minimum 6GB VRAM</div>
+							<div class="p-2">2% Fee</div>
+						</div>
 						<p><a href="https://github.com/mozkomor/GrinProMiner/releases/latest" target="_blank" class="btn btn-outline-secondary mt-3">Latest Releases&ensp;<i class="fab fa-github"></i></a></p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -317,15 +359,14 @@
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-5">
 					<h4 class="featured-item-title">NB Miner</h4>
-					<p>The most powerful Swap miner for Nvidia GPUs. Windows 10 requires a minimum 6GB VRAM. Includes support for web monitoring.</p>					  
-						<ul class="list-group list-group-horizontal">
-					  		<li class="list-group-item">
-								<i class="fab fa-windows fa-lg"></i>&ensp;
-								<i class="fab fa-linux fa-lg"></i></li>
-							<li class="list-group-item">Nvidia</li>
-							<li class="list-group-item">Minimum 5GB VRAM</li>
-							<li class="list-group-item">2% Fee</li>
-						</ul>
+					<p>The most powerful Swap miner for Nvidia GPUs. Windows 10 requires a minimum 6GB VRAM. Includes support for remote web monitoring.</p>					  
+						<div class="d-flex flex-row-stats">
+							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+							<div class="p-2">Nvidia</div>
+							<div class="p-2">Minimum 5GB VRAM</div>
+							<div class="p-2">2% Fee</div>
+						</div>
 						<p><a href="https://github.com/NebuTech/NBMiner/releases/latest" target="_blank" class="btn btn-outline-secondary mt-3">Latest Releases&ensp;<i class="fab fa-github"></i></a></p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -335,15 +376,15 @@
 					<div class="col-lg-8 mb-5">
 					<h4 class="featured-item-title">G Miner</h4>
 					<p>A powerful miner for Nvidia and the only Swap miner to support 4GB VRAM. Mining with 4GB VRAM is only supported on Windows 7 and Linux. For Windows 10 6GB of VRAM is required.</p>
-					<p>Integrated with a built-in web monitor and watchdog. The watchdog monitors mining processes and restarts the application in the event of failure or loss of connection to pools.</p>					  
-						<ul class="list-group list-group-horizontal">
-							<li class="list-group-item">
-								<i class="fab fa-windows fa-lg"></i>&ensp;
-								<i class="fab fa-linux fa-lg"></i></li>
-							<li class="list-group-item">AMD & Nvidia</li>
-							<li class="list-group-item">Minimum 4GB VRAM</li>
-							<li class="list-group-item">2% Fee</li>
-						</ul>
+					<p>Integrated with a built-in remote web monitor and watchdog. The watchdog monitors mining processes and restarts the application in the event of failure or loss of connection to pools.</p>					  
+					<div class="d-flex flex-row-stats">
+							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+							<div class="p-2">AMD</div>
+							<div class="p-2">Nvidia</div>
+							<div class="p-2">Minimum 4GB VRAM</div>
+							<div class="p-2">2% Fee</div>
+						</div>
 						<p><a href="https://github.com/develsoftware/GMinerRelease/releases/latest" target="_blank" class="btn btn-outline-secondary mt-3">Latest Releases&ensp;<i class="fab fa-github"></i></a></p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -353,16 +394,16 @@
 					<div class="col-lg-8 mb-5">
 					<h4 class="featured-item-title">Rainbow Miner</h4>
 					<p>A mining script with intelligent profit switching between mining pools, algorithms, and miners. 
-						Runs on top of mining programs. Supports Gminer and Swap Reference Miner for Swap.</p>
+						Runs on top of mining programs. Supports NBminer, Gminer and Swap Reference Miner for mining Swap.</p>
 					<p>Features easy setup wizard, web interface, and auto-update.</p>
-						<ul class="list-group list-group-horizontal">
-							<li class="list-group-item">
-								<i class="fab fa-windows fa-lg"></i></li>
-							<li class="list-group-item">AMD & Nvidia</li>
-							<li class="list-group-item">Minimum 4GB VRAM</li>
-							<li class="list-group-item">0% Fee</li>
-						</ul>
-						<p><a href="https://github.com/RainbowMiner/RainbowMiner/releases/latest" target="_blank" class="btn btn-outline-secondary mt-3">Latest Releases&ensp;<i class="fab fa-github"></i></a></p>
+						<div class="d-flex flex-row-stats">
+							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+							<div class="p-2">AMD</div>
+							<div class="p-2">Nvidia</div>
+							<div class="p-2">Minimum 4GB VRAM</div>
+							<div class="p-2">0% Fee</div>
+						</div>
+						<p><a href="https://github.com/RainbowMiner/RainbowMiner/releases/latest" target="_blank" class="btn btn-outline-secondary mt-3">Latest Release&ensp;<i class="fab fa-github"></i></a></p>
 					</div>
 					<div class="col-lg-2"></div>
 				</div>
@@ -372,21 +413,21 @@
 					<h4 class="featured-item-title">Swap Reference Miner</h4>
 					<p>Created by Swap developer Sebastian Green. Forked from Grin Gold Miner, 
 						it is the first Swap miner and serves as an example for other miner developers.</p>
-						<ul class="list-group list-group-horizontal">
-							<li class="list-group-item">
-								<i class="fab fa-windows fa-lg"></i>&ensp;
-								<i class="fab fa-linux fa-lg"></i>&ensp;
-								<i class="fab fa-apple fa-lg"></i></li>
-							<li class="list-group-item">AMD & Nvidia</li>
-							<li class="list-group-item">Minimum 5.5GB VRAM</li>
-							<li class="list-group-item">0% Fee</li>
-					  	</ul>
+						<div class="d-flex flex-row-stats">
+							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+							<div class="p-2"><i class="fab fa-apple fa-lg"></i></div>
+							<div class="p-2">AMD</div>
+							<div class="p-2">Nvidia</div>
+							<div class="p-2">Minimum 6GB VRAM</div>
+							<div class="p-2">0% Fee</div>
+						</div>
 						<p><a href="https://github.com/swap-dev/SwapReferenceMiner/releases/latest" target="_blank" class="btn btn-outline-secondary mt-3">Latest Releases&ensp;<i class="fab fa-github"></i></a></p>
 					</div>
 					<div class="col-lg-2"></div>
 				</div>
 			</div>
-			<!-- // container -->
+		<!-- // container -->
 		</section>
 		<!-- // section -->
 		<section id="pools" class="section section-separated">
@@ -449,47 +490,6 @@
 				</div>
 			</div>
 			<!-- // container -->
-		</section>
-		<!-- // section -->
-		<section id="exchanges" class="section">
-			<div class="container">
-				<div class="section-title max-title text-center centered-text mx-auto">
-					<h3><i class="fas fa-chart-line gradient-icon"></i>&ensp;Exchanges</h3>
-				</div>
-				<p class="lead p-3 centered-text text-center mx-auto">Get Swap with Bitcoin.</p>
-				<div class="row align-items-center justify-content-around text-center exchange-logos">
-					<div class="col-6 col-sm-6 col-md-3">
-						<a href="https://tradeogre.com/exchange/BTC-XWP" target="_blank"><img src="images/exchanges/tradeogre-exchange.svg" alt="TradeOgre" class="img-fluid exchange-logo"></a>
-					</div>
-					<div class="col-6 col-sm-6 col-md-3">
-						<a href="https://graviex.net/markets/xwpbtc" target="_blank"><img src="images/exchanges/graviex.png" alt="Graviex BTC Pair" class="img-fluid exchange-logo"></a>
-					</div>
-					<div class="col-6 col-sm-6 col-md-3">
-						<a href="https://wallet.hotdex.eu/market/HOTDEX.XWP_HOTDEX.BTC" target="_blank"><img src="images/exchanges/hotdex-logo.png" alt="HotDex" class="img-fluid exchange-logo"></a>
-					</div>
-					<div class="col-6 col-sm-6 col-md-3">
-						<a href="https://www.citex.co.kr/#/trade/2/44" target="_blank"><img src="images/exchanges/citex.png" alt="Citex BTC Pair" class="img-fluid exchange-logo"></a>
-					</div>
-				</div>
-				<p class="lead p-3 centered-text text-center mx-auto">Get Swap with Ethereum.</p>
-				<div class="row align-items-center justify-content-around text-center exchange-logos">
-					<div class="col-6 col-sm-6 col-md-3">
-						<a href="https://graviex.net/markets/xwpeth" target="_blank"><img src="images/exchanges/graviex.png" alt="Graviex ETH Pair" class="img-fluid exchange-logo"></a>
-					</div>
-					<div class="col-6 col-sm-6 col-md-3">
-						<a href="https://www.citex.co.kr/#/trade/1/45" target="_blank"><img src="images/exchanges/citex.png" alt="Citex ETH Pair" class="img-fluid exchange-logo"></a>
-					</div>
-                </div>
-			<div class="section-title max-title text-center centered-text mx-auto">
-				<h3><i class="fas fa-chart-line gradient-icon"></i>&ensp;Rent Hashing</h3>
-			</div>
-			<div class="row align-items-center justify-content-around text-center exchange-logos">
-                <div class="col-6 col-sm-6 col-md-4">
-                    <a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap" target="_blank"><img src="images/exchanges/mrr.png" alt="Mining Rig Rentals" class="img-fluid exchange-logo"></a>
-                </div>
-			</div>
-		</div>
-        <!-- // container -->
 		</section>
 		<!-- // section -->
 		<section id="milestones" class="section parallax-window" data-parallax="scroll" data-image-src="images/pruebas.svg">
@@ -619,7 +619,7 @@
 		<!-- // container -->
 		</section>
 		<!-- // section -->
-		<section id="team" class="section">
+		<section id="team" class="section section-separated">
 			<div class="container">
 				<div class="section-title max-title text-center centered-text mx-auto">
 					<h3><i class="far fa-users gradient-icon"></i>&ensp;Team</h3>
@@ -641,11 +641,11 @@
 						</div>
 							<span class="fa-stack" title="Github"><a href="https://github.com/sebseb7" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-github fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-github fa-stack-1x"></i></span></a>
 							</span>
 							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/sebseb7" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
 							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
@@ -662,11 +662,11 @@
 						</div>
 							<span class="fa-stack" title="Github"><a href="https://github.com/LPHuynh/" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-github fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-github fa-stack-1x"></i></span></a>
 							</span>
 							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/Leafy_R" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
 							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
@@ -682,7 +682,7 @@
 						</div>
 							<span class="fa-stack" title="Github"><a href="https://github.com/killmak/" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-github fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-github fa-stack-1x"></i></span></a>
 							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
@@ -700,7 +700,7 @@
 						</div>
 							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/PharmEcis" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
 							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
@@ -717,7 +717,7 @@
 						</div>
 							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/NickCadden" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
 							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
@@ -735,11 +735,11 @@
 						</div>
 							<span class="fa-stack" title="Github"><a href="https://github.com/Supercircles" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-github fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-github fa-stack-1x"></i></span></a>
 							</span>
 							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/Sanyasi10" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
 							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
@@ -756,56 +756,56 @@
 						</div>
 							<span class="fa-stack" title="Github"><a href="https://github.com/cancabron" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-github fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-github fa-stack-1x"></i></span></a>
 							</span>
 							<span class="fa-stack" title="Website"><a href="https://panotur360.com/" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fas fa-globe fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fas fa-globe fa-stack-1x"></i></span></a>
 							</span>
 							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/cancabron" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
 							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
 							<div class="container-team"><img src="images/team/chris.jpg" alt="Photo" class="mx-auto image-team img-fluid img-team mb-4">
-							<h4 class="mb-0">Chris Clausen</h4>
-							@Christcoinzy
-							<p><small class="text-info text-uppercase">Design</small></p>
-							<div class="overlay-team">
-								<div class="text-team">
-									&ensp;Advertising designer 15 years with a hunger for the new.
-									I’ve learned to invest, trade and mine, not just coins and tokens, also communities.
-									I believe in the mystical magnetism of this space.
-									Unquestionably, I want to be a part.&ensp;<i class="fas fa-palette"></i>
+								<h4 class="mb-0">Chris Clausen</h4>
+								@Christcoinzy
+								<p><small class="text-info text-uppercase">Design</small></p>
+								<div class="overlay-team">
+									<div class="text-team">
+										&ensp;Advertising designer 15 years with a hunger for the new.
+										I’ve learned to invest, trade and mine, not just coins and tokens, also communities.
+										I believe in the mystical magnetism of this space.
+										Unquestionably, I want to be a part.&ensp;<i class="fas fa-palette"></i>
+									</div>
 								</div>
 							</div>
-						</div>
 							<span class="fa-stack" title="Website"><a href="https://clausie.com/contact/" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fas fa-globe fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fas fa-globe fa-stack-1x"></i></span></a>
 							</span>
 							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/chrisclausie" target="_blank">
 								<i class="fas fa-square fa-stack-2x"></i>
-								<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
 							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
 							<div class="container-team"><img src="images/team/tiagods.jpg" alt="Photo" class="mx-auto image-team img-fluid img-team mb-4">
-							<h4 class="mb-0">Tiago Santos</h4>
-							@TiagoDS
-							<p><small class="text-info text-uppercase">Design</small></p>
-							<div class="overlay-team">
+								<h4 class="mb-0">Tiago Santos</h4>
+								@TiagoDS
+								<p><small class="text-info text-uppercase">Design</small></p>
+								<div class="overlay-team">
 									<div class="text-team">
 										&ensp;Pursuing a Degree in Marketing and Advertising. Passionate about repairing and building computers, which got me into crypto and mining.<br>
 										&ensp;I contribute design and photography to Swap.&ensp;<i class="fas fa-camera-alt"></i>
 									</div>
 								</div>
 							</div>
-								<span class="fa-stack" title="Twitter"><a href="https://twitter.com/TDS1337" target="_blank">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
-								</span>
+							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/TDS1337" target="_blank">
+								<i class="fas fa-square fa-stack-2x"></i>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+							</span>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
 							<div class="container-team"><img src="images/team/easu.jpg" alt="Photo" class="mx-auto image-team img-fluid img-team mb-4">
@@ -821,17 +821,17 @@
 									</div>
 								</div>
 							</div>
-								<span class="fa-stack" title="Twitter"><a href="https://twitter.com/OceanzEthereum" target="_blank">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<span class="blue-icon-dark"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
-								</span>
+							<span class="fa-stack" title="Twitter"><a href="https://twitter.com/OceanzEthereum" target="_blank">
+								<i class="fas fa-square fa-stack-2x"></i>
+								<span class="blue-icon"><i class="fab fa-twitter fa-stack-1x"></i></span></a>
+							</span>
 						</div>
 					</div>
 				</div>
 			<!-- // container -->
 		</section>
 		<!-- // section -->
-		<section id="faq" class="section section-separated">
+		<section id="faq" class="section">
 			<div class="container">
 				<div class="section-title max-title text-center centered-text mx-auto">
 					<h3><i class="fas fa-comments-alt gradient-icon"></i>&ensp;Frequently Asked Questions</h3>
@@ -884,7 +884,7 @@
 							<p>Learn the technology. It's easier to explain things when you understand them better.
 								Then you can form opinions about the technology's potential, or lack thereof.
 							</p>
-							<p>Bring people in, all kinds of people, regardless of coding skills, and also
+							<p>Spread the word about Swap and bring all kinds of people in, regardless of coding skills. Even reach out to
 								haters, because they help to make the community more robust.
 							</p>
 						</div>
@@ -904,7 +904,7 @@
 			<!-- // container -->
 		</section>
 		<!-- // section -->
-		<section id="cryptonote" class="section">
+		<section id="cryptonote" class="section section-separated">
 			<div class="container">
 				<div class="section-title max-title text-center centered-text mx-auto">
 					<h3><i class="fas fa-mask gradient-icon"></i>&ensp;CryptoNote</h3>
@@ -944,7 +944,7 @@
 						</div>
 						<img src="images/media/swap-emission.png" alt="Emission Chart" class="img-fluid">
 						<div class="faq__item">
-							<h4>Tail emission phase</h4>
+							<h4>Tail emission</h4>
 							<p>When the block reward is below tail emission block reward, the tail emission phase will begin. Block reward will be constant at 0.075 Swap.</p>
 							
 							<p>The kickoff will be year 8 from genesis block. This is after roughly 16,000,000 blocks found, or 18,085,000 into coin emission.
@@ -956,7 +956,8 @@
 			</div>
 			<!-- // container -->
 		</section>
-		<!-- // section -->		<section id="cuckaroo" class="section section-separated">
+		<!-- // section -->		
+		<section id="cuckaroo" class="section">
 			<div class="container">
 				<div class="section-title max-title text-center centered-text mx-auto">
 					<h3><i class="far fa-crow gradient-icon"></i>&ensp;Cuckaroo29s</h3>
@@ -1031,13 +1032,13 @@
 			<!-- // container -->
 		</section>
 		<!-- // section -->
-		<footer class="section py-lg centered-text text-center mx-auto">
+		<footer class="section section-separated py-lg text-center mx-auto">
 			<!-- // container -->
-			<p><i class="fas fa-heart"></i>&ensp;<b>XWP Donation Address</b>
+			<p><i class="fas fa-heart"></i>&ensp;<b>XWP Donation Address</b><br>
 			<small><small>fh2jc6PbQYd4a5PY3ooPMZiPVniMy4MGcjSRBnoBVc1xLmdCHJ6hc98Ess2hpN2mDgPnCAXtDUUbmjWYutRvdoSr2Nps2o5wc</small></small><br>
 			<small><i class="fas fa-key"></i>&ensp;<b>Private View Key</b></small><br>
 			<small><small>84a6ac951dccea8aa5c23127f9e69bd71222d64c0b560bbec49a6e6c01df1205</small></small></p><br>
-			Fundamentals Driven Secure Blockchain<br><img src="images/copyleft.svg" alt="Copyleft" class="copyleft"> Copyleft Swap 2019
+			Fundamentals Driven Secure Blockchain<br><img src="images/copyleft.svg" alt="Copyleft" class="copyleft"> Copyleft 2019 Swap
 		</footer>
 		<!-- // section -->
 		<a href="#0" class="cd-top js-cd-top">Top</a>
