@@ -5569,6 +5569,19 @@ input[type="button"].btn-block {
   margin-bottom: 0;
 }
 
+.list-group-horizontal {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.list-group-horizontal .list-group-item {
+  background-color: #1d244a;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+
 .list-group-item-action {
   width: 100%;
   color: #495057;
