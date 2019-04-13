@@ -9942,6 +9942,7 @@ a:hover {
   content: "";
   height: 2px;
   bottom: 0;
+  left:auto;
   background: -moz-linear-gradient(left, rgba(165,97,229,1) 0%, rgba(103,122,243,1) 50%, rgba(126,222,238,1) 100%);
   background: -webkit-linear-gradient(left, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
   background: linear-gradient(to right, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
