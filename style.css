@@ -10071,6 +10071,9 @@ a:hover {
   .section-title:after {
     left: 0;
   }
+  .section-title.max-title:after {
+    width: 100%;
+  }
 }
 
 /*---------------------------------------------------
