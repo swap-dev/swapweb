@@ -7102,7 +7102,7 @@ button.bg-dark:focus {
   flex-direction: row !important;
 }
 
-.flex-row-stats {
+.flex-row-stats, .flex-row-stats-alt {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
   -ms-flex-direction: row !important;
@@ -7113,7 +7113,14 @@ button.bg-dark:focus {
 .flex-row-stats div {
   border:1px solid #151933;
   background-color: #1d244a;
-  border-color: #151933;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.flex-row-stats-alt div {
+  border:1px solid #1d244a;
+  background-color: #151933;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   flex-wrap: wrap;
@@ -10072,6 +10079,11 @@ a:hover {
   .section-title.max-title:after {
     width: 100%;
   }
+  .copyleft {
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+  }
 }
 
 /*---------------------------------------------------
@@ -10155,6 +10167,8 @@ a:hover {
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+  max-width: 15rem;
+  max-height: 5rem;
 }
 
 @media (max-width: 992px) {
@@ -10547,6 +10561,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', end
 
 .exchange-logo {
   padding: 20px !important;
+  padding-left: 0px !important;
 }
 
 .media-logo {
