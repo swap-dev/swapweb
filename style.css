@@ -10825,3 +10825,9 @@ ul.countdown li p {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Title Link icon */
+.link-icon i {
+  position: absolute;
+  bottom: 1rem;
+}
