@@ -10690,6 +10690,18 @@ ul.countdown li p {
   }
 }
 
+/* Title Link icon */
+.link-icon i {
+  position: absolute;
+  bottom: 1rem;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container-link-icon:hover .link-icon i {
+  opacity: 0.9;
+}
+
 .container-team {
   position: relative;
 }
@@ -10716,76 +10728,6 @@ ul.countdown li p {
 .text-team {
   text-align: left;
   padding:5px;
-}
-
-.container-team-sebas {
-  height: 256px;
-  background: url('images/team/team.png') -542px -1074px;
-  background-position: -1455px -588px;
-  background-size: 450%;
-}
-
-.container-team-long {
-  height: 256px;
-  background: url('images/team/team.png') -542px -1074px;
-  background-position: -1734px -871px;
-  background-size: 450%;
-}
-
-.container-team-kyle {
-  height: 256px;
-  background: url('images/team/team.png') -542px -1074px;
-  background-position: -1458px -308px;
-  background-size: 450%;
-}
-
-.container-team-greg {
-  height: 256px;
-  background: url('images/team/team.png') -542px -1074px;
-  background-position: -1737px -304px;
-  background-size: 450%;
-}
-
-.container-team-nick {
-    height: 256px;
-    background: url('images/team/team.png') -1601px -8px;
-    background-position: -24px -330%;
-    background-size: 450%;
-}
-
-.container-team-gian {
-    height: 256px;
-    background: url('images/team/team.png') -1601px -8px;
-    background-position: -1733px -590px;
-    background-size: 450%;
-}
-
-.container-team-pablo {
-    height: 256px;
-    background: url('images/team/team.png') -1601px -8px;
-    background-position: -10px -139%;
-    background-size: 450%;
-}
-
-.container-team-chris {
-    height: 256px;
-    background: url('images/team/team.png') -1601px -8px;
-    background-position: -1447px -880px;
-    background-size: 450%;
-}
-
-.container-team-tiago {
-    height: 256px;
-    background: url('images/team/team.png') -1601px -8px;
-    background-position: -2020px -877px;
-    background-size: 450%;
-}
-
-.container-team-rich {
-    height: 256px;
-    background: url('images/team/team.png') -1601px -8px;
-    background-position: -13px -234%;
-    background-size: 450%;
 }
 
 .modal {
@@ -10824,10 +10766,4 @@ ul.countdown li p {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-}
-
-/* Title Link icon */
-.link-icon i {
-  position: absolute;
-  bottom: 1rem;
 }
