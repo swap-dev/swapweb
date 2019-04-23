@@ -31,7 +31,7 @@
 		<!-- Plugins -->
 		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 		<!-- Template CSS -->
-		<!-- <link rel="stylesheet" href="fa/css/all.css"> -->
+		<link rel="stylesheet" href="fa/css/all.css">
 		<link rel="stylesheet" href="style.css">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
@@ -45,8 +45,9 @@
 		</script>
 	</head>
 	<body class="dark">
+	 <div class="screenfill">
 		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="#"></a>
+			<div class="navbar-brand"></div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -136,13 +137,16 @@
 			<div class="graph">
 				<img src="images/graph-swap.svg" alt="graph" class="img-fluid">
 			</div>
+			<div class="space"></div>
 			<div class="text-center mx-4 mt-1">
-				<h1 class="centered-text mb-4 section-highlight-text ">
+				<h1 class="centered-text mb-4 section-highlight-text">
 					A community developed cryptocurrency striving for robust privacy, ecosystem fairness, full transparency, secure blockchain, and ease of use.
 				</h1>
-				<a data-scroll href="#milestones" class="btn btn-outline-secondary">View Milestones&ensp;<i class="fas fa-arrow-circle-right"></i></a>
+				<div id="networkdiv"></div>				
+				<!--<a data-scroll href="#milestones" class="btn btn-outline-secondary">View Milestones&ensp;<i class="fas fa-arrow-circle-right"></i></a>-->
 			</div>
 		</div>
+	 </div>
 		<section id="specifications" class="section section-separated">
 			<div class="container">
 				<div class="section-title max-title centered-text text-center mx-auto container-link-icon">

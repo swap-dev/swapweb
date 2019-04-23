@@ -582,6 +582,9 @@ pre code {
   .container {
     max-width: 1140px;
   }
+  .space {
+    height:25rem;
+  }
 }
 
 .container-fluid {
@@ -4346,8 +4349,8 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1.5rem;
-  font-size: 1.25rem;
+  margin-right: 0rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4714,11 +4717,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #a3acde;
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #a3acde;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -9852,7 +9855,7 @@ a:hover {
   width: 100%;
   margin: -5rem 0 -10rem;
   z-index: -1;
-  position: relative;
+  position: absolute;
 }
 
 .highlight {
@@ -10766,4 +10769,19 @@ ul.countdown li p {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+#networkdiv h3 {
+  color: #a3acde;
+  font-size: 1.3rem;
+  border:1px solid #151933;
+  background-color: #1d244a;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display:inline-block;
+}
+
+.screenfill {
+  min-height:1050px;
+  height: 100vh;
 }
