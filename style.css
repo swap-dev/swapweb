@@ -570,26 +570,17 @@ pre code {
   .container {
     max-width: 720px;
   }
-  .top-space {
-    margin-top:10em;
-  }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
-  .top-space {
-    margin-top:16em;
-  }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
-  }
-  .top-space {
-    margin-top:23em;
   }
 }
 
@@ -9861,7 +9852,7 @@ a:hover {
   width: 100%;
   margin: -5rem 0 -10rem;
   z-index: -1;
-  position: absolute;
+  position: relative;
 }
 
 .highlight {
@@ -10785,9 +10776,4 @@ ul.countdown li p {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   display:inline-block;
-}
-
-.screenfill {
-  min-height:1050px;
-  height: 100vh;
 }
