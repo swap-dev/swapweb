@@ -570,11 +570,17 @@ pre code {
   .container {
     max-width: 720px;
   }
+  .top-space {
+    margin-top:10em;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .top-space {
+    margin-top:16em;
   }
 }
 
@@ -582,8 +588,8 @@ pre code {
   .container {
     max-width: 1140px;
   }
-  .space {
-    height:25rem;
+  .top-space {
+    margin-top:23em;
   }
 }
 
