@@ -104,3 +104,30 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+const request = new XMLHttpRequest();
+ 
+request.open('GET', 'https://swap.coinscope.cc/api/networkinfo');
+request.send(); 
+ 
+request.onload = () => {
+  if (request.status === 200) {
+		console.log("Success"); // So extract data from json and create table
+    
+    //Extracting data
+    var hashrate = JSON.parse(request.response).data.hash_rate;
+		var difficulty = JSON.parse(request.response).data.difficulty;
+    
+    //Creating table
+		var network="<h3><i class='fas fa-tachometer'></i>&ensp;Graphrate "+(hashrate/32).toFixed(2)+" Kgps</h3><h3><i class='fas fa-unlock'></i>&ensp;Difficulty "+(difficulty/1000).toFixed(2)+" K</h3>";
+ 
+    //Showing the table inside table
+    document.getElementById("networkdiv").innerHTML = network;   
+	} 
+	 
+};
+ 
+request.onerror = () => {
+  console.log("error")
+};
