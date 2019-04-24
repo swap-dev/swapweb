@@ -4346,8 +4346,8 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1.5rem;
-  font-size: 1.25rem;
+  margin-right: 0rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4714,11 +4714,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #a3acde;
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #a3acde;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -10766,4 +10766,14 @@ ul.countdown li p {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+#networkdiv div, #networkdiv2 div {
+  color: #a3acde;
+  font-size: 1rem;
+  border:2px solid #151933;
+  background-color: #1d244a;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display:inline-block;
 }

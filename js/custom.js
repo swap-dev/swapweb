@@ -1,5 +1,5 @@
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 500,
+	speed: 250,
   speedAsDuration: false, // If true, use speed as the total duration of the scroll animation
 	durationMax: null, // Integer. The maximum amount of time the scroll animation should take
 	durationMin: null, // Integer. The minimum amount of time the scroll animation should take
@@ -104,3 +104,62 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+const request = new XMLHttpRequest();
+ 
+request.open('GET', 'https://swap.coinscope.cc/api/networkinfo');
+request.send(); 
+ 
+request.onload = () => {
+  if (request.status === 200) {
+    console.log("Success"); // So extract data from json and create table
+    
+    //Extracting data
+    var hashrate = JSON.parse(request.response).data.hash_rate;
+    var difficulty = JSON.parse(request.response).data.difficulty;
+    
+    //Creating table
+    var network=
+    "<div class='mx-1 my-1'><i class='fas fa-tachometer'></i>&ensp;Graphrate "+(hashrate/32).toFixed(2)+
+    " Kgps</div><div class='mx-1 my-1'><i class='fas fa-unlock'></i>&ensp;Difficulty "+Intl.NumberFormat().format(difficulty)+"</div>";
+ 
+    //Showing the table inside table
+    document.getElementById("networkdiv").innerHTML = network;   
+  } 
+   
+};
+ 
+request.onerror = () => {
+  console.log("error")
+};
+
+const request2 = new XMLHttpRequest();
+ 
+request2.open('GET', 'https://swap.coinscope.cc/api/emission');
+request2.send(); 
+ 
+request2.onload = () => {
+  if (request2.status === 200) {
+    console.log("Success"); // So extract data from json and create table
+    
+    //Extracting data
+    var coinbase = JSON.parse(request2.response).data.coinbase;
+    var blocknumber = JSON.parse(request2.response).data.blk_no;
+    
+    console.log(new Intl.NumberFormat().format(coinbase));
+    
+    //Creating table
+    var network2=
+    "<div class='mx-1 my-1'><i class='fas fa-layer-group'></i>&ensp;Emission "+Intl.NumberFormat().format((coinbase/1000000000000).toFixed(0))+
+    " XWP</div><div class='mx-1 my-1'><i class='fas fa-cubes'></i>&ensp;Block "+Intl.NumberFormat().format(blocknumber)+"</div>";
+ 
+    //Showing the table inside table
+    document.getElementById("networkdiv2").innerHTML = network2;   
+  } 
+   
+};
+ 
+request2.onerror = () => {
+  console.log("error")
+};

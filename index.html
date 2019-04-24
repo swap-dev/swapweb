@@ -31,9 +31,9 @@
 		<!-- Plugins -->
 		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 		<!-- Template CSS -->
-		<!-- <link rel="stylesheet" href="fa/css/all.css"> -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css?v=1">
 		<!-- Font Awesome -->
+		<!-- <link rel="stylesheet" href="fa/css/all.css"> -->
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5720377-4"></script>
@@ -46,7 +46,7 @@
 	</head>
 	<body class="dark">
 		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="#"></a>
+			<div class="navbar-brand"></div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -136,11 +136,13 @@
 			<div class="graph">
 				<img src="images/graph-swap.svg" alt="graph" class="img-fluid">
 			</div>
-			<div class="text-center mx-4 mt-1">
-				<h1 class="centered-text mb-4 section-highlight-text ">
+			<div class="text-center mx-4 top-space">
+				<div id="networkdiv"></div>
+				<div id="networkdiv2"></div>	
+				<h1 class="centered-text mt-4 mb-4 section-highlight-text">
 					A community developed cryptocurrency striving for robust privacy, ecosystem fairness, full transparency, secure blockchain, and ease of use.
 				</h1>
-				<a data-scroll href="#milestones" class="btn btn-outline-secondary">View Milestones&ensp;<i class="fas fa-arrow-circle-right"></i></a>
+				<!--<a data-scroll href="#milestones" class="btn btn-outline-secondary">View Milestones&ensp;<i class="fas fa-arrow-circle-right"></i></a>-->
 			</div>
 		</div>
 		<section id="specifications" class="section section-separated">
@@ -148,9 +150,9 @@
 				<div class="section-title max-title centered-text text-center mx-auto container-link-icon">
 					<h3><i class="far fa-atom-alt gradient-icon"></i>&ensp;Specifications</h3>&ensp;<span class="link-icon"><a data-scroll href="#specifications"><i class="fal fa-link fa-xs"></i></a></span>
 				</div>
-				<p class="lead p-3 centered-text text-center mx-auto">Total number of supply is 18,400,000 XWP.<br>
-					Mining Swap uses Cuckaroo29s Cycle PoW with a 15 second block time.<br>
-					Block timing is regulated using Monero&nbsp;DAA.<br>
+				<p class="lead p-3 centered-text text-center mx-auto">Total number of supply is 18,400,000 XWP<br>
+					Cuckaroo Cycle PoW algorithm with 15 second block time<br>
+					Block timing is regulated using Monero&nbsp;DAA<br>
 					<a data-scroll href="#cryptonote" class="btn btn-outline-secondary mt-3 mx-1">CryptoNote&ensp;<i class="fas fa-arrow-circle-right"></i></a>
 					<a data-scroll href="#cuckaroo" class="btn btn-outline-secondary mt-3 mx-1">Cuckaroo29s&ensp;<i class="fas fa-arrow-circle-right"></i></a>
 				</p>
@@ -1241,6 +1243,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 		<!-- Plugin JS -->
 		<script src="js/plugins/all-plugins.js"></script>
-		<script src="js/custom.js"></script>
+		<script src="js/custom.js?v=1"></script>
 	</body>
 </html>
