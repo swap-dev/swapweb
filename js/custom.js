@@ -120,7 +120,9 @@ request.onload = () => {
     var difficulty = JSON.parse(request.response).data.difficulty;
     
     //Creating table
-    var network="<div class='mx-1 my-1'><i class='fas fa-tachometer'></i>&ensp;Graphrate "+(hashrate/32).toFixed(2)+" Kgps</div><div class='mx-1 my-1'><i class='fas fa-unlock'></i>&ensp;Difficulty "+(difficulty/1000).toFixed(2)+" K</div>";
+    var network=
+    "<div class='mx-1 my-1'><i class='fas fa-tachometer'></i>&ensp;Graphrate "+(hashrate/32).toFixed(2)+
+    " Kgps</div><div class='mx-1 my-1'><i class='fas fa-unlock'></i>&ensp;Difficulty "+Intl.NumberFormat().format(difficulty)+"</div>";
  
     //Showing the table inside table
     document.getElementById("networkdiv").innerHTML = network;   
@@ -148,7 +150,9 @@ request2.onload = () => {
     console.log(new Intl.NumberFormat().format(coinbase));
     
     //Creating table
-    var network2="<div class='mx-1 my-1'><i class='fas fa-layer-group'></i>&ensp;Emission "+Intl.NumberFormat().format((coinbase/1000000000000).toFixed(0))+" XWP</div><div class='mx-1 my-1'><i class='fas fa-cubes'></i>&ensp;Block "+(blocknumber/1000).toFixed(2)+" K</div>";
+    var network2=
+    "<div class='mx-1 my-1'><i class='fas fa-layer-group'></i>&ensp;Emission "+Intl.NumberFormat().format((coinbase/1000000000000).toFixed(0))+
+    " XWP</div><div class='mx-1 my-1'><i class='fas fa-cubes'></i>&ensp;Block "+Intl.NumberFormat().format(blocknumber)+"</div>";
  
     //Showing the table inside table
     document.getElementById("networkdiv2").innerHTML = network2;   
