@@ -10768,10 +10768,10 @@ ul.countdown li p {
   cursor: pointer;
 }
 
-#networkdiv h3 {
+#networkdiv div, #networkdiv2 div {
   color: #a3acde;
-  font-size: 1.3rem;
-  border:1px solid #151933;
+  font-size: 1rem;
+  border:2px solid #151933;
   background-color: #1d244a;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
