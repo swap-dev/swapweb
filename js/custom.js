@@ -106,6 +106,15 @@ window.onclick = function(event) {
 }
 
 
+$(document).ready(function() {
+    // Fetch the initial table
+    refreshTable();
+
+    // Fetch every 5 seconds
+    setInterval(refreshTable, 3000);
+});
+
+function refreshTable(){
 const request = new XMLHttpRequest();
  
 request.open('GET', 'https://swap.coinscope.cc/api/networkinfo');
@@ -121,7 +130,7 @@ request.onload = () => {
     
     //Creating table
     var network=
-    "<div class='mx-1 my-1'><i class='fas fa-tachometer'></i>&ensp;Graphrate "+(hashrate/32).toFixed(2)+
+    "<div id='#networkdivload' class='mx-1 my-1'><i class='fas fa-tachometer'></i>&ensp;Graphrate "+(hashrate/32).toFixed(2)+
     " Kgps</div><div class='mx-1 my-1'><i class='fas fa-unlock'></i>&ensp;Difficulty "+Intl.NumberFormat().format(difficulty)+"</div>";
  
     //Showing the table inside table
@@ -134,6 +143,18 @@ request.onerror = () => {
   console.log("error")
 };
 
+}
+
+
+$(document).ready(function() {
+  // Fetch the initial table
+  refreshTable2();
+
+  // Fetch every 5 seconds
+  setInterval(refreshTable2, 3000);
+});
+
+function refreshTable2(){
 const request2 = new XMLHttpRequest();
  
 request2.open('GET', 'https://swap.coinscope.cc/api/emission');
@@ -151,7 +172,7 @@ request2.onload = () => {
     
     //Creating table
     var network2=
-    "<div class='mx-1 my-1'><i class='fas fa-layer-group'></i>&ensp;Emission "+Intl.NumberFormat().format((coinbase/1000000000000).toFixed(0))+
+    "<div class='mx-1 my-1'><i class='fas fa-layer-group'></i>&ensp;Circulation "+Intl.NumberFormat().format((coinbase/1000000000000).toFixed(0))+
     " XWP</div><div class='mx-1 my-1'><i class='fas fa-cubes'></i>&ensp;Block "+Intl.NumberFormat().format(blocknumber)+"</div>";
  
     //Showing the table inside table
@@ -163,3 +184,4 @@ request2.onload = () => {
 request2.onerror = () => {
   console.log("error")
 };
+}
