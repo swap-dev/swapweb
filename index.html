@@ -33,7 +33,7 @@
 		<!-- Template CSS -->
 		<link rel="stylesheet" href="style.css?v=1.1">
 		<!-- Font Awesome -->
-		<!-- <link rel="stylesheet" href="fa/css/all.css"> -->
+		<link rel="stylesheet" href="fa/css/all.css">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5720377-4"></script>
@@ -46,7 +46,7 @@
 	</head>
 	<body class="dark">
 		<nav class="navbar navbar-expand-lg navbar-dark">
-			<div class="navbar-brand"></div>
+			<a class="navbar-brand" href="#"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -84,7 +84,7 @@
 							aria-haspopup="true" aria-expanded="false">
 						Development
 						</a>
-						<div class="dropdown-menu" aria-labelledby="communityDropdown">
+						<div class="dropdown-menu" aria-labelledby="developmentDropdown">
 							<a class="dropdown-item" data-scroll href="#cryptonote"><i class="fas fa-mask fa-fw"></i>&ensp;CryptoNote</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" data-scroll href="#cuckaroo"><i class="far fa-crow fa-fw"></i>&ensp;Cuckaroo29s</a>
@@ -120,7 +120,7 @@
 			<div class="hero">
 				<div class="row align-items-center justify-content-around text-center mb-5">
 					<div class="col-10 col-sm-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-						<img src="images/logo/swap-logo-coloured.png" alt="logo" class="swap-hero-logo">
+						<img src="images/logo/swap-logo-coloured.png" alt="Swap" class="swap-hero-logo">
 					</div>
 				</div>
 				<p class="lead mt-3 mx-auto">Stable Network&ensp;|&ensp;No Governance Fee&ensp;|&ensp;No Premine&ensp;|&ensp;No BS</p>
@@ -132,12 +132,12 @@
 				<p class="lead mt-3 mx-auto">
 					Listed on <b><a data-scroll href="#graviex">Graviex</a></b> April 11th
 				</p>
-				<a data-scroll href="#wallets" class="btn btn-primary mt-3">Download Wallet&ensp;<i class="fas fa-arrow-circle-right"></i></a>
+				<a data-scroll href="#wallets" class="btn btn-primary mt-3">Swap Wallets&ensp;<i class="fas fa-arrow-circle-right"></i></a>
 			</div>
 			<div class="graph">
 				<img src="images/graph-swap.svg" alt="graph" class="img-fluid">
 			</div>
-			<div class="text-center mx-4 top-space">
+			<div class="text-center mx-4">
 				<div id="networkdiv"></div>
 				<div id="networkdiv2"></div>	
 				<h1 class="centered-text mt-4 mb-4 section-highlight-text">
@@ -235,65 +235,75 @@
 		<section id="wallets" class="section">
 			<div class="container">
 				<div class="section-title max-title text-center centered-text mx-auto container-link-icon">
-					<h3><i class="far fa-wallet gradient-icon"></i>&ensp;Swap Wallet</h3>&ensp;<span class="link-icon"><a data-scroll href="#wallets"><i class="fal fa-link fa-xs"></i></a></span>
+					<h3><i class="far fa-wallet gradient-icon"></i>&ensp;Wallets</h3>&ensp;<span class="link-icon"><a data-scroll href="#wallets"><i class="fal fa-link fa-xs"></i></a></span>
 				</div>
+				<p class="lead p-3 centered-text text-center mx-auto">
+					Desktop, Web, Paper and Hardware Wallets.
+				</p>
 				<div class="row align-items-start justify-content-around text-center">
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="feature-item">
-                            <span class="wallet-icons"><i class="featured-item-icon far fa-desktop gradient-icon"></i></span><br>
-                            <h4 class="featured-item-title">CLI & GUI Wallets</h4>
-                            <p>
-                                <i class="fab fa-windows gradient-icon fa-2x"></i>&ensp;
-                                <i class="fab fa-linux gradient-icon fa-2x"></i>&ensp;
-                                <i class="fab fa-apple gradient-icon fa-2x"></i>
-                            </p>
-                            <p>
-                                <a href="https://github.com/swap-dev/swap/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Latest Releases&ensp;<i class="fab fa-github"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                    <!--
 					<div class="col-12 col-sm-6 col-md-3">
 						<div class="feature-item">
 							<span class="wallet-icons"><i class="featured-item-icon fab fa-windows gradient-icon"></i></span>
 							<h4 class="featured-item-title">Windows</h4>
-							<p><a href="https://github.com/swap-dev/swap/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary">CLI Wallet&ensp;<i class="fab fa-github"></i></a></p>
-							<p><a href="https://github.com/swap-dev/swap/releases/latest" rel="nofollow" target="_blank" class="btn btn-primary">GUI Wallet&ensp;<i class="fab fa-github"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap/releases/download/v2.8.1/swap-v2.8-gui-win.zip" class="btn btn-primary">GUI Wallet&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap/releases/download/v2.8.1/swap-v2.8-cli-win.zip" class="btn btn-outline-secondary">CLI Wallet&ensp;<i class="fas fa-download"></i></a></p>							
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-md-3">
 						<div class="feature-item">
 							<span class="wallet-icons"><i class="featured-item-icon fab fa-linux gradient-icon"></i></span>
 							<h4 class="featured-item-title">Linux</h4>
-							<p><a href="https://github.com/swap-dev/swap/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary">CLI Wallet&ensp;<i class="fab fa-github"></i></a></p>
-							<p><a href="https://github.com/swap-dev/swap/releases/latest" rel="nofollow" target="_blank" class="btn btn-primary">GUI Wallet&ensp;<i class="fab fa-github"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap/releases/download/v2.8.1/swap-v2.8-gui-linux64.tar.gz" class="btn btn-primary">GUI Wallet&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap/releases/download/v2.8.1/swap-v2.8-cli-linux64.tar.gz" class="btn btn-outline-secondary">CLI Wallet&ensp;<i class="fas fa-download"></i></a></p>							
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-md-3">
 						<div class="feature-item">
-							<span class="wallet-icons"><i class="featured-item-icon fab fa-apple gradient-icon"></i></span>
+							<span class="wallet-icons"><i class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
 							<h4 class="featured-item-title">Mac</h4>
-							<p><a href="https://github.com/swap-dev/swap/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary">CLI Wallet&ensp;<i class="fab fa-github"></i></a></p>
-							<p><a href="https://github.com/swap-dev/swap/releases/latest" rel="nofollow" target="_blank" class="btn btn-primary">GUI Wallet&ensp;<i class="fab fa-github"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap/releases/download/v2.8.1/swap-v2.8-gui-mac.zip" class="btn btn-primary">GUI Wallet&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap/releases/download/v2.8.1/swap-v2.8-cli-mac.zip" class="btn btn-outline-secondary">CLI Wallet&ensp;<i class="fas fa-download"></i></a></p>							
 						</div>
-                    </div>
-                    -->
-					<div class="col-12 col-sm-6 col-md-3">
+					</div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="feature-item">
+                            <span class="wallet-icons"><i class="featured-item-icon fas fa-globe gradient-icon"></i></span><br>
+							<h4 class="featured-item-title">Light Web Wallet</h4>
+							<p><a href="https://wallet.swap.fyi/" target="_blank" class="btn btn-primary">Log In&ensp;<i class="fas fa-sign-in-alt"></i></a></p>
+                            <p><a href="https://wallet.swap.fyi/#!/create-your-account" target="_blank" class="btn btn-outline-secondary">Create Account&ensp;<i class="fas fa-user-plus"></i></a></p>
+                        </div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i class="featured-item-icon far fa-file-alt gradient-icon"></i></span>
 							<h4 class="featured-item-title">Paper Wallet</h4>
-							<p><a href="https://github.com/swap-dev/swap-paperwallet-generator" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Latest Release&ensp;<i class="fab fa-github"></i></a></p>
-							<p><a href="paperwallet-alternative.html" target="_blank" class="btn btn-outline-secondary">Web Generator&ensp;<i class="fas fa-globe"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap-paperwallet-generator/archive/master.zip" class="btn btn-primary">Download&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="paperwallet-alternative.html" target="_blank" class="btn btn-outline-secondary">Generate Online&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i class="featured-item-icon fab fa-usb gradient-icon"></i></span>
 							<h4 class="featured-item-title">Hardware Wallet</h4>
-							<p><a href="https://github.com/swap-dev/ledger-app-swap/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Latest Release&ensp;<i class="fab fa-github"></i></a></p>
-							<p> </p>
+							<p><a href="https://github.com/swap-dev/ledger-app-swap/archive/v1.1.1.zip" class="btn btn-primary">Download&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="https://github.com/swap-dev/ledger-app-swap" rel="nofollow" target="_blank" class="btn btn-outline-secondary">GitHub&ensp;<i class="fab fa-github"></i></a></p>
 						</div>
 					</div>
+                    <!--<div class="col-12 col-sm-6 col-md-4">
+                        <div class="feature-item">
+							<span class="wallet-icons"><i class="featured-item-icon far fa-desktop gradient-icon"></i></span><br>
+							<p>
+                                <i class="fab fa-windows gradient-icon fa-2x"></i>&ensp;
+                                <i class="fab fa-linux gradient-icon fa-2x"></i>&ensp;
+                                <i class="fab fa-apple gradient-icon fa-2x"></i>
+                            </p>
+                            <h4 class="featured-item-title">Desktop Wallets</h4>
+
+                            <p>
+                                <a href="https://github.com/swap-dev/swap/releases/latest" target="_blank" class="btn btn-outline-secondary">All Latest Releases&ensp;<i class="fab fa-github"></i></a>
+                            </p>
+                        </div>
+                    </div>-->
 				</div>
 			</div>
 			<!-- // container -->
@@ -525,6 +535,7 @@
 					<div class="d-flex flex-row-stats">
 							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
 							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+							<div class="p-2">AMD</div>
 							<div class="p-2">Nvidia</div>
 							<div class="p-2">Minimum 4GB VRAM</div>
 							<div class="p-2">2% Fee</div>
@@ -612,21 +623,21 @@
 				<p class="lead p-3 centered-text text-center mx-auto">
 					Mine Swap using the Micropool for low latency and no pool fees. Mining solo is especially achievable with a quick 15 second block time and Cuckaroo, the simplest PoW algorithm.</p>
 				<div class="row align-items-start justify-content-center text-center">
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="feature-item">
                             <span class="wallet-icons"><i class="featured-item-icon far fa-tint gradient-icon"></i></span>
                             <h4 class="featured-item-title">Micropool</h4>
                             <a href="https://github.com/swap-dev/micropool-gui/releases/latest" class="btn btn-outline-secondary" rel="nofollow" target="_blank">Latest Release&ensp;<i class="fab fa-github"></i></a>
                         </div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3">
+					<div class="col-12 col-sm-6 col-md-4">
                         <div class="feature-item">
                             <span class="wallet-icons"><i class="featured-item-icon far fa-list gradient-icon"></i></span>
                             <h4 class="featured-item-title">Pool List</h4>
                             <p><button id="myBtn" class="btn btn-outline-secondary media-logo2">View Pool List&ensp;<i class="fas fa-arrow-circle-right"></i></button></p>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="feature-item">
                             <span class="wallet-icons"><i class="featured-item-icon far fa-chart-bar gradient-icon"></i></span>
                             <h4 class="featured-item-title">Pool Stats</h4>
@@ -777,10 +788,30 @@
 						<div class="cd-timeline__block js-cd-block">
 							<div class="cd-timeline__milestone"> </div>
 							<div class="cd-timeline__content js-cd-content">
-								<div class="cd-timeline__date">Future Goal</div>
+								<div class="cd-timeline__date">April 27th 2019</div>
+								<span class="wallet-icons"><i class="fas fa-project-diagram gradient-icon"></i></span>
+								<h4>MyMonero Apps Now Easily Ported to Swap</h4>
+								<p>With the addition of 4 new repos Swap is now compatible with MyMonero Apps.</p>
+								<p>The new repos are lightwallet-server, myswap-core-js, myswap-core-cpp, and swap-core-custom.</p>
+							</div>
+						</div>
+						<div class="cd-timeline__block js-cd-block">
+							<div class="cd-timeline__milestone"> </div>
+							<div class="cd-timeline__content js-cd-content">
+								<div class="cd-timeline__date">May 2nd 2019</div>
 								<span class="wallet-icons"><i class="far fa-wallet gradient-icon"></i></span>
-								<h4>Mobile and Web Wallet Support</h4>
-								<p>Send and receive Swap with mobile and online.</p>
+								<h4>Light Web Wallet Online</h4>
+								<p>Send and receive Swap with ease using your favorite web browser.</p>
+								<p><a href="#wallets" class="btn btn-outline-secondary mt-3" target="_blank">Light Web Wallet&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+							</div>
+						</div>
+						<div class="cd-timeline__block js-cd-block">
+							<div class="cd-timeline__milestone"> </div>
+							<div class="cd-timeline__content js-cd-content">
+								<div class="cd-timeline__date">Future Goal</div>
+								<span class="wallet-icons"><i class="far fa-mobile-android gradient-icon"></i></span>
+								<h4>Mobile Wallet Support</h4>
+								<p>The capability to send and receive Swap on your phone.</p>
 							</div>
 						</div>
 						<div class="cd-timeline__block js-cd-block">
