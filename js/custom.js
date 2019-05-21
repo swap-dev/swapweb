@@ -130,7 +130,7 @@ request.onload = () => {
     
     //Creating table
     var network=
-    "<div id='#networkdivload' class='mx-1 my-1'><i class='fas fa-chart-network'></i>&ensp;Network "+(hashrate/32).toFixed(2)+
+    "<div id='#networkdivload' class='mx-1 my-1'><i class='fas fa-tachometer-alt'></i>&ensp;Network "+(hashrate/32).toFixed(2)+
     " Kgps</div><div class='mx-1 my-1'><i class='fas fa-unlock'></i>&ensp;Difficulty "+Intl.NumberFormat().format(difficulty)+"</div>";
  
     //Showing the table inside table
