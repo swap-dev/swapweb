@@ -9742,9 +9742,7 @@ a.text-dark:hover, a.text-dark:focus {
   Global
 ---------------------------------------------------*/
 .btn-primary {
-
   background-image: -webkit-linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
-
   background-image: linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', endColorstr='#7edeee',GradientType=1 );
   background-repeat: repeat-x;
