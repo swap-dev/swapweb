@@ -117,7 +117,7 @@ $(document).ready(function() {
 function refreshTable(){
 const request = new XMLHttpRequest();
  
-request.open('GET', 'https://swap.coinscope.cc/api/networkinfo');
+request.open('GET', 'https://explorer.xwp.fyi/api/networkinfo');
 request.send(); 
  
 request.onload = () => {
@@ -157,7 +157,7 @@ $(document).ready(function() {
 function refreshTable2(){
 const request2 = new XMLHttpRequest();
  
-request2.open('GET', 'https://swap.coinscope.cc/api/emission');
+request2.open('GET', 'https://explorer.xwp.fyi/api/emission');
 request2.send(); 
  
 request2.onload = () => {
