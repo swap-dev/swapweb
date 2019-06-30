@@ -10757,9 +10757,11 @@ ul.countdown li p {
 /* The Close Button */
 .close {
   color: #a3acde;
-  float: right;
+  text-align: right;
   font-size: 28px;
   font-weight: bold;
+  margin: .25em;
+  padding: 0;
 }
 
 .close:hover,
@@ -10772,7 +10774,7 @@ ul.countdown li p {
 #networkdiv div, #networkdiv2 div {
   color: #a3acde;
   font-size: 1rem;
-  border:2px solid #151933;
+  border:2px solid #1d244a;
   background-color: #1d244a;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
