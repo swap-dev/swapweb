@@ -10570,6 +10570,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', end
   filter:brightness(200%);
 }
 
+.media-logo3 img {
+  filter:brightness(200%);
+}
+
 .img-team {
   border-radius: 50%;
   max-width: 65%;
