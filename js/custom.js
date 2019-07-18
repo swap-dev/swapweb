@@ -111,7 +111,7 @@ $(document).ready(function() {
     refreshTable();
 
     // Fetch every 5 seconds
-    setInterval(refreshTable, 3000);
+    setInterval(refreshTable, 6000);
 });
 
 function refreshTable(){
@@ -151,7 +151,7 @@ $(document).ready(function() {
   refreshTable2();
 
   // Fetch every 5 seconds
-  setInterval(refreshTable2, 3000);
+  setInterval(refreshTable2, 6000);
 });
 
 function refreshTable2(){
