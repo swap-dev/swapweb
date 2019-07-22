@@ -10786,4 +10786,10 @@ ul.countdown li p {
   display:inline-block;
 }
 
-.goog-te-banner-frame.skiptranslate {display: none !important;}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+.flags {
+  width: 1em;
+}
