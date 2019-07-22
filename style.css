@@ -70,6 +70,7 @@ body {
   color: #a3acde;
   text-align: left;
   background-color: #151933;
+  top: 0px !important;
 }
 
 [tabindex="-1"]:focus {
@@ -10784,3 +10785,5 @@ ul.countdown li p {
   border-radius: 0.25rem;
   display:inline-block;
 }
+
+.goog-te-banner-frame.skiptranslate {display: none !important;}
