@@ -49,6 +49,7 @@ $(function () {
 		}
 	});
 });
+
 */
 //Stats Section
 /*
@@ -79,6 +80,7 @@ $('#hashrate').countTo({
 */
 
 
+// Pools Modal
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -106,6 +108,8 @@ window.onclick = function(event) {
 }
 
 
+
+// Explorer Stats
 $(document).ready(function() {
     // Fetch the initial table
     refreshTable();
@@ -117,7 +121,7 @@ $(document).ready(function() {
 function refreshTable(){
 const request = new XMLHttpRequest();
  
-request.open('GET', 'https://explorer.xwp.fyi/api/networkinfo');
+request.open('GET', 'https://explorer2.xwp.fyi/api/networkinfo');
 request.send(); 
  
 request.onload = () => {
@@ -145,7 +149,7 @@ request.onerror = () => {
 
 }
 
-
+// Explorer Stats
 $(document).ready(function() {
   // Fetch the initial table
   refreshTable2();
@@ -157,7 +161,7 @@ $(document).ready(function() {
 function refreshTable2(){
 const request2 = new XMLHttpRequest();
  
-request2.open('GET', 'https://explorer.xwp.fyi/api/emission');
+request2.open('GET', 'https://explorer2.xwp.fyi/api/emission');
 request2.send(); 
  
 request2.onload = () => {
@@ -185,3 +189,31 @@ request2.onerror = () => {
   console.log("error")
 };
 }
+
+// Google Translate
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+}
+
+function triggerHtmlEvent(element, eventName) {
+  var event;
+  if (document.createEvent) {
+  event = document.createEvent('HTMLEvents');
+  event.initEvent(eventName, true, true);
+  element.dispatchEvent(event);
+  } else {
+  event = document.createEventObject();
+  event.eventType = eventName;
+  element.fireEvent('on' + event.eventType, event);
+  }
+}
+
+jQuery('.lang-select').click(function() {
+  var theLang = jQuery(this).attr('data-lang');
+  jQuery('.goog-te-combo').val(theLang);
+
+  //alert(jQuery(this).attr('href'));
+  window.location = jQuery(this).attr('href');
+  location.reload();
+
+});
