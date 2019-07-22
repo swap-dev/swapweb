@@ -10792,4 +10792,11 @@ ul.countdown li p {
 
 .flags {
   width: 1.2em;
+  -webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(70%);
+}
+
+.dropdown-item:hover .flags {
+  -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(30%);
 }
