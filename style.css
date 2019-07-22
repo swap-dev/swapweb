@@ -70,6 +70,7 @@ body {
   color: #a3acde;
   text-align: left;
   background-color: #151933;
+  top: 0px !important;
 }
 
 [tabindex="-1"]:focus {
@@ -10783,4 +10784,19 @@ ul.countdown li p {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   display:inline-block;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+.flags {
+  width: 1.2em;
+  -webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(70%);
+}
+
+.dropdown-item:hover .flags {
+  -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(30%);
 }

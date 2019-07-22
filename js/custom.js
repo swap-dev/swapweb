@@ -49,6 +49,7 @@ $(function () {
 		}
 	});
 });
+
 */
 //Stats Section
 /*
@@ -79,6 +80,7 @@ $('#hashrate').countTo({
 */
 
 
+// Pools Modal
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -106,18 +108,20 @@ window.onclick = function(event) {
 }
 
 
+
+// Explorer Stats
 $(document).ready(function() {
     // Fetch the initial table
     refreshTable();
 
     // Fetch every 5 seconds
-    setInterval(refreshTable, 6000);
+    setInterval(refreshTable, 24000);
 });
 
 function refreshTable(){
 const request = new XMLHttpRequest();
  
-request.open('GET', 'https://explorer.xwp.fyi/api/networkinfo');
+request.open('GET', 'https://explorer2.xwp.fyi/api/networkinfo');
 request.send(); 
  
 request.onload = () => {
@@ -145,19 +149,19 @@ request.onerror = () => {
 
 }
 
-
+// Explorer Stats
 $(document).ready(function() {
   // Fetch the initial table
   refreshTable2();
 
   // Fetch every 5 seconds
-  setInterval(refreshTable2, 6000);
+  setInterval(refreshTable2, 24000);
 });
 
 function refreshTable2(){
 const request2 = new XMLHttpRequest();
  
-request2.open('GET', 'https://explorer.xwp.fyi/api/emission');
+request2.open('GET', 'https://explorer2.xwp.fyi/api/emission');
 request2.send(); 
  
 request2.onload = () => {

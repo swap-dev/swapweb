@@ -31,7 +31,7 @@
 		<!-- Plugins -->
 		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 		<!-- Template CSS -->
-		<link rel="stylesheet" href="style.css?v=1.4">
+		<link rel="stylesheet" href="style.css?v=1.5">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="fa/css/all.css">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
@@ -85,13 +85,13 @@
 						Development
 						</a>
 						<div class="dropdown-menu" aria-labelledby="developmentDropdown">
-							<a class="dropdown-item" data-scroll href="#cryptonote"><i class="fas fa-mask fa-fw"></i>&ensp;CryptoNote</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" data-scroll href="#cuckaroo"><i class="far fa-crow fa-fw"></i>&ensp;Cuckaroo29s</a>
-							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="https://github.com/swap-dev" rel="nofollow" target="_blank"><i class="fab fa-github fa-fw"></i>&ensp;GitHub</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="https://github.com/swap-dev/swap/wiki" rel="nofollow" target="_blank"><i class="far fa-book-open fa-fw"></i>&ensp;Wiki</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" data-scroll href="#cryptonote"><i class="fas fa-mask fa-fw"></i>&ensp;CryptoNote</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" data-scroll href="#cuckaroo"><i class="far fa-crow fa-fw"></i>&ensp;Cuckaroo29s</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -99,19 +99,36 @@
 							aria-haspopup="true" aria-expanded="false">
 						Community
 						</a>
-						<div class="dropdown-menu" aria-labelledby="communityDropdown">					
-							<a class="dropdown-item" href="https://discord.gg/Eun5FHp" rel="nofollow" target="_blank"><i class="fab fa-discord fa-fw"></i>&ensp;Discord</a>
-							<a class="dropdown-item" href="https://t.me/swapxwp" rel="nofollow" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i>&ensp;Telegram</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="https://bitcointalk.org/index.php?topic=5083455.0" rel="nofollow" target="_blank"><i class="fab fa-btc fa-fw"></i>&ensp;BitcoinTalk</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="https://swap-forum.fyi" target="_blank"><i class="fas fa-comments fa-fw"></i>&ensp;Forum</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="https://medium.com/@Swap_Community" rel="nofollow" target="_blank"><i class="fab fa-medium-m fa-fw"></i>&ensp;Medium</a>
+						<div class="dropdown-menu" aria-labelledby="communityDropdown">
 							<a class="dropdown-item" href="https://twitter.com/@Swap_Community" rel="nofollow" target="_blank"><i class="fab fa-twitter fa-fw"></i>&ensp;Twitter</a>
+							<a class="dropdown-item" href="https://medium.com/@Swap_Community" rel="nofollow" target="_blank"><i class="fab fa-medium-m fa-fw"></i>&ensp;Medium</a>
+							<a class="dropdown-item" href="https://bitcointalk.org/index.php?topic=5083455.0" rel="nofollow" target="_blank"><i class="fab fa-btc fa-fw"></i>&ensp;BitcoinTalk</a>
 							<a class="dropdown-item" href="https://www.reddit.com/r/SwapProject" rel="nofollow" target="_blank"><i class="fab fa-reddit-alien fa-fw"></i>&ensp;Reddit</a>
 							<a class="dropdown-item" href="https://www.facebook.com/swapproject" rel="nofollow" target="_blank"><i class="fab fa-facebook-f fa-fw"></i>&ensp;Facebook</a>
 							<a class="dropdown-item" href="https://www.instagram.com/swap.coin/" rel="nofollow" target="_blank"><i class="fab fa-instagram fa-fw"></i>&ensp;Instagram</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="https://discord.gg/Eun5FHp" rel="nofollow" target="_blank"><i class="fab fa-discord fa-fw"></i>&ensp;Discord</a>
+							<a class="dropdown-item" href="https://t.me/swapxwp" rel="nofollow" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i>&ensp;Telegram</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-language fa-2x align-middle"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="communityDropdown">
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|ar)" data-lang="ar"><img class="flags" src="images/flags/arabia.png">&ensp;العَرَبِيَّة</a>
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN"><img class="flags" src="images/flags/china.png">&ensp;中文</a>
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img class="flags" src="images/flags/unitedkingdom.png">&ensp;English</a>
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|fr)" data-lang="fr"><img class="flags" src="images/flags/france.png">&ensp;Français</a>
+							<a class="dropdown-item lang-de lang-select" href="#googtrans(en|de)" data-lang="de"><img class="flags" src="images/flags/germany.png">&ensp;Deutsch</a>
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|hi)" data-lang="hi"><img class="flags" src="images/flags/india.png">&ensp;हिन्दी</a>
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|it)" data-lang="it"><img class="flags" src="images/flags/italy.png">&ensp;Italiano</a>		
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|ja)" data-lang="ja"><img class="flags" src="images/flags/japan.png">&ensp;日本語</a>
+							<a class="dropdown-item lang-ko lang-select" href="#googtrans(en|ko)" data-lang="ko"><img class="flags" src="images/flags/korea.png">&ensp;한국어</a>
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|pt)" data-lang="pt"><img class="flags" src="images/flags/portugal.png">&ensp;Português</a>
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|ru)" data-lang="ru"><img class="flags" src="images/flags/russia.png">&ensp;Русский</a>
+							<a class="dropdown-item lang-en lang-select" href="#googtrans(en|es)" data-lang="es"><img class="flags" src="images/flags/spain.png">&ensp;Español</a>
 						</div>
 					</li>
 				</ul>
@@ -434,32 +451,12 @@
 		<section id="miners" class="section parallax-window">
 			<div class="container">
 				<div class="section-title max-title text-center centered-text mx-auto container-link-icon">
-					<h3><i class="far fa-crow gradient-icon"></i>&ensp;Cuckaroo29s Miners</h3>&ensp;<span class="link-icon"><a data-scroll href="#miners"><i class="fal fa-link fa-xs"></i></a></span>
+					<h3><i class="far fa-crow gradient-icon"></i>&ensp;Miners</h3>&ensp;<span class="link-icon"><a data-scroll href="#miners"><i class="fal fa-link fa-xs"></i></a></span>
 				</div>
 				<p class="lead p-3 centered-text text-center mx-auto">
 					Mine Swap with 4GB VRAM GPUs using GMiner on Windows 7 or Linux.
 				</p>
 				<div class="row mt-5">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GrinProMiner</h4>
-					<p>The most powerful Swap miner for AMD GPUs. Supports remote web monitoring. Windows requires .NET Core 2.2 Build apps.</p>
-						<div class="d-flex flex-row-stats">
-							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
-							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
-							<div class="p-2">AMD</div>
-							<div class="p-2">Minimum 6GB VRAM</div>
-							<div class="p-2">2% Fee</div>
-						</div>
-						<p>
-							<a href="https://github.com/mozkomor/GrinProMiner/releases/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Releases&ensp;<i class="fab fa-github"></i></a>
-							<a href="https://grinpro.io/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
-							<a href="https://dotnet.microsoft.com/download" class="btn btn-outline-secondary mt-3" rel="nofollow" target="_blank">.NET Core&ensp;<i class="fab fa-windows"></i></a>
-						</p>
-					</div>
-					<div class="col-lg-2"></div>
-				</div>
-				<div class="row">
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-5">
 					<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GMiner</h4>
@@ -496,6 +493,26 @@
 						<p>
 							<a href="https://github.com/NebuTech/NBMiner/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Releases&ensp;<i class="fab fa-github"></i></a>
 							<a href="https://bitcointalk.org/index.php?topic=5099379.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+						</p>
+					</div>
+					<div class="col-lg-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-8 mb-5">
+					<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GrinProMiner</h4>
+					<p>The most powerful Swap miner for AMD GPUs. Supports remote web monitoring. Windows requires .NET Core 2.2 Build apps.</p>
+						<div class="d-flex flex-row-stats">
+							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+							<div class="p-2">AMD</div>
+							<div class="p-2">Minimum 6GB VRAM</div>
+							<div class="p-2">2% Fee</div>
+						</div>
+						<p>
+							<a href="https://github.com/mozkomor/GrinProMiner/releases/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Releases&ensp;<i class="fab fa-github"></i></a>
+							<a href="https://grinpro.io/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
+							<a href="https://dotnet.microsoft.com/download" class="btn btn-outline-secondary mt-3" rel="nofollow" target="_blank">.NET Core&ensp;<i class="fab fa-windows"></i></a>
 						</p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -1274,6 +1291,35 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 		<!-- Plugin JS -->
 		<script src="js/plugins/all-plugins.js"></script>
-		<script src="js/custom.js?v=1.3"></script>
+		<script src="js/custom.js?v=1.6"></script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+			  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+			}
+		
+			function triggerHtmlEvent(element, eventName) {
+			  var event;
+			  if (document.createEvent) {
+				event = document.createEvent('HTMLEvents');
+				event.initEvent(eventName, true, true);
+				element.dispatchEvent(event);
+			  } else {
+				event = document.createEventObject();
+				event.eventType = eventName;
+				element.fireEvent('on' + event.eventType, event);
+			  }
+			}
+		
+			jQuery('.lang-select').click(function() {
+			  var theLang = jQuery(this).attr('data-lang');
+			  jQuery('.goog-te-combo').val(theLang);
+		
+			  //alert(jQuery(this).attr('href'));
+			  window.location = jQuery(this).attr('href');
+			  location.reload();
+		
+			});
+		</script>
 	</body>
 </html>
