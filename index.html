@@ -31,7 +31,7 @@
 		<!-- Plugins -->
 		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 		<!-- Template CSS -->
-		<link rel="stylesheet" href="style.css?v=1.5">
+		<link rel="stylesheet" href="style.css?v=1.6">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="fa/css/all.css">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
@@ -277,7 +277,7 @@
 							<span class="wallet-icons"><i class="featured-item-icon fab fa-linux gradient-icon"></i></span>
 							<h4 class="featured-item-title my-0 py-0">Linux</h4>
 							<p class="mb-3 py-0">Malkoha</p>
-							<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.1/swap-v3.0.1-gui-linux.tar.gz" class="btn btn-primary">GUI Version 3.0.1&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.2/swap-v3.0.2-gui-linux.tar.gz" class="btn btn-primary">GUI Version 3.0.2&ensp;<i class="fas fa-download"></i></a></p>
 							<p><a href="https://github.com/swap-dev/swap/releases/download/v3.0.0/swap-v3.0.0-cli-linux.tar.gz" class="btn btn-outline-secondary">CLI Version 3.0.0&ensp;<i class="fas fa-download"></i></a></p>							
 						</div>
 					</div>
@@ -286,7 +286,7 @@
 							<span class="wallet-icons"><i class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
 							<h4 class="featured-item-title my-0 py-0">Mac</h4>
 							<p class="mb-3 py-0">Malkoha</p>
-							<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.1/swap-v3.0.1-gui-mac.zip" class="btn btn-primary">GUI Version 3.0.1&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.2/swap-v3.0.2-gui-mac.zip" class="btn btn-primary">GUI Version 3.0.2&ensp;<i class="fas fa-download"></i></a></p>
 							<p><a href="https://github.com/swap-dev/swap/releases/download/v3.0.0/swap-v3.0.0-cli-mac.zip" class="btn btn-outline-secondary">CLI Version 3.0.0&ensp;<i class="fas fa-download"></i></a></p>							
 						</div>
 					</div>
@@ -456,193 +456,224 @@
 				<p class="lead p-3 centered-text text-center mx-auto">
 					Mine Swap with 4GB VRAM GPUs using GMiner on Windows 7 or Linux.
 				</p>
-				<div class="row mt-5">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GMiner</h4>
-					<p>A powerful Swap miner for Nvidia and the only Swap miner to support 4GB VRAM. Mining with 4GB VRAM is only supported on Windows 7 and Linux. For Windows 10 6GB of VRAM is required.</p>
-					<p>Integrated with a built-in remote web monitor and watchdog. The watchdog monitors mining processes and restarts the application in the event of failure or loss of connection to pools.</p>					  
-					<div class="d-flex flex-row-stats">
-							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
-							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
-							<div class="p-2">AMD</div>
-							<div class="p-2">Nvidia</div>
-							<div class="p-2">Minimum 4GB VRAM</div>
-							<div class="p-2">2% Fee</div>
-						</div>
-						<p>
-							<a href="https://github.com/develsoftware/GMinerRelease/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Releases&ensp;<i class="fab fa-github"></i></a>
-							<a href="https://bitcointalk.org/index.php?topic=5034735.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
-						</p>
-					</div>
-					<div class="col-lg-2"></div>
+				<div class="text-center">
+					<button class="mx-1 btn tablink btn-primary btn-primary2" onclick="openMiner(event,'mines')">Miners&ensp;<i class="fas fa-snowplow"></i></button>
+					<button class="mx-1 btn tablink btn-primary" onclick="openMiner(event,'linux')">Custom Linux&ensp;<i class="fab fa-linux"></i></button>
+					<button class="mx-1 btn tablink btn-primary" onclick="openMiner(event,'monitors')">Monitors&ensp;<i class="fas fa-desktop"></i></button>
 				</div>
-				<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;NBMiner</h4>
-					<p>A powerful Swap miner for Nvidia GPUs. Windows 10 requires a minimum 6GB VRAM.
-						Use Windows 7 or Linux for 5GB VRAM support. Includes remote web monitoring.</p>					  
-						<div class="d-flex flex-row-stats">
-							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
-							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
-							<div class="p-2">Nvidia</div>
-							<div class="p-2">Minimum 5GB VRAM</div>
-							<div class="p-2">2% Fee</div>
+				<div id="mines" class="miner">
+					<div class="row mt-5">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+							<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GMiner</h4>
+							<p>A powerful Swap miner for Nvidia and the only Swap miner to support 4GB VRAM. Mining with 4GB VRAM is only supported on Windows 7 and Linux. For Windows 10 6GB of VRAM is required.</p>
+							<p>Integrated with a built-in remote web monitor and watchdog. The watchdog monitors mining processes and restarts the application in the event of failure or loss of connection to pools.</p>					  
+							<div class="d-flex flex-row-stats">
+								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+								<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+								<div class="p-2">AMD</div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 4GB VRAM</div>
+								<div class="p-2">2% Fee</div>
+							</div>
+							<p>
+								<a href="https://github.com/develsoftware/GMinerRelease/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Releases&ensp;<i class="fab fa-github"></i></a>
+								<a href="https://bitcointalk.org/index.php?topic=5034735.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+							</p>
 						</div>
-						<p>
-							<a href="https://github.com/NebuTech/NBMiner/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Releases&ensp;<i class="fab fa-github"></i></a>
-							<a href="https://bitcointalk.org/index.php?topic=5099379.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
-						</p>
+						<div class="col-lg-2"></div>
 					</div>
-					<div class="col-lg-2"></div>
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;NBMiner</h4>
+						<p>A powerful Swap miner for Nvidia GPUs. Windows 10 requires a minimum 6GB VRAM.
+							Use Windows 7 or Linux for 5GB VRAM support. Includes remote web monitoring.</p>					  
+							<div class="d-flex flex-row-stats">
+								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+								<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 5GB VRAM</div>
+								<div class="p-2">2% Fee</div>
+							</div>
+							<p>
+								<a href="https://github.com/NebuTech/NBMiner/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Releases&ensp;<i class="fab fa-github"></i></a>
+								<a href="https://bitcointalk.org/index.php?topic=5099379.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+							</p>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GrinProMiner</h4>
+						<p>The most powerful Swap miner for AMD GPUs. Supports remote web monitoring. Windows requires .NET Core 2.2 Build apps.</p>
+							<div class="d-flex flex-row-stats">
+								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+								<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+								<div class="p-2">AMD</div>
+								<div class="p-2">Minimum 6GB VRAM</div>
+								<div class="p-2">2% Fee</div>
+							</div>
+							<p>
+								<a href="https://github.com/mozkomor/GrinProMiner/releases/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Releases&ensp;<i class="fab fa-github"></i></a>
+								<a href="https://grinpro.io/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
+								<a href="https://dotnet.microsoft.com/download" class="btn btn-outline-secondary mt-3" rel="nofollow" target="_blank">.NET Core&ensp;<i class="fab fa-windows"></i></a>
+							</p>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;Swap Reference Miner</h4>
+						<p>Created by Swap developer Sebastian Green. Forked from Grin Gold Miner, 
+							it is the first Swap miner and serves as an example for other miner developers. 
+							Windows requires .NET Core 2.2 Build apps.</p>
+							<div class="d-flex flex-row-stats">
+								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+								<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+								<div class="p-2"><i class="fab fa-apple fa-lg"></i></div>
+								<div class="p-2">AMD</div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 6GB VRAM</div>
+								<div class="p-2">0% Fee</div>
+							</div>
+							<p>
+								<a href="https://github.com/swap-dev/SwapReferenceMiner/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Releases&ensp;<i class="fab fa-github"></i></a>
+								<a href="https://github.com/swap-dev/swap/wiki/Swap-Reference-Miner" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Wiki&ensp;<i class="far fa-book-open"></i></a>
+								<a href="https://dotnet.microsoft.com/download" class="btn btn-outline-secondary mt-3" rel="nofollow" target="_blank">.NET Core&ensp;<i class="fab fa-windows"></i></a>
+							</p>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
+				</div>	
+				<div id="linux" class="miner" style="display:none">
+					<div class="row mt-5">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;mmpOS</h4>
+						<p>Highly optimized, ubuntu based linux OS, booting right of an USB stick (min 4GB). Miner management made easy. Allows you to manage and monitor all your rigs via one powerful dashboard.</p>
+						<p>Features include temperature and fan management, overclocking, undervolting and optimizing timings, live stats, and remote access.</p>
+							<div class="d-flex flex-row-stats">
+								<div class="p-2">AMD</div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 4GB VRAM</div>
+								<div class="p-2">Free up to 12 workers</div>
+							</div>
+							<p>
+								<a href="https://app.mmpos.eu/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
+								<a href="https://bitcointalk.org/index.php?topic=5088988.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+							</p>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Hive OS</h4>
+						<p>Hive OS is an all-in-one monitoring and management tool for your mining rigs. 
+							Keep track of hashrates, online statuses, GPU errors, team activity, pool configurations & power consumption. 
+							Remote access from anywhere across the globe, troubleshoot and reboot GPUs remotely or perform bulk updates across your entire farm.
+						</p>
+							<div class="d-flex flex-row-stats">
+								<div class="p-2">AMD</div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 4GB VRAM</div>
+								<div class="p-2">Free up to 3 workers</div>
+							</div>
+							<p>
+								<a href="https://hiveos.farm/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
+								<a href="https://bitcointalk.org/index.php?topic=2350786.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+							</p>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Simple Mining OS</h4>
+						<p>SimpleMining OS is plug and play operating system for mining cryptocurrency coins. 
+							No more messing with Windows, drivers, TeamViewer, etc. 
+							Just download the OS image, write it to any (USB/SSD/HDD) drive, set your email address and boot it. 
+							All your rigs can be managed with just a few clicks in web browser on cloud dashboard.</p>
+							<div class="d-flex flex-row-stats">
+								<div class="p-2">AMD</div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 4GB VRAM</div>
+								<div class="p-2">$2 per month</div>
+							</div>
+							<p>
+								<a href="https://simplemining.net/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
+								<a href="https://bitcointalk.org/index.php?topic=1541084.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+							</p>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Miner Stat OS</h4>
+						<p>Linux mining OS, ASIC monitoring and Windows mining software for professionals and mining farms.
+							Monitor and manage your rigs with a help of unique features, such as ClockTune, profit switch, control room, and more.
+						</p>
+							<div class="d-flex flex-row-stats">
+								<div class="p-2">AMD</div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 4GB VRAM</div>
+								<div class="p-2">Free up to 2 workers</div>
+							</div>
+							<p>
+								<a href="https://minerstat.com/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
+								<a href="https://bitcointalk.org/index.php?topic=1772780.1300" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+							</p>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GrinProMiner</h4>
-					<p>The most powerful Swap miner for AMD GPUs. Supports remote web monitoring. Windows requires .NET Core 2.2 Build apps.</p>
-						<div class="d-flex flex-row-stats">
-							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
-							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
-							<div class="p-2">AMD</div>
-							<div class="p-2">Minimum 6GB VRAM</div>
-							<div class="p-2">2% Fee</div>
+				<div id="monitors" class="miner" style="display:none">
+					<div class="row mt-5">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fas fa-desktop gradient-icon"></i>&ensp;RainbowMiner</h4>
+						<p>A mining script with intelligent profit switching between mining pools, algorithms, and miners. 
+							Runs on top of mining programs. Supports GrinProMiner, NBminer, and Gminer for Swap mining.</p>
+						<p>Features easy setup wizard, web interface, and auto-update.</p>
+							<div class="d-flex flex-row-stats">
+								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+								<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
+								<div class="p-2">AMD</div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 4GB VRAM</div>
+								<div class="p-2">0% Fee</div>
+							</div>
+							<p>
+								<a href="https://github.com/RainbowMiner/RainbowMiner/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Release&ensp;<i class="fab fa-github"></i></a>
+								<a href="https://bitcointalk.org/index.php?topic=5050211.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+							</p>
 						</div>
-						<p>
-							<a href="https://github.com/mozkomor/GrinProMiner/releases/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Releases&ensp;<i class="fab fa-github"></i></a>
-							<a href="https://grinpro.io/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
-							<a href="https://dotnet.microsoft.com/download" class="btn btn-outline-secondary mt-3" rel="nofollow" target="_blank">.NET Core&ensp;<i class="fab fa-windows"></i></a>
-						</p>
+						<div class="col-lg-2"></div>
 					</div>
-					<div class="col-lg-2"></div>
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 mb-5">
+						<h4 class="featured-item-title"><i class="fas fa-desktop gradient-icon"></i>&ensp;AwesomeMiner</h4>
+						<p>Mining manager for NBminer and Gminer. Pay to have more features or use the free edition with rig monitoring and management.</p>
+							<div class="d-flex flex-row-stats">
+								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
+								<div class="p-2">AMD</div>
+								<div class="p-2">Nvidia</div>
+								<div class="p-2">Minimum 4GB VRAM</div>
+								<div class="p-2">0% Fee</div>
+							</div>
+							<p>
+								<a href="https://www.awesomeminer.com/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
+								<a href="https://bitcointalk.to/index.php?topic=676942.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+							</p>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;mmpOS</h4>
-					<p>Highly optimized, ubuntu based linux OS, booting right of an USB stick (min 4GB). Miner management made easy. Allows you to manage and monitor all your rigs via one powerful dashboard.</p>
-					<p>Features include temperature and fan management, overclocking, undervolting and optimizing timings, live stats, and remote access.</p>
-						<div class="d-flex flex-row-stats">
-							<div class="p-2">AMD</div>
-							<div class="p-2">Nvidia</div>
-							<div class="p-2">Minimum 4GB VRAM</div>
-							<div class="p-2">Free up to 12 workers</div>
-						</div>
-						<p>
-							<a href="https://app.mmpos.eu/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
-							<a href="https://bitcointalk.org/index.php?topic=5088988.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
-						</p>
-					</div>
-					<div class="col-lg-2"></div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Hive OS</h4>
-					<p>Hive OS is an all-in-one monitoring and management tool for your mining rigs. 
-						Keep track of hashrates, online statuses, GPU errors, team activity, pool configurations & power consumption. 
-						Remote access from anywhere across the globe, troubleshoot and reboot GPUs remotely or perform bulk updates across your entire farm.
-					</p>
-						<div class="d-flex flex-row-stats">
-							<div class="p-2">AMD</div>
-							<div class="p-2">Nvidia</div>
-							<div class="p-2">Minimum 4GB VRAM</div>
-							<div class="p-2">Free up to 3 workers</div>
-						</div>
-						<p>
-							<a href="https://hiveos.farm/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
-							<a href="https://bitcointalk.org/index.php?topic=2350786.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
-						</p>
-					</div>
-					<div class="col-lg-2"></div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;SimpleMining OS</h4>
-					<p>SimpleMining OS is plug and play operating system for mining cryptocurrency coins. 
-						No more messing with Windows, drivers, TeamViewer, etc. 
-						Just download the OS image, write it to any (USB/SSD/HDD) drive, set your email address and boot it. 
-						All your rigs can be managed with just a few clicks in web browser on cloud dashboard.</p>
-						<div class="d-flex flex-row-stats">
-							<div class="p-2">AMD</div>
-							<div class="p-2">Nvidia</div>
-							<div class="p-2">Minimum 4GB VRAM</div>
-							<div class="p-2">$2 per month</div>
-						</div>
-						<p>
-							<a href="https://simplemining.net/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
-							<a href="https://bitcointalk.org/index.php?topic=1541084.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
-						</p>
-					</div>
-					<div class="col-lg-2"></div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fas fa-desktop gradient-icon"></i>&ensp;RainbowMiner</h4>
-					<p>A mining script with intelligent profit switching between mining pools, algorithms, and miners. 
-						Runs on top of mining programs. Supports GrinProMiner, NBminer, and Gminer for Swap mining.</p>
-					<p>Features easy setup wizard, web interface, and auto-update.</p>
-						<div class="d-flex flex-row-stats">
-							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
-							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
-							<div class="p-2">AMD</div>
-							<div class="p-2">Nvidia</div>
-							<div class="p-2">Minimum 4GB VRAM</div>
-							<div class="p-2">0% Fee</div>
-						</div>
-						<p>
-							<a href="https://github.com/RainbowMiner/RainbowMiner/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Release&ensp;<i class="fab fa-github"></i></a>
-							<a href="https://bitcointalk.org/index.php?topic=5050211.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
-						</p>
-					</div>
-					<div class="col-lg-2"></div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fas fa-desktop gradient-icon"></i>&ensp;AwesomeMiner</h4>
-					<p>Mining manager for NBminer and Gminer. Pay to have more features or use the free edition with rig monitoring and management.</p>
-						<div class="d-flex flex-row-stats">
-							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
-							<div class="p-2">AMD</div>
-							<div class="p-2">Nvidia</div>
-							<div class="p-2">Minimum 4GB VRAM</div>
-							<div class="p-2">0% Fee</div>
-						</div>
-						<p>
-							<a href="https://www.awesomeminer.com/" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Official Homepage&ensp;<i class="fas fa-globe"></i></a>
-							<a href="https://bitcointalk.to/index.php?topic=676942.0" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
-						</p>
-					</div>
-					<div class="col-lg-2"></div>
-				</div>
-				<!--<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 mb-5">
-					<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;Swap Reference Miner</h4>
-					<p>Created by Swap developer Sebastian Green. Forked from Grin Gold Miner, 
-						it is the first Swap miner and serves as an example for other miner developers. 
-						Windows requires .NET Core 2.2 Build apps.</p>
-						<div class="d-flex flex-row-stats">
-							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
-							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
-							<div class="p-2"><i class="fab fa-apple fa-lg"></i></div>
-							<div class="p-2">AMD</div>
-							<div class="p-2">Nvidia</div>
-							<div class="p-2">Minimum 6GB VRAM</div>
-							<div class="p-2">0% Fee</div>
-						</div>
-						<p>
-							<a href="https://github.com/swap-dev/SwapReferenceMiner/releases/latest" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Latest Releases&ensp;<i class="fab fa-github"></i></a>
-							<a href="https://github.com/swap-dev/swap/wiki/Swap-Reference-Miner" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Wiki&ensp;<i class="far fa-book-open"></i></a>
-							<a href="https://dotnet.microsoft.com/download" class="btn btn-outline-secondary mt-3" rel="nofollow" target="_blank">.NET Core&ensp;<i class="fab fa-windows"></i></a>
-						</p>
-					</div>
-					<div class="col-lg-2"></div>
-				</div>-->
 			</div>
 		<!-- // container -->
 		</section>
@@ -1291,7 +1322,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 		<!-- Plugin JS -->
 		<script src="js/plugins/all-plugins.js"></script>
-		<script src="js/custom.js?v=1.6"></script>
+		<script src="js/custom.js?v=1.7"></script>
 		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		<script type="text/javascript">
 			function googleTranslateElementInit() {
