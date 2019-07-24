@@ -2539,13 +2539,12 @@ fieldset:disabled a.btn {
   transition: all 1s ease;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary2{
   color: #fff;
   filter: saturate(2);
 }
 
 .btn-primary:focus, .btn-primary.focus {
-
 
 }
 
