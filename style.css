@@ -2539,6 +2539,10 @@ fieldset:disabled a.btn {
   transition: all 1s ease;
 }
 
+.tablink {
+  margin-top: .5em;
+}
+
 .btn-primary:hover, .btn-primary2{
   color: #fff;
   filter: saturate(2);
