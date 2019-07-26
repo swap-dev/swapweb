@@ -79,6 +79,7 @@ $('#hashrate').countTo({
 });
 */
 
+///////////////////////////////////////
 
 // Pools Modal
 // Get the modal
@@ -107,7 +108,7 @@ window.onclick = function(event) {
   }
 }
 
-
+//////////////////////////////////////////////////////////////////////////////
 
 // Explorer Stats
 $(document).ready(function() {
@@ -149,7 +150,7 @@ request.onerror = () => {
 
 }
 
-// Explorer Stats
+// Explorer Stats 2
 $(document).ready(function() {
   // Fetch the initial table
   refreshTable2();
@@ -190,8 +191,9 @@ request2.onerror = () => {
 };
 }
 
+//////////////////////////////////////////////////////////////////////////////
 
-// Tabbature
+// Miners Tabbature
 function openMiner(evt, minerName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("miner");
