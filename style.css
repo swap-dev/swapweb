@@ -2539,13 +2539,12 @@ fieldset:disabled a.btn {
   transition: all 1s ease;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary2{
   color: #fff;
   filter: saturate(2);
 }
 
 .btn-primary:focus, .btn-primary.focus {
-
 
 }
 
@@ -10765,8 +10764,10 @@ ul.countdown li p {
   text-align: right;
   font-size: 28px;
   font-weight: bold;
-  margin: .25em;
+  margin: 0;
   padding: 0;
+  top: 0px;
+  vertical-align: text-top;
 }
 
 .close:hover,
@@ -10799,4 +10800,39 @@ ul.countdown li p {
 .dropdown-item:hover .flags {
   -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
   filter: grayscale(30%);
+}
+
+.animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.img-cuckaroo {
+  width:1.5em;
+  vertical-align: inherit;
+}
+
+.img-cuckaroo2 {
+  width:1.5em;
+  vertical-align: inherit;
+  margin:11px 0 0;
+}
+
+.img-cuckaroo3 {
+  width:5em;
+  vertical-align: text-bottom;
+  margin:11px 0 0;
+}
+
+.img-cuckaroo4 {
+  width:1em;
+  vertical-align: inherit;
+  margin:0;
+}
+
+.img-cuckaroo5 {
+  width:1.3em;
+  vertical-align: text-bottom;
+  margin:0;
+}
+
+.dropdown-item:hover img {
+  filter:brightness(200%);
 }
