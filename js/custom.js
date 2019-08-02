@@ -122,7 +122,7 @@ $(document).ready(function() {
 function refreshTable(){
 const request = new XMLHttpRequest();
  
-request.open('GET', 'https://explorer2.xwp.fyi/api/networkinfo');
+request.open('GET', 'https://explorer.xwp.one/api/networkinfo');
 request.send(); 
  
 request.onload = () => {
@@ -134,12 +134,12 @@ request.onload = () => {
     var difficulty = JSON.parse(request.response).data.difficulty;
     
     //Creating table
-    var network=
+    var network2=
     "<div id='#networkdivload' class='mx-1 my-1'><i class='fas fa-tachometer-alt'></i>&ensp;Network "+(hashrate/32).toFixed(2)+
     " Kgps</div><div class='mx-1 my-1'><i class='fas fa-unlock'></i>&ensp;Difficulty "+Intl.NumberFormat().format(difficulty)+"</div>";
  
     //Showing the table inside table
-    document.getElementById("networkdiv").innerHTML = network;   
+    document.getElementById("networkdiv").innerHTML = network2;   
   } 
    
 };
@@ -162,7 +162,7 @@ $(document).ready(function() {
 function refreshTable2(){
 const request2 = new XMLHttpRequest();
  
-request2.open('GET', 'https://explorer2.xwp.fyi/api/emission');
+request2.open('GET', 'https://explorer.xwp.one/api/emission');
 request2.send(); 
  
 request2.onload = () => {
@@ -176,12 +176,12 @@ request2.onload = () => {
     console.log(new Intl.NumberFormat().format(coinbase));
     
     //Creating table
-    var network2=
+    var network3=
     "<div class='mx-1 my-1'><i class='fas fa-layer-group'></i>&ensp;Circulation "+Intl.NumberFormat().format((coinbase/1000000000000).toFixed(0))+
     " XWP</div><div class='mx-1 my-1'><i class='fas fa-cubes'></i>&ensp;Block "+Intl.NumberFormat().format(blocknumber)+"</div>";
  
     //Showing the table inside table
-    document.getElementById("networkdiv2").innerHTML = network2;   
+    document.getElementById("networkdiv2").innerHTML = network3;   
   } 
    
 };
