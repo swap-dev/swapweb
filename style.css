@@ -10171,12 +10171,29 @@ a:hover {
   max-height: 5rem;
 }
 
+.exchange-logos1 img {
+  -webkit-filter: grayscale(0%) drop-shadow(3px 3px 2px #111); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(3px 3px 2px #111) grayscale(0%);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  max-width: 15rem;
+  max-height: 5rem;
+}
+
 @media (max-width: 992px) {
   .exchange-logos img {
     padding: 0.6rem 1rem;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
+
+  .exchange-logos1 img {
+    padding: 0.6rem 1rem;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
+
   .exchange-logos img:hover {
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
