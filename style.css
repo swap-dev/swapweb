@@ -10577,7 +10577,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', end
 }
 
 .exchange-logo {
-  padding: 20px !important;
+  padding: 20px;
   padding-left: 0px !important;
 }
 
