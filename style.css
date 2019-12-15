@@ -2543,6 +2543,10 @@ fieldset:disabled a.btn {
   margin-top: .5em;
 }
 
+.tablinks {
+  margin-top: .5em;
+}
+
 .btn-primary:hover, .btn-primary2{
   color: #fff;
   filter: saturate(2);
@@ -10162,21 +10166,11 @@ a:hover {
   Exchange Logos
 ---------------------------------------------------*/
 .exchange-logos img {
-  -webkit-filter: grayscale(100%) drop-shadow(3px 3px 2px #111); /* Safari 6.0 - 9.0 */
-  filter: drop-shadow(3px 3px 2px #111) grayscale(100%);
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
   max-width: 15rem;
   max-height: 5rem;
 }
 
 .exchange-logos1 img {
-  -webkit-filter: grayscale(0%) drop-shadow(3px 3px 2px #111); /* Safari 6.0 - 9.0 */
-  filter: drop-shadow(3px 3px 2px #111) grayscale(0%);
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
   max-width: 15rem;
   max-height: 5rem;
 }
@@ -10184,19 +10178,13 @@ a:hover {
 @media (max-width: 992px) {
   .exchange-logos img {
     padding: 0.6rem 1rem;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
   }
 
   .exchange-logos1 img {
     padding: 0.6rem 1rem;
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
   }
 
   .exchange-logos img:hover {
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
   }
 }
 
@@ -10209,10 +10197,6 @@ a:hover {
 }
 
 .exchange-logos img:hover {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
-  -webkit-filter: drop-shadow(6px 6px 10px #000);
-  filter: drop-shadow(6px 6px 10px #000);
 }
 
 /*---------------------------------------------------
