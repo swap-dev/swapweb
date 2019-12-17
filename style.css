@@ -10581,7 +10581,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', end
 
 .img-team {
   border-radius: 50%;
-  max-width: 65%;
+  max-width: 50%;
   border: .25em solid #151933;
   background: #151933;
 }
