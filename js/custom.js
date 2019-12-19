@@ -207,3 +207,20 @@ function openMiner(evt, minerName) {
   document.getElementById(minerName).style.display = "block"; 
   evt.currentTarget.className += " btn-primary2";
 }
+
+//////////////////////////////////////////////////////////////////////////////
+
+// Team Tabbature
+function openTeam(evt, teamName) {
+  var i, x, tablinksteam;
+  x = document.getElementsByClassName("team");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  tablinksteam = document.getElementsByClassName("tablinkteam");
+  for (i = 0; i < x.length; i++) {
+    tablinksteam[i].className = tablinksteam[i].className.replace(" btn-primary2", " ");
+  }
+  document.getElementById(teamName).style.display = "block"; 
+  evt.currentTarget.className += " btn-primary2";
+}
