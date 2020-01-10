@@ -2539,11 +2539,7 @@ fieldset:disabled a.btn {
   transition: all 1s ease;
 }
 
-.tablink {
-  margin-top: .5em;
-}
-
-.tablinkteam {
+.tablink, .tablinkteam, .tablinkwallet {
   margin-top: .5em;
 }
 

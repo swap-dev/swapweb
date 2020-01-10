@@ -284,13 +284,14 @@
 					<div class="text-center">
 						<button class="mx-1 btn tablinkwallet btn-primary btn-primary2" onclick="openWallet(event,'gui')">GUI Wallet&ensp;<i class="fas fa-desktop"></i></button>
 						<button class="mx-1 btn tablinkwallet btn-primary" onclick="openWallet(event,'cli')">CLI Wallet&ensp;<i class="far fa-terminal"></i></button>
+						<button class="mx-1 btn tablinkwallet btn-primary" onclick="openWallet(event,'bootstrap')">Blockchain Bootstraps&ensp;<i class="far fa-cube"></i></button>
 						<button class="mx-1 btn tablinkwallet btn-primary" onclick="openWallet(event,'hardware')">Hardware Wallet&ensp;<i class="fab fa-usb"></i></button>
 						<button class="mx-1 btn tablinkwallet btn-primary" onclick="openWallet(event,'lightWallet')">Mobile & Light Wallets&ensp;<i class="fas fa-feather-alt"></i></button>
 					</div>
 				</p>
 				<div id="gui" class="wallet animate-opacity mt-5">
 					<div class="row align-items-start justify-content-around text-center">
-						<div class="col-12 col-sm-6 col-md-4">
+						<div class="col-12 col-sm-6 col-md-3">
 							<div class="feature-item">
 								<span class="wallet-icons"><i class="featured-item-icon fab fa-windows gradient-icon"></i></span>
 								<h4 class="featured-item-title my-0 py-0">Windows</h4>
@@ -298,7 +299,7 @@
 								<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.6/swap-v3.0.6-gui-win.zip" class="btn btn-primary">GUI v3.0.6&ensp;<i class="fas fa-download"></i></a></p>						
 							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-md-4">
+						<div class="col-12 col-sm-6 col-md-3">
 							<div class="feature-item">
 								<span class="wallet-icons"><i class="featured-item-icon fab fa-linux gradient-icon"></i></span>
 								<h4 class="featured-item-title my-0 py-0">Linux</h4>
@@ -306,7 +307,7 @@
 								<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.6/swap-v3.0.6-gui-linux.tar.gz" class="btn btn-primary">GUI v3.0.6&ensp;<i class="fas fa-download"></i></a></p>							
 							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-md-4">
+						<div class="col-12 col-sm-6 col-md-3">
 							<div class="feature-item">
 								<span class="wallet-icons"><i class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
 								<h4 class="featured-item-title my-0 py-0">Mac</h4>
@@ -318,7 +319,7 @@
 				</div>
 					<div id="cli" class="wallet animate-opacity mt-5" style="display:none">
 						<div class="row align-items-start justify-content-around text-center">
-							<div class="col-12 col-sm-6 col-md-4">
+							<div class="col-12 col-sm-6 col-md-3">
 								<div class="feature-item">
 									<span class="wallet-icons"><i class="featured-item-icon fab fa-windows gradient-icon"></i></span>
 									<h4 class="featured-item-title my-0 py-0">Windows</h4>
@@ -326,7 +327,7 @@
 									<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-v3.1.0-cli-win64.zip" class="btn btn-primary">CLI v3.1&ensp;<i class="fas fa-download"></i></a></p>							
 								</div>
 							</div>
-							<div class="col-12 col-sm-6 col-md-4">
+							<div class="col-12 col-sm-6 col-md-3">
 								<div class="feature-item">
 									<span class="wallet-icons"><i class="featured-item-icon fab fa-linux gradient-icon"></i></span>
 									<h4 class="featured-item-title my-0 py-0">Linux</h4>
@@ -334,12 +335,32 @@
 									<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-v3.1.0-cli-linux64.tar.gz" class="btn btn-primary">CLI v3.1&ensp;<i class="fas fa-download"></i></a></p>							
 								</div>
 							</div>
-							<div class="col-12 col-sm-6 col-md-4">
+							<div class="col-12 col-sm-6 col-md-3">
 								<div class="feature-item">
 									<span class="wallet-icons"><i class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
 									<h4 class="featured-item-title my-0 py-0">Mac</h4>
 									<p class="mb-3 py-0">Greater Roadrunner</p>
 									<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-v3.1.0-cli-mac.zip" class="btn btn-primary">CLI v3.1&ensp;<i class="fas fa-download"></i></a></p>							
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="bootstrap" class="wallet animate-opacity mt-5" style="display:none">
+						<div class="row align-items-start justify-content-around text-center">
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon far fa-cube gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">24hr Bootstrap</h4>
+									<p class="mb-3 py-0">Updated Daily</p>
+									<p><a href="https://node.pocketwhale.info/swap_blockchain.raw" class="btn btn-primary">Blockchain&ensp;<i class="fas fa-download"></i></a></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon far fa-cube gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">2hr Bootstrap</h4>
+									<p class="mb-3 py-0">Updated Every 2 Hours</p>
+									<p><a href="https://explorer2.xwp.fyi/swap/blockchain.raw" class="btn btn-primary">Blockchain&ensp;<i class="fas fa-download"></i></a></p>
 								</div>
 							</div>
 						</div>
@@ -358,7 +379,7 @@
 					</div>
 					<div id="lightWallet" class="wallet animate-opacity mt-5" style="display:none">						
 						<div class="row align-items-start justify-content-center text-center">
-							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-12 col-sm-6 col-md-4">
 								<div class="feature-item">
 									<span class="wallet-icons"><i class="featured-item-icon fab fa-android gradient-icon"></i></span>
 									<h4 class="featured-item-title my-0 py-0">Android</h4>
@@ -367,14 +388,14 @@
 									<p><a href="https://play.google.com/store/apps/details?id=com.swap.xwpwallet" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Google Play Store&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
 								</div>
 							</div>
-							<!-- <div class="col-12 col-sm-6 col-md-3">
+							<div class="col-12 col-sm-6 col-md-4">
 								<div class="feature-item">
 									<span class="wallet-icons"><i class="featured-item-icon fab fa-app-store-ios gradient-icon"></i></span>
 									<h4 class="featured-item-title my-0 py-0">iOS</h4>
 									<p class="mb-3 py-0">Greater Roadrunner</p>
 									<p><a href="#" class="btn btn-primary">Future Goal</i></a></p>						
 								</div>
-							</div> -->
+							</div>
 							<div class="col-12 col-sm-6 col-md-4">
 								<div class="feature-item">
 									<span class="wallet-icons"><i class="featured-item-icon far fa-feather-alt gradient-icon"></i></span><br>
