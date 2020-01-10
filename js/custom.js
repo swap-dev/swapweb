@@ -144,10 +144,6 @@ request.onload = () => {
    
 };
  
-request.onerror = () => {
-  console.log("error")
-};
-
 }
 
 // Explorer Stats 2
@@ -186,9 +182,6 @@ request2.onload = () => {
    
 };
  
-request2.onerror = () => {
-  console.log("error")
-};
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -222,5 +215,22 @@ function openTeam(evt, teamName) {
     tablinksteam[i].className = tablinksteam[i].className.replace(" btn-primary2", " ");
   }
   document.getElementById(teamName).style.display = "block"; 
+  evt.currentTarget.className += " btn-primary2";
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+// Wallet Tabbature
+function openWallet(evt, walletName) {
+  var i, x, tablinkswallet;
+  x = document.getElementsByClassName("wallet");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  tablinkswallet = document.getElementsByClassName("tablinkwallet");
+  for (i = 0; i < x.length; i++) {
+    tablinkswallet[i].className = tablinkswallet[i].className.replace(" btn-primary2", " ");
+  }
+  document.getElementById(walletName).style.display = "block"; 
   evt.currentTarget.className += " btn-primary2";
 }
