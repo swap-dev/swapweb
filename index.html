@@ -32,7 +32,7 @@
 		<!-- Plugins -->
 		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 		<!-- Template CSS -->
-		<link rel="stylesheet" href="style.css?v=2.1">
+		<link rel="stylesheet" href="style.css?v=2.3">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -144,7 +144,7 @@
 				</div>
 				<p class="lead mt-3 mx-auto">Stable Network&ensp;|&ensp;No Governance Fee&ensp;|&ensp;No Premine&ensp;|&ensp;No BS</p>
 				<h2>
-					<img src="images/logo/Swap_the_Bird_Grad_1.png" alt="Cuckoo" class="img-fluid img-cuckaroo">&nbsp;<a data-scroll href="#wallets"><span class="highlight">Malkoha 3.0</span></a>
+					<img src="images/logo/Swap_the_Bird_Grad_1.png" alt="Cuckoo" class="img-fluid img-cuckaroo">&nbsp;<a data-scroll href="#wallets"><span class="highlight">Greater Roadrunner 3.1</span></a>
 				</h2>
 				<!--<p class="lead mt-3 mx-auto">
 					Wallet Released June 30th
@@ -279,77 +279,150 @@
 					Malkoha adds accelerated daemon sync speed, blockchain pruning, and openalias. 
 					Pruning shrinks local blockchain database by 50% and openalias enables linking domains to wallet addresses, like donate.xwp.fyi.
 				</p> -->
-				<div class="row align-items-start justify-content-center text-center">
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="feature-item">
-							<span class="wallet-icons"><i class="featured-item-icon fab fa-android gradient-icon"></i></span>
-							<h4 class="featured-item-title my-0 py-0">Android</h4>
-							<p class="mb-3 py-0">Greater Roadrunner</p>
-							<p><a href="https://github.com/swap-dev/swap-android-wallet/releases/download/v3.1.1/Swap.Wallet-3x1x1_universal.apk" rel="nofollow" target="_blank" class="btn btn-primary">App v3.1.1&ensp;<i class="fas fa-download"></i></a></p>
-							<p><a href="https://play.google.com/store/apps/details?id=com.swap.xwpwallet" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Google Play Store&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
-						</div>
+				<p class="lead p-3 centered-text text-center mx-auto">
+					A variety of wallets for a variety of users.<br />
+					<div class="text-center">
+						<button class="mx-1 btn tablinkwallet btn-primary btn-primary2" onclick="openWallet(event,'gui')">GUI Wallet&ensp;<i class="fas fa-desktop"></i></button>
+						<button class="mx-1 btn tablinkwallet btn-primary" onclick="openWallet(event,'cli')">CLI Wallet&ensp;<i class="far fa-terminal"></i></button>
+						<button class="mx-1 btn tablinkwallet btn-primary" onclick="openWallet(event,'bootstrap')">Blockchain Bootstraps&ensp;<i class="far fa-cube"></i></button>
+						<button class="mx-1 btn tablinkwallet btn-primary" onclick="openWallet(event,'hardware')">Hardware Wallet&ensp;<i class="fab fa-usb"></i></button>
+						<button class="mx-1 btn tablinkwallet btn-primary" onclick="openWallet(event,'lightWallet')">Mobile & Light Wallets&ensp;<i class="fas fa-feather-alt"></i></button>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3">
-						<div class="feature-item">
-							<span class="wallet-icons"><i class="featured-item-icon fab fa-app-store-ios gradient-icon"></i></span>
-							<h4 class="featured-item-title my-0 py-0">iOS</h4>
-							<p class="mb-3 py-0">Greater Roadrunner</p>
-							<p><a href="#" class="btn btn-primary">Future Goal</i></a></p>						
+				</p>
+				<div id="gui" class="wallet animate-opacity mt-5">
+					<div class="row align-items-start justify-content-around text-center">
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="feature-item">
+								<span class="wallet-icons"><i class="featured-item-icon fab fa-windows gradient-icon"></i></span>
+								<h4 class="featured-item-title my-0 py-0">Windows</h4>
+								<p class="mb-3 py-0">Greater Roadrunner</p>
+								<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.1.0.0/swap-3.1-gui-win32.exe" class="btn btn-primary">Qt GUI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>
+								<p><a href="https://github.com/swap-dev/swap-electron-gui-wallet/releases/download/v3.1.0/Swap.Electron.Wallet.Setup.3.1.0.exe" class="btn btn-outline-secondary">Electron GUI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>						
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="feature-item">
+								<span class="wallet-icons"><i class="featured-item-icon fab fa-linux gradient-icon"></i></span>
+								<h4 class="featured-item-title my-0 py-0">Linux</h4>
+								<p class="mb-3 py-0">Greater Roadrunner</p>
+								<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.1.0.0/swap-3.1-gui-linux64.tar.gz" class="btn btn-primary">Qt GUI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>
+								<p><a href="https://github.com/swap-dev/swap-electron-gui-wallet/releases/download/v3.1.0/Swap.Electron.Wallet-3.1.0.AppImage-linux.zip" class="btn btn-outline-secondary">Electron GUI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>								
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="feature-item">
+								<span class="wallet-icons"><i class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
+								<h4 class="featured-item-title my-0 py-0">Mac</h4>
+								<p class="mb-3 py-0">Greater Roadrunner</p>
+								<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.1.0.0/swap-3.1-gui-mac.zip" class="btn btn-primary">Qt GUI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>
+								<p><a href="https://github.com/swap-dev/swap-electron-gui-wallet/releases/download/v3.1.0/Swap.Electron.Wallet-3.1.0.AppImage-linux.zip" class="btn btn-outline-secondary">Electron GUI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row align-items-start justify-content-around text-center">
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="feature-item">
-							<span class="wallet-icons"><i class="featured-item-icon fab fa-windows gradient-icon"></i></span>
-							<h4 class="featured-item-title my-0 py-0">Windows</h4>
-							<p class="mb-3 py-0">Greater Roadrunner</p>
-							<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.6/swap-v3.0.6-gui-win.zip" class="btn btn-primary">GUI v3.0.6&ensp;<i class="fas fa-download"></i></a></p>
-							<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-v3.1.0-cli-win64.zip" class="btn btn-outline-secondary">CLI v3.1&ensp;<i class="fas fa-download"></i></a></p>							
+					<div id="cli" class="wallet animate-opacity mt-5" style="display:none">
+						<div class="row align-items-start justify-content-around text-center">
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon fab fa-windows gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">Windows</h4>
+									<p class="mb-3 py-0">Greater Roadrunner</p>
+									<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-3.1-cli-win64.zip" class="btn btn-primary">CLI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>							
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon fab fa-linux gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">Linux</h4>
+									<p class="mb-3 py-0">Greater Roadrunner</p>
+									<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-3.1-cli-linux64.tar.gz" class="btn btn-primary">CLI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>							
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
+									<h4 class="featured-item-title my-0 py-0">Mac</h4>
+									<p class="mb-3 py-0">Greater Roadrunner</p>
+									<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-3.1-cli-mac.zip" class="btn btn-primary">CLI v3.1.0&ensp;<i class="fas fa-download"></i></a></p>							
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="feature-item">
-							<span class="wallet-icons"><i class="featured-item-icon fab fa-linux gradient-icon"></i></span>
-							<h4 class="featured-item-title my-0 py-0">Linux</h4>
-							<p class="mb-3 py-0">Greater Roadrunner</p>
-							<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.6/swap-v3.0.6-gui-linux.tar.gz" class="btn btn-primary">GUI v3.0.6&ensp;<i class="fas fa-download"></i></a></p>
-							<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-v3.1.0-cli-linux64.tar.gz" class="btn btn-outline-secondary">CLI v3.1&ensp;<i class="fas fa-download"></i></a></p>							
+					<div id="bootstrap" class="wallet animate-opacity mt-5" style="display:none">
+						<div class="row align-items-start justify-content-center text-center">
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon far fa-cube gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">24hr Bootstrap</h4>
+									<p class="mb-3 py-0">Updated Daily</p>
+									<p><a href="https://node.pocketwhale.info/swap_blockchain.raw" class="btn btn-primary">Blockchain&ensp;<i class="fas fa-download"></i></a></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon far fa-cube gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">2hr Bootstrap</h4>
+									<p class="mb-3 py-0">Updated Every 2 Hours</p>
+									<p><a href="https://explorer2.xwp.fyi/swap/blockchain.raw" class="btn btn-primary">Blockchain&ensp;<i class="fas fa-download"></i></a></p>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="feature-item">
-							<span class="wallet-icons"><i class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
-							<h4 class="featured-item-title my-0 py-0">Mac</h4>
-							<p class="mb-3 py-0">Greater Roadrunner</p>
-							<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.0.6/swap-v3.0.6-gui-mac.tar.gz" class="btn btn-primary">GUI v3.0.6&ensp;<i class="fas fa-download"></i></a></p>
-							<p><a href="https://github.com/swap-dev/swap/releases/download/swap-v3.1/swap-v3.1.0-cli-mac.zip" class="btn btn-outline-secondary">CLI v3.1&ensp;<i class="fas fa-download"></i></a></p>							
+					<div id="hardware" class="wallet animate-opacity mt-5" style="display:none">
+						<div class="row align-items-start justify-content-center text-center">
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons">
+										<img src="images/media/ledger.png" alt="TradeOgre" class="img-fluid image-icon">
+										<!--<i class="featured-item-icon fab fa-usb gradient-icon"></i>-->
+									</span>
+									<h4 class="featured-item-title my-0 py-0">Ledger</h4>
+									<p class="mb-3 py-0"><a href="https://ledger.com" rel="nofollow" target="_blank">ledger.com</a></p>
+									<p><a href="https://github.com/swap-dev/ledger-app-swap/releases/download/1.4.2/app.hex" class="btn btn-primary">App v1.4.2&ensp;<i class="fas fa-download"></i></a></p>
+									<p><a href="https://github.com/swap-dev/ledger-app-swap/releases" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Release Notes&ensp;<i class="fab fa-github"></i></a></p>
+								</div>
+							</div>
 						</div>
 					</div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="feature-item">
-                            <span class="wallet-icons"><i class="featured-item-icon far fa-feather-alt gradient-icon"></i></span><br>
-							<h4 class="featured-item-title">Light Web Wallet</h4>
-							<p><a href="https://wallet.xwp.fyi/" target="_blank" class="btn btn-primary">Log In&ensp;<i class="fas fa-sign-in-alt"></i></a></p>
-                            <p><a href="https://wallet.xwp.fyi/" target="_blank" class="btn btn-outline-secondary">Create Account&ensp;<i class="fas fa-user-plus"></i></a></p>
-                        </div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="feature-item">
-							<span class="wallet-icons"><i class="featured-item-icon far fa-file-alt gradient-icon"></i></span>
-							<h4 class="featured-item-title">Paper Wallet</h4>
-							<p><a href="https://github.com/swap-dev/swap-paperwallet-generator/archive/master.zip" class="btn btn-primary">Generate Local&ensp;<i class="fas fa-download"></i></a></p>
-							<p><a href="paperwallet-alternative.html" target="_blank" class="btn btn-outline-secondary">Generate Online&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+					<div id="lightWallet" class="wallet animate-opacity mt-5" style="display:none">						
+						<div class="row align-items-start justify-content-center text-center">
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon fab fa-android gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">Android</h4>
+									<p class="mb-3 py-0">Greater Roadrunner</p>
+									<p><a href="https://github.com/swap-dev/swap-android-wallet/releases/download/v3.1.2/Swap.Wallet-3x1x2_universal.apk" rel="nofollow" target="_blank" class="btn btn-primary">App v3.1.1&ensp;<i class="fas fa-download"></i></a></p>
+									<p><a href="https://play.google.com/store/apps/details?id=com.swap.xwpwallet" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Google Play Store&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+								</div>
+							</div>
+							<!-- <div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon fab fa-app-store-ios gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">iOS</h4>
+									<p class="mb-3 py-0">Greater Roadrunner</p>
+									<p><a href="#" class="btn btn-primary">Future Goal</i></a></p>						
+								</div>
+							</div> -->
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon far fa-feather-alt gradient-icon"></i></span><br>
+									<h4 class="featured-item-title my-0 py-0">Light Web Wallet</h4>
+									<p class="mb-3 py-0"><a href="https://wallet.xwp.fyi" rel="nofollow" target="_blank">wallet.xwp.fyi</a></p>
+									<p><a href="https://wallet.xwp.fyi" target="_blank" class="btn btn-primary">View Online&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon far fa-file-alt gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">Paper Wallet</h4>
+									<p class="mb-3 py-0">Generator</p>
+									<p><a href="https://github.com/swap-dev/swap-paperwallet-generator/archive/master.zip" class="btn btn-primary">Generate Local&ensp;<i class="fas fa-download"></i></a></p>
+									<p><a href="paperwallet-alternative.html" target="_blank" class="btn btn-outline-secondary">Generate Online&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="feature-item">
-							<span class="wallet-icons"><i class="featured-item-icon fab fa-usb gradient-icon"></i></span>
-							<h4 class="featured-item-title">Hardware Wallet</h4>
-							<p><a href="https://github.com/swap-dev/ledger-app-swap/releases/download/1.4.2/app.hex" class="btn btn-primary">Ledger App v1.4.2&ensp;<i class="fas fa-download"></i></a></p>
-							<p><a href="https://github.com/swap-dev/ledger-app-swap/releases" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Release Notes&ensp;<i class="fab fa-github"></i></a></p>
-						</div>
-					</div>
+
 				</div>
 			</div>
 			<!-- // container -->
@@ -383,6 +456,7 @@
 							<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/btc" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Rent with Bitcoin&ensp;<i class="fab fa-btc"></i></a>
 							<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/eth" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1">Rent with Ethereum&ensp;<i class="fab fa-ethereum"></i></a>
 							<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/ltc" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1 media-logo2">Rent with Litecoin&ensp;<img src="images/media/litecoin.png" alt="Litecoin" class="img-fluid media-logo"></a>
+							<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/bch" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1 media-logo2">Rent with Bcash&ensp;<img src="images/media/bcash.png" alt="Dash" class="img-fluid media-logo"></a>
 							<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/dash" rel="nofollow" target="_blank" class="btn btn-outline-secondary mt-3 mr-1 media-logo2">Rent with Dash&ensp;<img src="images/media/dash.png" alt="Dash" class="img-fluid media-logo"></a>
 						</div>
 					</div>
@@ -783,7 +857,7 @@
                         <div class="feature-item">
                             <span class="wallet-icons"><i class="featured-item-icon far fa-swimming-pool gradient-icon"></i></span>
 							<h4 class="featured-item-title my-0 py-0">Official Pool</h4>
-							<p class="mb-3 py-0">pool.xwp.one</p>
+							<p class="mb-3 py-0"><a href="https://pool.xwp.one/" rel="nofollow" target="_blank">pool.xwp.one</a></p>
 							<p><a href="https://pool.xwp.one/" class="btn btn-primary" rel="nofollow" target="_blank">View Pool&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
                         </div>
 					</div>
@@ -894,7 +968,7 @@
 							<div class="cd-timeline__milestone"> </div>
 							<div class="cd-timeline__content js-cd-content">
 								<div class="cd-timeline__date">December 16th 2018</div>
-								<span class="wallet-icons"><i class="fab fa-usb gradient-icon"></i></span>
+								<span class="wallet-icons"><img src="images/media/ledger.png" alt="TradeOgre" class="img-fluid image-icon"></span>
 								<h4>Hardware Wallet Support</h4>
 								<p>Store XWP physically with a Ledger Blue, Nano S, or Nano&nbsp;X.
                                 </p>
@@ -1030,6 +1104,15 @@
 						<div class="cd-timeline__block js-cd-block">
 							<div class="cd-timeline__milestone"> </div>
 							<div class="cd-timeline__content js-cd-content">
+								<div class="cd-timeline__date">January 8th 2020</div>
+								<img src="images/media/electron.png" alt="Electron" class="featured-item-icon swap-logo1">
+								<h4>Electron Wallet Support</h4>
+								<p>A user-friendly lightweight GUI option for sending and receiving Swap.</p>
+							</div>
+						</div>
+						<div class="cd-timeline__block js-cd-block">
+							<div class="cd-timeline__milestone"> </div>
+							<div class="cd-timeline__content js-cd-content">
 								<div class="cd-timeline__date">Future Goal</div>
 								<span class="wallet-icons"><i class="fab fa-app-store-ios gradient-icon"></i></span>
 								<h4>iOS Wallet Support</h4>
@@ -1040,7 +1123,7 @@
 							<div class="cd-timeline__milestone"> </div>
 							<div class="cd-timeline__content js-cd-content">
 								<div class="cd-timeline__date">Future Goal</div>
-								<span class="wallet-icons"><i class="fal fa-atom gradient-icon"></i></span>
+								<span class="wallet-icons"><i class="far fa-atom-alt gradient-icon"></i></span>
 								<h4>Atomic Swaps to Bitcoin with Lightning Network</h4>
 								<p>The newest technology heading into the next year.</p>
 								<p>With atomic swaps comes the ability to directly send Swap between Bitcoin, Litecoin and any crypto coins on the Lightning Network.</p>
@@ -1075,7 +1158,7 @@
 					A community developed crypto coin with contributors from around the world.<br />
 					<div class="text-center">
 						<button class="mx-1 btn tablinkteam btn-primary btn-primary2" onclick="openTeam(event,'core')">Operations&ensp;<i class="fas fa-head-side-brain"></i></button>
-						<button class="mx-1 btn tablinkteam btn-primary" onclick="openTeam(event,'devs')">Developers&ensp;<i class="fas fa-microscope"></i></button>
+						<button class="mx-1 btn tablinkteam btn-primary" onclick="openTeam(event,'devs')">Developers&ensp;<i class="fab fa-github"></i></button>
 						<button class="mx-1 btn tablinkteam btn-primary" onclick="openTeam(event,'community')">Community&ensp;<i class="fas fa-users"></i></button>
 						<button class="mx-1 btn tablinkteam btn-primary" onclick="openTeam(event,'guest')">Special Thanks&ensp;<i class="fas fa-sparkles"></i></button>
 					</div>
@@ -1666,7 +1749,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 		<!-- Plugin JS -->
 		<script src="js/plugins/all-plugins.js"></script>
-		<script src="js/custom.js?v=2.0"></script>
+		<script src="js/custom.js?v=2.1"></script>
 		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		<script type="text/javascript">
 			function googleTranslateElementInit() {

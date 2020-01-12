@@ -2539,11 +2539,7 @@ fieldset:disabled a.btn {
   transition: all 1s ease;
 }
 
-.tablink {
-  margin-top: .5em;
-}
-
-.tablinkteam {
+.tablink, .tablinkteam, .tablinkwallet {
   margin-top: .5em;
 }
 
@@ -10318,10 +10314,10 @@ a:hover {
   height: 100%;
   width: 4px;
   background: rgb(165,97,229);
-background: -moz-linear-gradient(top, rgba(165,97,229,1) 0%, rgba(103,122,243,1) 50%, rgba(126,222,238,1) 100%);
-background: -webkit-linear-gradient(top, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
-background: linear-gradient(to bottom, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', endColorstr='#7edeee',GradientType=0 );
+  background: -moz-linear-gradient(top, rgba(165,97,229,1) 0%, rgba(103,122,243,1) 50%, rgba(126,222,238,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
+  background: linear-gradient(to bottom, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', endColorstr='#7edeee',GradientType=0 );
 }
 
 @media only screen and (min-width: 1170px) {
@@ -10515,7 +10511,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', end
 
 
 /* Start Custom CSS */
-
+.image-icon {
+  max-width: .85em;
+}
 .swap-hero-logo {
   max-width: 100%;
   height: auto;
