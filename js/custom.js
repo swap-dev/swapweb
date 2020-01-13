@@ -195,10 +195,10 @@ function openMiner(evt, minerName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" btn-primary2", " ");
+    tablinks[i].className = tablinks[i].className.replace(" btn-outline-tab2", " ");
   }
   document.getElementById(minerName).style.display = "block"; 
-  evt.currentTarget.className += " btn-primary2";
+  evt.currentTarget.className += " btn-outline-tab2";
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -212,10 +212,10 @@ function openTeam(evt, teamName) {
   }
   tablinksteam = document.getElementsByClassName("tablinkteam");
   for (i = 0; i < x.length; i++) {
-    tablinksteam[i].className = tablinksteam[i].className.replace(" btn-primary2", " ");
+    tablinksteam[i].className = tablinksteam[i].className.replace(" btn-outline-tab2-dark", " ");
   }
   document.getElementById(teamName).style.display = "block"; 
-  evt.currentTarget.className += " btn-primary2";
+  evt.currentTarget.className += " btn-outline-tab2-dark";
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -229,8 +229,8 @@ function openWallet(evt, walletName) {
   }
   tablinkswallet = document.getElementsByClassName("tablinkwallet");
   for (i = 0; i < x.length; i++) {
-    tablinkswallet[i].className = tablinkswallet[i].className.replace(" btn-primary2", " ");
+    tablinkswallet[i].className = tablinkswallet[i].className.replace(" btn-outline-tab2", " ");
   }
   document.getElementById(walletName).style.display = "block"; 
-  evt.currentTarget.className += " btn-primary2";
+  evt.currentTarget.className += " btn-outline-tab2";
 }
