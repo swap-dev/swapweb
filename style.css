@@ -9800,6 +9800,34 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
 }
 
+.btn-outline2 {
+  color: #6d70ff;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid #151933;
+  color: #a3acde;
+}
+
+.btn-outline2:hover {
+  color: #fff;
+  background-color: #151933;
+  border-color: #151933;
+}
+
+.btn-outline3 {
+  color: #6d70ff;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid #1d244a;
+  color: #a3acde;
+}
+
+.btn-outline3:hover {
+  color: #fff;
+  background-color: #1d244a;
+  border-color: #1d244a;
+}
+
 .btn-outline-tab {
   color: #6d70ff;
   background-color: transparent;
