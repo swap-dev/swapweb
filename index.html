@@ -285,9 +285,9 @@
 					<div class="text-center">
 						<button class="btn tablinkwallet btn-outline-tab btn-outline-tab2 mt-1" onclick="openWallet(event,'gui')">GUI Wallet&ensp;<i class="far fa-window"></i></button>
 						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'cli')">CLI Wallet&ensp;<i class="far fa-terminal"></i></button>
+						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'lightWallet')">Web &  Mobile Wallets&ensp;<i class="far fa-globe"></i></button>
 						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'bootstrap')">Blockchain Bootstraps&ensp;<i class="far fa-download"></i></button>
 						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'hardware')">Hardware Wallet&ensp;<i class="fab fa-usb"></i></button>
-						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'lightWallet')">Mobile & Light Wallets&ensp;<i class="fas fa-feather-alt"></i></button>
 					</div>
 				</p>
 				<div id="gui" class="wallet animate-opacity mt-5">
@@ -387,15 +387,6 @@
 					</div>
 					<div id="lightWallet" class="wallet animate-opacity mt-5" style="display:none">						
 						<div class="row align-items-start justify-content-center text-center">
-							<div class="col-12 col-sm-6 col-md-4">
-								<div class="feature-item">
-									<span class="wallet-icons"><i class="featured-item-icon fab fa-android gradient-icon"></i></span>
-									<h4 class="featured-item-title my-0 py-0">Android</h4>
-									<p class="mb-3 py-0">Greater Roadrunner</p>
-									<p><a href="https://github.com/swap-dev/swap-android-wallet/releases/download/v3.1.2/Swap.Wallet-3x1x2_universal.apk" rel="nofollow" target="_blank" class="btn btn-primary">App v3.1.2&ensp;<i class="fas fa-download"></i></a></p>
-									<p><a href="https://play.google.com/store/apps/details?id=com.swap.xwpwallet" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Google Play Store&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
-								</div>
-							</div>
 							<!-- <div class="col-12 col-sm-6 col-md-4">
 								<div class="feature-item">
 									<span class="wallet-icons"><i class="featured-item-icon fab fa-app-store-ios gradient-icon"></i></span>
@@ -408,8 +399,17 @@
 								<div class="feature-item">
 									<span class="wallet-icons"><i class="featured-item-icon far fa-feather-alt gradient-icon"></i></span><br>
 									<h4 class="featured-item-title my-0 py-0">Light Web Wallet</h4>
-									<p class="mb-3 py-0"><a href="https://wallet.xwp.one" rel="nofollow" target="_blank">wallet.xwp.one</a></p>
-									<p><a href="https://wallet.xwp.one" target="_blank" class="btn btn-primary">View Online&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+									<p class="mb-3 py-0">View Online</p>
+									<p><a href="https://wallet.xwp.one" target="_blank" class="btn btn-primary">Get Started&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="feature-item">
+									<span class="wallet-icons"><i class="featured-item-icon fab fa-android gradient-icon"></i></span>
+									<h4 class="featured-item-title my-0 py-0">Android</h4>
+									<p class="mb-3 py-0">Greater Roadrunner</p>
+									<p><a href="https://github.com/swap-dev/swap-android-wallet/releases/download/v3.1.2/Swap.Wallet-3x1x2_universal.apk" rel="nofollow" target="_blank" class="btn btn-primary">App v3.1.2&ensp;<i class="fas fa-download"></i></a></p>
+									<p><a href="https://play.google.com/store/apps/details?id=com.swap.xwpwallet" rel="nofollow" target="_blank" class="btn btn-outline-secondary">Google Play Store&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -417,8 +417,8 @@
 									<span class="wallet-icons"><i class="featured-item-icon far fa-file-alt gradient-icon"></i></span>
 									<h4 class="featured-item-title my-0 py-0">Paper Wallet</h4>
 									<p class="mb-3 py-0">Generator</p>
-									<p><a href="https://github.com/swap-dev/swap-paperwallet-generator/archive/master.zip" class="btn btn-primary">Generate Local&ensp;<i class="fas fa-download"></i></a></p>
-									<p><a href="paperwallet-alternative.html" target="_blank" class="btn btn-outline-secondary">Generate Online&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+									<p><a href="paperwallet-alternative.html" target="_blank" class="btn btn-primary">Generate Online&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
+									<p><a href="https://github.com/swap-dev/swap-paperwallet-generator/archive/master.zip" class="btn btn-outline-secondary">Generate Local&ensp;<i class="fas fa-download"></i></a></p>
 								</div>
 							</div>
 						</div>
@@ -444,7 +444,6 @@
 						<div class="text-left exchange-logos">
 							<img src="images/exchanges/mrr.png" alt="Mining Rig Rentals" class="img-fluid exchange-logo">
 						</div>
-						<p>Support the network economy by renting hashing power for Swap.</p>
 						<p>Whether you're new and want to try out mining or you're a veteran looking for more hash, Mining Rig Rentals is the place to go.</p>
 						<div class="d-flex flex-row-stats-alt">
 							<div class="p-2">HQ United States</div>
@@ -620,15 +619,14 @@
 				<div class="text-center">
 					<button class="btn tablink btn-outline-tab btn-outline-tab2 mt-1" onclick="openMiner(event,'mines')">Miners&ensp;<i class="fas fa-snowplow"></i></button>
 					<button class="btn tablink btn-outline-tab mt-1" onclick="openMiner(event,'linux')">Custom Linux&ensp;<i class="fab fa-linux"></i></button>
-					<button class="btn tablink btn-outline-tab mt-1" onclick="openMiner(event,'monitors')">Monitors&ensp;<i class="fas fa-desktop"></i></button>
+					<button class="btn tablink btn-outline-tab mt-1" onclick="openMiner(event,'monitors')">Monitors&ensp;<i class="far fa-heart-rate"></i></button>
 				</div>
 				<div id="mines" class="miner animate-opacity">
 					<div class="row mt-5">
 						<div class="col-lg-2"></div>
 						<div class="col-lg-8 mb-5">
 							<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GMiner</h4>
-							<p>A powerful Swap miner for Nvidia and the only Swap miner to support 4GB VRAM. Mining with 4GB VRAM is only supported on Windows 7 and Linux. For Windows 10 6GB of VRAM is required.</p>
-							<p>Integrated with a built-in remote web monitor and watchdog. The watchdog monitors mining processes and restarts the application in the event of failure or loss of connection to pools.</p>					  
+							<p>A powerful Swap miner for Nvidia and the only Swap miner to support 4GB VRAM. Mining with 4GB VRAM is only supported on Windows 7 and Linux. For Windows 10 6GB of VRAM is required.</p>				  
 							<div class="d-flex flex-row-stats">
 								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
 								<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
@@ -715,7 +713,6 @@
 						<div class="col-lg-8 mb-5">
 						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;mmpOS</h4>
 						<p>Highly optimized, ubuntu based linux OS, booting right of an USB stick (min 4GB). Miner management made easy. Allows you to manage and monitor all your rigs via one powerful dashboard.</p>
-						<p>Features include temperature and fan management, overclocking, undervolting and optimizing timings, live stats, and remote access.</p>
 							<div class="d-flex flex-row-stats">
 								<div class="p-2">AMD</div>
 								<div class="p-2">Nvidia</div>
@@ -734,8 +731,7 @@
 						<div class="col-lg-8 mb-5">
 						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Hive OS</h4>
 						<p>Hive OS is an all-in-one monitoring and management tool for your mining rigs. 
-							Keep track of hashrates, online statuses, GPU errors, team activity, pool configurations & power consumption. 
-							Remote access from anywhere across the globe, troubleshoot and reboot GPUs remotely or perform bulk updates across your entire farm.
+							Keep track of hashrates, online statuses, GPU errors, team activity, pool configurations & power consumption.
 						</p>
 							<div class="d-flex flex-row-stats">
 								<div class="p-2">AMD</div>
@@ -755,9 +751,7 @@
 						<div class="col-lg-8 mb-5">
 						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Simple Mining OS</h4>
 						<p>SimpleMining OS is plug and play operating system for mining crypto coin coins. 
-							No more messing with Windows, drivers, TeamViewer, etc. 
-							Just download the OS image, write it to any (USB/SSD/HDD) drive, set your email address and boot it. 
-							All your rigs can be managed with just a few clicks in web browser on cloud dashboard.</p>
+							No more messing with Windows, drivers, TeamViewer, etc.</p>
 							<div class="d-flex flex-row-stats">
 								<div class="p-2">AMD</div>
 								<div class="p-2">Nvidia</div>
@@ -775,8 +769,7 @@
 						<div class="col-lg-2"></div>
 						<div class="col-lg-8 mb-5">
 						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Miner Stat OS</h4>
-						<p>Linux mining OS, ASIC monitoring and Windows mining software for professionals and mining farms.
-							Monitor and manage your rigs with a help of unique features, such as ClockTune, profit switch, control room, and more.
+						<p>Monitor and manage your rigs with a help of unique features, such as ClockTune, profit switch, control room, and more.
 						</p>
 							<div class="d-flex flex-row-stats">
 								<div class="p-2">AMD</div>
@@ -796,10 +789,9 @@
 					<div class="row mt-5">
 						<div class="col-lg-2"></div>
 						<div class="col-lg-8 mb-5">
-						<h4 class="featured-item-title"><i class="fas fa-desktop gradient-icon"></i>&ensp;RainbowMiner</h4>
+						<h4 class="featured-item-title"><i class="far fa-heart-rate gradient-icon"></i>&ensp;RainbowMiner</h4>
 						<p>A mining script with intelligent profit switching between mining pools, algorithms, and miners. 
 							Runs on top of mining programs. Supports GrinProMiner, NBminer, and Gminer for Swap mining.</p>
-						<p>Features easy setup wizard, web interface, and auto-update.</p>
 							<div class="d-flex flex-row-stats">
 								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
 								<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
@@ -818,7 +810,7 @@
 					<div class="row">
 						<div class="col-lg-2"></div>
 						<div class="col-lg-8 mb-5">
-						<h4 class="featured-item-title"><i class="fas fa-desktop gradient-icon"></i>&ensp;AwesomeMiner</h4>
+						<h4 class="featured-item-title"><i class="far fa-heart-rate gradient-icon"></i>&ensp;AwesomeMiner</h4>
 						<p>Mining manager for NBminer and Gminer. Pay to have more features or use the free edition with rig monitoring and management.</p>
 							<div class="d-flex flex-row-stats">
 								<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
