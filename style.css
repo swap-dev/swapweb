@@ -10878,6 +10878,11 @@ ul.countdown li p {
 
 .animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 
+
+.img-chart {
+  width:30em;
+}
+
 .img-cuckaroo {
   width:1.5em;
   vertical-align: inherit;
