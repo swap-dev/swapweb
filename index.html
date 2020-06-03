@@ -40,7 +40,7 @@
 		<!-- Plugins -->
 		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 		<!-- Template CSS -->
-		<link rel="stylesheet" href="style.css?v=2.9">
+		<link rel="stylesheet" href="style.css?v=3.0">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 	</head>
@@ -286,11 +286,7 @@
 				<p class="lead p-3 centered-text text-center mx-auto">
 					A variety of wallets for a variety of users.<br />
 					<div class="text-center">
-						<button class="btn tablinkwallet btn-outline-tab btn-outline-tab2 mt-1" onclick="openWallet(event,'gui')">GUI Wallet&ensp;<i class="far fa-window"></i></button>
-						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'cli')">CLI Wallet&ensp;<i class="far fa-terminal"></i></button>
-						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'lightWallet')">Web &  Mobile Wallets&ensp;<i class="far fa-globe"></i></button>
-						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'bootstrap')">Blockchain Bootstraps&ensp;<i class="far fa-link"></i></button>
-						<button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'hardware')">Hardware Wallet&ensp;<i class="fab fa-usb"></i></button>
+						<button class="btn tablinkwallet btn-outline-tab btn-outline-tab-start btn-outline-tab2 mt-1" onclick="openWallet(event,'gui')">GUI Wallet</button><button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'cli')">CLI Wallet</button><button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'lightWallet')">Web &  Mobile Wallets</button><button class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'bootstrap')">Blockchain Bootstraps</button><button class="btn tablinkwallet btn-outline-tab btn-outline-tab-end mt-1" onclick="openWallet(event,'hardware')">Hardware Wallet</button>
 					</div>
 				</p>
 				<div id="gui" class="wallet animate-opacity mt-5">
@@ -598,9 +594,7 @@
 					Mine Swap with 4GB VRAM GPUs using GMiner on Windows 7 or Linux.
 				</p>
 				<div class="text-center">
-					<button class="btn tablink btn-outline-tab btn-outline-tab2 mt-1" onclick="openMiner(event,'mines')">Miners&ensp;<i class="fas fa-snowplow"></i></button>
-					<button class="btn tablink btn-outline-tab mt-1" onclick="openMiner(event,'linux')">Custom Linux&ensp;<i class="fab fa-linux"></i></button>
-					<button class="btn tablink btn-outline-tab mt-1" onclick="openMiner(event,'monitors')">Monitors&ensp;<i class="far fa-heart-rate"></i></button>
+					<button class="btn tablink btn-outline-tab btn-outline-tab-start btn-outline-tab2 mt-1" onclick="openMiner(event,'mines')">Miners</button><button class="btn tablink btn-outline-tab mt-1" onclick="openMiner(event,'linux')">Linux OS</button><button class="btn tablink btn-outline-tab btn-outline-tab-end mt-1" onclick="openMiner(event,'monitors')">Monitors</button>
 				</div>
 				<div id="mines" class="miner animate-opacity">
 					<div class="row mt-5">
@@ -804,8 +798,8 @@
                             <span class="wallet-icons"><i class="featured-item-icon far fa-tint gradient-icon"></i></span>
 							<h4 class="featured-item-title my-0 py-0">Micropool</h4>
 							<p class="mb-3 py-0">Solo Mining</p>
-							<p><a href="https://github.com/swap-dev/micropool-gui/releases/download/v1.5.3/swap-micro-pool.v1.5.3-windows.zip" class="btn btn-primary">Portable v1.5.3&ensp;<i class="fas fa-download"></i></a></p>
-							<p><a href="https://github.com/swap-dev/micropool-gui/releases/download/v1.5.3/swap-micro-pool.Setup.1.5.3.exe" class="btn btn-primary">Setup v1.5.3&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="https://github.com/swap-dev/micropool-gui/releases/download/v1.5.4/swap-micro-pool.v1.5.4-windows.zip" class="btn btn-primary">Portable v1.5.4&ensp;<i class="fas fa-download"></i></a></p>
+							<p><a href="https://github.com/swap-dev/micropool-gui/releases/download/v1.5.4/swap-micro-pool.Setup.1.5.4.exe" class="btn btn-primary">Setup v1.5.4&ensp;<i class="fas fa-download"></i></a></p>
 							<p><a href="https://github.com/swap-dev/swap/wiki/Swap-Micropool-How-to-Guide" class="btn btn-outline-secondary" rel="nofollow" target="_blank">How to Guide&ensp;<i class="far fa-book-open fa-fw"></i></a></p>
                         </div>
 					</div>
@@ -1087,9 +1081,7 @@
 					A community developed crypto coin with contributors from around the world.<br />
 					<div class="text-center">
 						<!-- <button class="btn tablinkteam btn-outline-tab-dark btn-outline-tab2-dark mt-1" onclick="openTeam(event,'core')">Operations&ensp;<i class="fas fa-head-side-brain"></i></button> -->
-						<button class="btn tablinkteam btn-outline-tab-dark btn-outline-tab2-dark mt-1" onclick="openTeam(event,'devs')">Developers&ensp;<i class="fab fa-github"></i></button>
-						<button class="btn tablinkteam btn-outline-tab-dark mt-1" onclick="openTeam(event,'marketing')">Marketing&ensp;<i class="fas fa-users"></i></button>
-						<button class="btn tablinkteam btn-outline-tab-dark mt-1" onclick="openTeam(event,'guest')">Special Thanks&ensp;<i class="fas fa-sparkles"></i></button>
+						<button class="btn tablinkteam btn-outline-tab-dark btn-outline-tab-dark-start btn-outline-tab2-dark mt-1" onclick="openTeam(event,'devs')">Developers</button><button class="btn tablinkteam btn-outline-tab-dark mt-1" onclick="openTeam(event,'marketing')">Marketing</button><button class="btn tablinkteam btn-outline-tab-dark btn-outline-tab-dark-end mt-1" onclick="openTeam(event,'guest')">Special Thanks</button>
 					</div>
 				</p>
 				<div id="devs" class="team animate-opacity mt-5">
