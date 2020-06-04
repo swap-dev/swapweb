@@ -44,10 +44,10 @@
 	<!-- Plugins -->
 	<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 	<!-- Template CSS -->
-	<link rel="stylesheet" href="style.css?v=3.2">
+	<link rel="stylesheet" href="style.css?v=3.3">
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css"
-		integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" 
+		integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
 </head>
 
 <body class="dark">
@@ -60,7 +60,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" data-scroll href="#team"><i class="fas fa-users"></i>&ensp;Team</a>
+					<a class="nav-link" data-scroll href="#articles"><i class="fas fa-newspaper"></i>&ensp;Articles</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" data-scroll href="#milestones"><i
@@ -101,6 +101,8 @@
 						Development
 					</a>
 					<div class="dropdown-menu animate-opacity" aria-labelledby="developmentDropdown">
+						<a class="dropdown-item" data-scroll href="#team"><i class="fas fa-users"></i>&ensp;Team</a>
+						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="https://github.com/swap-dev" rel="nofollow" target="_blank"><i
 								class="fab fa-github fa-fw"></i>&ensp;GitHub</a>
 						<div class="dropdown-divider"></div>
@@ -123,49 +125,53 @@
 					<div class="dropdown-menu animate-opacity" aria-labelledby="communityDropdown">
 						<a class="dropdown-item" href="https://twitter.com/@Swap_Community" rel="nofollow"
 							target="_blank"><i class="fab fa-twitter fa-fw"></i>&ensp;Twitter</a>
+						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="https://medium.com/@Swap_Community" rel="nofollow"
 							target="_blank"><i class="fab fa-medium-m fa-fw"></i>&ensp;Medium</a>
+						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="https://www.reddit.com/r/SwapProject" rel="nofollow"
 							target="_blank"><i class="fab fa-reddit-alien fa-fw"></i>&ensp;Reddit</a>
+						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="https://bitcointalk.org/index.php?topic=5083455.0" rel="nofollow"
 							target="_blank"><i class="fab fa-btc fa-fw"></i>&ensp;BitcoinTalk</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="https://discord.gg/Eun5FHp" rel="nofollow" target="_blank"><i
-								class="fab fa-discord fa-fw"></i>&ensp;Discord</a>
+							class="fab fa-discord fa-fw"></i>&ensp;Discord</a>
+						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="https://t.me/swapxwp" rel="nofollow" target="_blank"><i
-								class="fab fa-telegram-plane fa-fw"></i>&ensp;Telegram</a>
+							class="fab fa-telegram-plane fa-fw"></i>&ensp;Telegram</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button"
+					<a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<i class="fas fa-language fa-2x align-middle"></i>
 					</a>
-					<div class="dropdown-menu animate-opacity" aria-labelledby="communityDropdown">
+					<div class="dropdown-menu animate-opacity" aria-labelledby="languageDropdown">
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|ar)" data-lang="ar"><img
-								class="flags" src="images/flags/arabia.png">&ensp;العَرَبِيَّة</a>
+								class="flags" src="images/flags/arabia.png" alt="flag">&ensp;العَرَبِيَّة</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN"><img
-								class="flags" src="images/flags/china.png">&ensp;中文</a>
+								class="flags" src="images/flags/china.png" alt="flag">&ensp;中文</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img
-								class="flags" src="images/flags/unitedkingdom.png">&ensp;English</a>
+								class="flags" src="images/flags/unitedkingdom.png" alt="flag">&ensp;English</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|fr)" data-lang="fr"><img
-								class="flags" src="images/flags/france.png">&ensp;Français</a>
+								class="flags" src="images/flags/france.png" alt="flag">&ensp;Français</a>
 						<a class="dropdown-item lang-de lang-select" href="#googtrans(en|de)" data-lang="de"><img
-								class="flags" src="images/flags/germany.png">&ensp;Deutsch</a>
+								class="flags" src="images/flags/germany.png" alt="flag">&ensp;Deutsch</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|hi)" data-lang="hi"><img
-								class="flags" src="images/flags/india.png">&ensp;हिन्दी</a>
+								class="flags" src="images/flags/india.png" alt="flag">&ensp;हिन्दी</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|it)" data-lang="it"><img
-								class="flags" src="images/flags/italy.png">&ensp;Italiano</a>
+								class="flags" src="images/flags/italy.png" alt="flag">&ensp;Italiano</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|ja)" data-lang="ja"><img
-								class="flags" src="images/flags/japan.png">&ensp;日本語</a>
+								class="flags" src="images/flags/japan.png" alt="flag">&ensp;日本語</a>
 						<a class="dropdown-item lang-ko lang-select" href="#googtrans(en|ko)" data-lang="ko"><img
-								class="flags" src="images/flags/korea.png">&ensp;한국어</a>
+								class="flags" src="images/flags/korea.png" alt="flag">&ensp;한국어</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|pt)" data-lang="pt"><img
-								class="flags" src="images/flags/portugal.png">&ensp;Português</a>
+								class="flags" src="images/flags/portugal.png" alt="flag">&ensp;Português</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|ru)" data-lang="ru"><img
-								class="flags" src="images/flags/russia.png">&ensp;Русский</a>
+								class="flags" src="images/flags/russia.png" alt="flag">&ensp;Русский</a>
 						<a class="dropdown-item lang-en lang-select" href="#googtrans(en|es)" data-lang="es"><img
-								class="flags" src="images/flags/spain.png">&ensp;Español</a>
+								class="flags" src="images/flags/spain.png" alt="flag">&ensp;Español</a>
 					</div>
 				</li>
 			</ul>
@@ -221,16 +227,16 @@
 		<div class="container">
 			<div class="row text-center justify-content-center align-items-center exchange-logos exchange-logos1">
 				<div class="col-12 col-sm-6 col-md-4">
-					<a href="https://coinmarketcap.com/currencies/swap/" target="_blank"><img
+					<a href="https://coinmarketcap.com/currencies/swap/" target="_blank" rel="nofollow"><img
 							src="images/market/coinmarketcap.png" alt="CoinMarketCap"
 							class="img-fluid exchange-logo"></a>
 				</div>
 				<div class="col-12 col-sm-6 col-md-auto">
-					<a href="https://www.cryptunit.com/coin/XWP" target="_blank"><img src="images/market/cryptunit.png"
+					<a href="https://www.cryptunit.com/coin/XWP" target="_blank" rel="nofollow"><img src="images/market/cryptunit.png"
 							alt="CryptUnit" class="img-fluid exchange-logo"></a>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<a href="https://www.coingecko.com/en/coins/swap" target="_blank"><img
+					<a href="https://www.coingecko.com/en/coins/swap" target="_blank" rel="nofollow"><img
 							src="images/market/coingecko.png" alt="CoinGecko" class="img-fluid exchange-logo"></a>
 				</div>
 			</div>
@@ -242,15 +248,16 @@
 				<h3><i class="far fa-atom-alt gradient-icon"></i>&ensp;Specifications</h3>&ensp;<span
 					class="link-icon"><a data-scroll href="#specifications"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">Total amount of supply is 18,400,000 XWP<br>
+			<p class="lead p-1 centered-text text-center mx-auto">Total amount of supply is 18,400,000 XWP<br>
 				Cuckaroo29s Cycle PoW algorithm with 15 second block time<br>
-				Block timing is regulated using Monero&nbsp;DAA<br>
+				Block timing is regulated using Monero&nbsp;DAA</p>
+			<div class="centered-text text-center mx-auto">
 				<a data-scroll href="#cuckoo" class="btn btn-outline-secondary mt-3 mx-1">Cuckoo&ensp;<i
 						class="fas fa-arrow-circle-right"></i></a>
 				<a data-scroll href="#cryptonote" class="btn btn-outline-secondary mt-3 mx-1">CryptoNote&ensp;<i
 						class="fas fa-arrow-circle-right"></i></a>
-			</p>
-			<div class="row align-items-start justify-content-around text-center">
+			</div>
+			<div class="row align-items-start justify-content-around text-center mt-2">
 				<div class="col-12 col-md-4">
 					<div class="feature-item">
 						<span class="wallet-icons"><i class="featured-item-icon fas fa-mask gradient-icon"></i></span>
@@ -330,7 +337,77 @@
 		<!-- // container -->
 	</section>
 	<!-- // section -->
-	<section id="wallets" class="section">
+	<section id="articles" class="section">
+		<div class="container">
+			<div class="section-title max-title text-center centered-text mx-auto container-link-icon">
+				<h3><i class="fal fa-newspaper gradient-icon"></i>&ensp;Articles</h3>&ensp;<span class="link-icon"><a
+						data-scroll href="#articles"><i class="fal fa-link fa-xs"></i></a></span>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="faq__item">
+						<h4>HASHR8 Privacy Coin Reviews: Swap</h4>
+						<p><i class="fas fa-quote-left"></i>&ensp;Privacy is a fundamental human right and requirement for freedom. 
+							We should be able to have privacy, not just in our own homes, but also in our financial transactions..&ensp;<i class="fas fa-quote-right"></i>
+						</p>
+						<a href="https://medium.com/hashr8/hashr8-privacy-coin-reviews-swap-58a2739610c0" rel="nofollow"
+							target="_blank" class="btn btn-outline3 mt-2 mr-1">Community Interview&ensp;<i
+								class="fas fa-arrow-circle-right"></i></a>
+					</div>
+					<div class="faq__item">
+						<i class="featured-item-icon far fa-rocket-launch gradient-icon fa-4x"></i>
+						<h4>Swap XWP: The most fundamentals driven crypto coin yet?</h4>
+						<p><i class="fas fa-quote-left"></i>&ensp;A fast, fair, efficient, peer-reviewed, privacy-oriented CN + C29s 
+							hybrid monster with a stable and secure blockchain..&ensp;<i class="fas fa-quote-right"></i>
+						</p>
+						<a href="https://medium.com/the-consensus/swap-xwp-the-most-fundamentals-driven-cryptocurrency-c51c59fca041" rel="nofollow"
+							target="_blank" class="btn btn-outline3 mt-2 mr-1">Project Analysis&ensp;<i
+								class="fas fa-arrow-circle-right"></i></a>
+					</div>
+					<div class="faq__item">
+						<h4>Q&A — Sebastian Green, founder & developer of Swap XWP</h4>
+						<p><i class="fas fa-quote-left"></i>&ensp;Swap is one of those projects with an active mining community which stood out to me the past months..&ensp;<i class="fas fa-quote-right"></i>
+						</p>
+						<a href="https://medium.com/@Coin_Shark/q-a-sebastian-green-founder-developer-of-swap-xwp-e5e94086eef9" rel="nofollow"
+							target="_blank" class="btn btn-outline3 mt-2 mr-1">Developer Interview&ensp;<i
+								class="fas fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="faq__item">
+						<i class="featured-item-icon far fa-head-side-mask gradient-icon fa-4x"></i>
+						<h4>El valor de la privacidad: Swap XWP, es una criptomoneda privada y con una comunidad creciente</h4>
+						<p><i class="fas fa-quote-left"></i>&ensp;¿Por qué elegir XWP cuando tenemos tantas opciones de criptomonedas 
+							y particularmente Bitcoin? La respuesta es muy sencilla..&ensp;<i class="fas fa-quote-right"></i>
+						</p>
+						<a href="https://www.fullstackdatascience.com.mx/blog/swap-xwp" rel="nofollow"
+							target="_blank" class="btn btn-outline3 mt-2 mr-1">Analisis Proyecto&ensp;<i
+								class="fas fa-arrow-circle-right"></i></a>
+					</div>
+					<div class="faq__item">
+						<h4>Swap Micropool — Your definitive guide to soloing blocks like a pro!</h4>
+						<p><i class="fas fa-quote-left"></i>&ensp;So how hard is it to setup and run your own Micropool? Not that hard at 
+							all and if you follow this guide..&ensp;<i class="fas fa-quote-right"></i>
+						</p>
+						<a href="https://www.cointainer.life/2019/05/12/swap-micropool-your-definitive-guide-to-soloing-blocks-like-a-pro/" rel="nofollow"
+							target="_blank" class="btn btn-outline3 mt-2 mr-1">Micropool Overview&ensp;<i
+								class="fas fa-arrow-circle-right"></i></a>
+					</div>
+					<div class="faq__item">
+						<h4>XWP: New Generation Anonymous Payment Coin</h4>
+						<p><i class="fas fa-quote-left"></i>&ensp;Cuckaroo29s Cycle PoW mining mechanism is inserted based on Monero to ensure mining fairness..&ensp;<i class="fas fa-quote-right"></i>
+						</p>
+						<a href="https://citex.zendesk.com/hc/en-us/articles/360026935711-XWP-New-Generation-Anonymous-Payment-Currency" rel="nofollow"
+							target="_blank" class="btn btn-outline3 mt-2 mr-1">Project Overview&ensp;<i
+								class="fas fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // container -->
+	</section>
+	<!-- // section -->
+	<section id="wallets" class="section section-separated">
 		<div class="container">
 			<div class="section-title max-title text-center centered-text mx-auto container-link-icon">
 				<h3><i class="far fa-wallet gradient-icon"></i>&ensp;Wallets</h3>&ensp;<span class="link-icon"><a
@@ -340,22 +417,22 @@
 					Malkoha adds accelerated daemon sync speed, blockchain pruning, and openalias. 
 					Pruning shrinks local blockchain database by 50% and openalias enables linking domains to wallet addresses, like donate.xwp.fyi.
 				</p> -->
-			<p class="lead p-3 centered-text text-center mx-auto">
-				A variety of wallets for a variety of users.<br />
+			<p class="lead p-1 centered-text text-center mx-auto">
+				A variety of wallets for a variety of users.
+			</p>
 			<div class="text-center">
-				<button class="btn tablinkwallet btn-outline-tab btn-outline-tab-start btn-outline-tab2 mt-1"
+				<button class="btn tablinkwallet btn-outline-tab-dark btn-outline-tab-dark-start btn-outline-tab2-dark mt-1"
 					onclick="openWallet(event,'gui')">GUI Wallet</button><button
-					class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'cli')">CLI
-					Wallet</button><button class="btn tablinkwallet btn-outline-tab mt-1"
+					class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'cli')">CLI
+					Wallet</button><button class="btn tablinkwallet btn-outline-tab-dark mt-1"
 					onclick="openWallet(event,'lightWallet')">Web & Mobile Wallets</button><button
-					class="btn tablinkwallet btn-outline-tab mt-1" onclick="openWallet(event,'bootstrap')">Blockchain
-					Bootstraps</button><button class="btn tablinkwallet btn-outline-tab btn-outline-tab-end mt-1"
+					class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'bootstrap')">Blockchain
+					Bootstraps</button><button class="btn tablinkwallet btn-outline-tab-dark btn-outline-tab-dark-end mt-1"
 					onclick="openWallet(event,'hardware')">Hardware Wallet</button>
 			</div>
-			</p>
 			<div id="gui" class="wallet animate-opacity mt-5">
 				<div class="row align-items-start justify-content-around text-center">
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon fab fa-windows gradient-icon"></i></span>
@@ -367,7 +444,7 @@
 									class="btn btn-primary">Electron v3.1.0&ensp;<i class="fas fa-download"></i></a></p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon fab fa-linux gradient-icon"></i></span>
@@ -379,7 +456,7 @@
 									class="btn btn-primary">Electron v3.1.0&ensp;<i class="fas fa-download"></i></a></p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
@@ -395,7 +472,7 @@
 			</div>
 			<div id="cli" class="wallet animate-opacity mt-5" style="display:none">
 				<div class="row align-items-start justify-content-around text-center">
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon fab fa-windows gradient-icon"></i></span>
@@ -405,7 +482,7 @@
 									class="btn btn-primary">CLI v3.1.1&ensp;<i class="fas fa-download"></i></a></p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon fab fa-linux gradient-icon"></i></span>
@@ -415,7 +492,7 @@
 									class="btn btn-primary">CLI v3.1.1&ensp;<i class="fas fa-download"></i></a></p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon fab fa-apple gradient-icon fa-xxs"></i></span>
@@ -463,11 +540,19 @@
 							<p class="mb-3 py-0">Cold Storage</p>
 							<p><a href="https://github.com/swap-dev/ledger-app-swap/releases/download/1.5.1/app.hex"
 									class="btn btn-primary">App v1.5.1&ensp;<i class="fas fa-download"></i></a></p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
+						<div class="feature-item">
+							<span class="wallet-icons"><i
+									class="featured-item-icon fab fa-github gradient-icon fa-xxs"></i></span>
+							<h4 class="featured-item-title my-0 py-0">Github</h4>
+							<p class="mb-3 py-0">Resources</p>
 							<p><a href="https://github.com/swap-dev/ledger-app-swap/releases" rel="nofollow"
-									target="_blank" class="btn btn-outline-secondary">Release Notes&ensp;<i
-										class="fab fa-github"></i></a></p>
-							<p><a href="https://github.com/swap-dev/swap/wiki/Swap-Ledger-Application" rel="nofollow"
-									target="_blank" class="btn btn-outline-secondary">How to Guide&ensp;<i
+								target="_blank" class="btn btn-outline-secondary">Release Notes&ensp;<i
+									class="fab fa-github"></i></a></p>
+							<p><a href="https://github.com/swap-dev/swap/wiki/Swap-Ledger-Application"
+									class="btn btn-outline-secondary" rel="nofollow" target="_blank">How to Guide&ensp;<i
 										class="far fa-book-open fa-fw"></i></a></p>
 						</div>
 					</div>
@@ -475,7 +560,7 @@
 			</div>
 			<div id="lightWallet" class="wallet animate-opacity mt-5" style="display:none">
 				<div class="row align-items-start justify-content-center text-center">
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon far fa-feather-alt gradient-icon"></i></span><br>
@@ -485,7 +570,7 @@
 									Started&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon fab fa-android gradient-icon"></i></span>
@@ -499,7 +584,7 @@
 										class="fas fa-arrow-circle-right"></i></a></p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
 							<span class="wallet-icons"><i
 									class="featured-item-icon far fa-file-alt gradient-icon"></i></span>
@@ -517,13 +602,13 @@
 		<!-- // container -->
 	</section>
 	<!-- // section -->
-	<section id="exchanges" class="section section-separated">
+	<section id="exchanges" class="section">
 		<div class="container">
 			<div class="section-title max-title text-center centered-text mx-auto container-link-icon">
 				<h3><i class="fas fa-chart-line gradient-icon"></i>&ensp;Exchanges</h3>&ensp;<span class="link-icon"><a
 						data-scroll href="#exchanges"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">
+			<p class="lead p-1 centered-text text-center mx-auto">
 				Swap is not associated with exchanges and will not pay fees to be listed.
 				Exchanges have determined Swap deserving of listing.
 			</p>
@@ -543,21 +628,9 @@
 						<div class="p-2">No KYC</div>
 					</div>
 					<div class="text-left">
-						<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/btc" rel="nofollow"
-							target="_blank" class="btn btn-outline2 mt-2 mr-1">Rent with Bitcoin&ensp;<i
-								class="fab fa-btc"></i></a>
-						<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/eth" rel="nofollow"
-							target="_blank" class="btn btn-outline2 mt-2 mr-1">Rent with Ethereum&ensp;<i
-								class="fab fa-ethereum"></i></a>
-						<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/ltc" rel="nofollow"
-							target="_blank" class="btn btn-outline2 mt-2 mr-1 media-logo2">Rent with Litecoin&ensp;<img
-								src="images/media/litecoin.png" alt="Litecoin" class="img-fluid media-logo"></a>
-						<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/bch" rel="nofollow"
-							target="_blank" class="btn btn-outline2 mt-2 mr-1 media-logo2">Rent with Bcash&ensp;<img
-								src="images/media/bcash.png" alt="Dash" class="img-fluid media-logo"></a>
-						<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/dash" rel="nofollow"
-							target="_blank" class="btn btn-outline2 mt-2 mr-1 media-logo2">Rent with Dash&ensp;<img
-								src="images/media/dash.png" alt="Dash" class="img-fluid media-logo"></a>
+						<a href="https://www.miningrigrentals.com/rigs/cuckoocycle29swap/" rel="nofollow"
+							target="_blank" class="btn btn-outline3 mt-2 mr-1">Rent Graph Power&ensp;<i
+								class="fas fa-snowplow"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-2"></div>
@@ -581,7 +654,7 @@
 					</div>
 					<div class="text-left">
 						<a href="https://tradeogre.com/exchange/BTC-XWP" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">Bitcoin Market&ensp;<i class="fab fa-btc"></i></a>
+							class="btn btn-outline3 mt-2 mr-1">Bitcoin Market&ensp;<i class="fab fa-btc"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-2"></div>
@@ -607,9 +680,9 @@
 					</div>
 					<div class="text-left">
 						<a href="https://graviex.net/markets/xwpbtc" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">Bitcoin Market&ensp;<i class="fab fa-btc"></i></a>
+							class="btn btn-outline3 mt-2 mr-1">Bitcoin Market&ensp;<i class="fab fa-btc"></i></a>
 						<a href="https://graviex.net/markets/xwpeth" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">Ethereum Market&ensp;<i class="fab fa-ethereum"></i></a>
+							class="btn btn-outline3 mt-2 mr-1">Ethereum Market&ensp;<i class="fab fa-ethereum"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-2"></div>
@@ -634,11 +707,11 @@
 					</div>
 					<div class="text-left">
 						<a href="https://www.citex.co.kr/#/trade/XWP_BTC" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">Bitcoin Market&ensp;<i class="fab fa-btc"></i></a>
+							class="btn btn-outline3 mt-2 mr-1">Bitcoin Market&ensp;<i class="fab fa-btc"></i></a>
 						<a href="https://www.citex.co.kr/#/trade/XWP_ETH" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">Ethereum Market&ensp;<i class="fab fa-ethereum"></i></a>
+							class="btn btn-outline3 mt-2 mr-1">Ethereum Market&ensp;<i class="fab fa-ethereum"></i></a>
 						<a href="https://trade.citex.co.kr/trade/XWP_USDT" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">USD Tether Market&ensp;<i
+							class="btn btn-outline3 mt-2 mr-1">USD Tether Market&ensp;<i
 								class="far fa-dollar-sign"></i></a>
 					</div>
 				</div>
@@ -664,7 +737,7 @@
 					</div>
 					<div class="text-left">
 						<a href="https://www.bkex.com/trade/XWP_USDT" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">USD Tether Market&ensp;<i
+							class="btn btn-outline3 mt-2 mr-1">USD Tether Market&ensp;<i
 								class="far fa-dollar-sign"></i></a>
 					</div>
 				</div>
@@ -690,9 +763,9 @@
 					</div>
 					<div class="text-left">
 						<a href="https://bia.do/trade/XWP-BTC" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">Bitcoin Market&ensp;<i class="fab fa-btc"></i></a>
+							class="btn btn-outline3 mt-2 mr-1">Bitcoin Market&ensp;<i class="fab fa-btc"></i></a>
 						<a href="https://bia.do/trade/XWP-XMR" rel="nofollow" target="_blank"
-							class="btn btn-outline2 mt-2 mr-1">Monero Market&ensp;<i class="fab fa-monero"></i></a>
+							class="btn btn-outline3 mt-2 mr-1">Monero Market&ensp;<i class="fab fa-monero"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-2"></div>
@@ -701,20 +774,20 @@
 		<!-- // container -->
 	</section>
 	<!-- // section -->
-	<section id="miners" class="section parallax-window">
+	<section id="miners" class="section section-separated">
 		<div class="container">
 			<div class="section-title max-title text-center centered-text mx-auto container-link-icon">
 				<h3><img src="images/logo/Swap_the_Bird_Grad_1.png" alt="Cuckoo" class="img-cuckaroo">&ensp;Miners</h3>
 				&ensp;<span class="link-icon"><a data-scroll href="#miners"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">
+			<p class="lead p-1 centered-text text-center mx-auto">
 				Mine Swap with 4GB VRAM GPUs using GMiner on Windows 7 or Linux.
 			</p>
 			<div class="text-center">
-				<button class="btn tablink btn-outline-tab btn-outline-tab-start btn-outline-tab2 mt-1"
-					onclick="openMiner(event,'mines')">Miners</button><button class="btn tablink btn-outline-tab mt-1"
+				<button class="btn tablink btn-outline-tab-dark btn-outline-tab-dark-start btn-outline-tab2-dark mt-1"
+					onclick="openMiner(event,'mines')">Miners</button><button class="btn tablink btn-outline-tab-dark mt-1"
 					onclick="openMiner(event,'linux')">Linux OS</button><button
-					class="btn tablink btn-outline-tab btn-outline-tab-end mt-1"
+					class="btn tablink btn-outline-tab-dark btn-outline-tab-dark-end mt-1"
 					onclick="openMiner(event,'monitors')">Monitors</button>
 			</div>
 			<div id="mines" class="miner animate-opacity">
@@ -734,10 +807,10 @@
 						</div>
 						<p>
 							<a href="https://github.com/develsoftware/GMinerRelease/releases/latest" rel="nofollow"
-								target="_blank" class="btn btn-outline3 mt-2 mr-1">Latest Release&ensp;<i
+								target="_blank" class="btn btn-outline2 mt-2 mr-1">Latest Release&ensp;<i
 									class="fab fa-github"></i></a>
 							<a href="https://bitcointalk.org/index.php?topic=5034735.0" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+								class="btn btn-outline2 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
 						</p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -757,9 +830,9 @@
 						</div>
 						<p>
 							<a href="https://github.com/NebuTech/NBMiner/releases/latest" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">Latest Release&ensp;<i class="fab fa-github"></i></a>
+								class="btn btn-outline2 mt-2 mr-1">Latest Release&ensp;<i class="fab fa-github"></i></a>
 							<a href="https://bitcointalk.org/index.php?topic=5099379.0" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+								class="btn btn-outline2 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
 						</p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -780,12 +853,12 @@
 						</div>
 						<p>
 							<a href="https://github.com/mozkomor/GrinProMiner/releases/tag/2.2" rel="nofollow"
-								target="_blank" class="btn btn-outline3 mt-2 mr-1">Latest Release&ensp;<i
+								target="_blank" class="btn btn-outline2 mt-2 mr-1">Latest Release&ensp;<i
 									class="fab fa-github"></i></a>
 							<a href="https://grinpro.io/" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">Official Homepage&ensp;<i
+								class="btn btn-outline2 mt-2 mr-1">Official Homepage&ensp;<i
 									class="fas fa-globe"></i></a>
-							<a href="https://dotnet.microsoft.com/download" class="btn btn-outline3 mt-2" rel="nofollow"
+							<a href="https://dotnet.microsoft.com/download" class="btn btn-outline2 mt-2" rel="nofollow"
 								target="_blank">.NET Core&ensp;<i class="fab fa-windows"></i></a>
 						</p>
 					</div>
@@ -811,12 +884,12 @@
 						</div>
 						<p>
 							<a href="https://github.com/swap-dev/SwapReferenceMiner/releases/latest" rel="nofollow"
-								target="_blank" class="btn btn-outline3 mt-2 mr-1">Latest Release&ensp;<i
+								target="_blank" class="btn btn-outline2 mt-2 mr-1">Latest Release&ensp;<i
 									class="fab fa-github"></i></a>
 							<a href="https://github.com/swap-dev/swap/wiki/Swap-Reference-Miner-Setup" rel="nofollow"
-								target="_blank" class="btn btn-outline3 mt-2 mr-1">How to Guide&ensp;<i
+								target="_blank" class="btn btn-outline2 mt-2 mr-1">How to Guide&ensp;<i
 									class="far fa-book-open"></i></a>
-							<a href="https://dotnet.microsoft.com/download" class="btn btn-outline3 mt-2 mr-1"
+							<a href="https://dotnet.microsoft.com/download" class="btn btn-outline2 mt-2 mr-1"
 								rel="nofollow" target="_blank">.NET Core&ensp;<i class="fab fa-windows"></i></a>
 						</p>
 					</div>
@@ -837,10 +910,10 @@
 						</div>
 						<p>
 							<a href="https://app.mmpos.eu/" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">Official Homepage&ensp;<i
+								class="btn btn-outline2 mt-2 mr-1">Official Homepage&ensp;<i
 									class="fas fa-globe"></i></a>
 							<a href="https://bitcointalk.org/index.php?topic=5088988.0" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+								class="btn btn-outline2 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
 						</p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -848,8 +921,8 @@
 				<div class="row">
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-5">
-						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Hashr8 OS</h4>
-						<p>Hashr8 Operating System allows you to configure, monitor, and manage your Rigs and ASICs.
+						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;RaveOS</h4>
+						<p>RaveOS Operating System allows you to configure, monitor, and manage your Rigs and ASICs.
 						</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2">AMD</div>
@@ -858,8 +931,8 @@
 							<div class="p-2">Free up to 3 workers</div>
 						</div>
 						<p>
-							<a href="https://hashr8.com/" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">Official Homepage&ensp;<i
+							<a href="https://raveos.com/" rel="nofollow" target="_blank"
+								class="btn btn-outline2 mt-2 mr-1">Official Homepage&ensp;<i
 									class="fas fa-globe"></i></a>
 						</p>
 					</div>
@@ -880,10 +953,10 @@
 						</div>
 						<p>
 							<a href="https://hiveos.farm/" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">Official Homepage&ensp;<i
+								class="btn btn-outline2 mt-2 mr-1">Official Homepage&ensp;<i
 									class="fas fa-globe"></i></a>
 							<a href="https://bitcointalk.org/index.php?topic=2350786.0" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+								class="btn btn-outline2 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
 						</p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -908,10 +981,10 @@
 						</div>
 						<p>
 							<a href="https://github.com/RainbowMiner/RainbowMiner/releases/latest" rel="nofollow"
-								target="_blank" class="btn btn-outline3 mt-2 mr-1">Latest Release&ensp;<i
+								target="_blank" class="btn btn-outline2 mt-2 mr-1">Latest Release&ensp;<i
 									class="fab fa-github"></i></a>
 							<a href="https://bitcointalk.org/index.php?topic=5050211.0" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+								class="btn btn-outline2 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
 						</p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -932,10 +1005,10 @@
 						</div>
 						<p>
 							<a href="https://www.awesomeminer.com/" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">Official Homepage&ensp;<i
+								class="btn btn-outline2 mt-2 mr-1">Official Homepage&ensp;<i
 									class="fas fa-globe"></i></a>
 							<a href="https://bitcointalk.to/index.php?topic=676942.0" rel="nofollow" target="_blank"
-								class="btn btn-outline3 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
+								class="btn btn-outline2 mt-2 mr-1">BitcoinTalk&ensp;<i class="fab fa-btc"></i></a>
 						</p>
 					</div>
 					<div class="col-lg-2"></div>
@@ -945,29 +1018,29 @@
 		<!-- // container -->
 	</section>
 	<!-- // section -->
-	<section id="micropool" class="section section-separated">
+	<section id="micropool" class="section">
 		<div class="container">
 			<div class="section-title max-title text-center centered-text mx-auto container-link-icon">
 				<h3><i class="far fa-tint gradient-icon"></i>&ensp;Swap Micropool</h3>&ensp;<span class="link-icon"><a
 						data-scroll href="#micropool"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">
-				Use the Micropool with low latency and no pool fees. Mining solo is especially achievable with a quick
-				15 second block time and Cuckaroo, the simplest PoW algorithm.</p>
+			<p class="lead p-1 centered-text text-center mx-auto">
+				The Swap Micropool delivers low latency and zero pool fees to miners. Mining solo is especially achievable with quick
+				15 second block times and Cuckoo, the simplest PoW algorithm.</p>
 			<div class="row align-items-start justify-content-center text-center">
-				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+				<div class="col-12 col-sm-6 col-md-4">
 					<div class="feature-item">
 						<span class="wallet-icons"><i
 								class="featured-item-icon fab fa-windows gradient-icon"></i></span>
 						<h4 class="featured-item-title my-0 py-0">Windows</h4>
 						<p class="mb-3 py-0">Micropool</p>
-						<p><a href="https://github.com/swap-dev/swap-gui/releases/download/v3.1.0.0/swap-3.1-gui-win32.exe"
+						<p><a href="https://github.com/swap-dev/micropool-gui/releases/download/v1.5.4/swap-micro-pool.v1.5.4-windows.zip"
 								class="btn btn-primary">Portable v1.5.4&ensp;<i class="fas fa-download"></i></a></p>
-						<p><a href="https://github.com/swap-dev/swap-electron-gui-wallet/releases/download/v3.1.0/Swap.Electron.Wallet.Setup.3.1.0.exe"
+						<p><a href="https://github.com/swap-dev/micropool-gui/releases/download/v1.5.4/swap-micro-pool.Setup.1.5.4.exe"
 								class="btn btn-primary">Setup v1.5.4&ensp;<i class="fas fa-download"></i></a></p>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+				<div class="col-12 col-sm-6 col-md-4">
 					<div class="feature-item">
 						<span class="wallet-icons"><i class="featured-item-icon fab fa-linux gradient-icon"></i></span>
 						<h4 class="featured-item-title my-0 py-0">Linux</h4>
@@ -976,7 +1049,7 @@
 								class="btn btn-primary">App v1.5.4&ensp;<i class="fas fa-download"></i></a></p>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+				<div class="col-12 col-sm-6 col-md-4">
 					<div class="feature-item">
 						<span class="wallet-icons"><i
 								class="featured-item-icon fab fa-github gradient-icon fa-xxs"></i></span>
@@ -995,18 +1068,18 @@
 		<!-- // container -->
 	</section>
 	<!-- // section -->
-	<section id="pools" class="section parallax-window">
+	<section id="pools" class="section section-separated">
 		<div class="container">
 			<div class="section-title max-title text-center centered-text mx-auto container-link-icon">
 				<h3><i class="far fa-chart-network gradient-icon"></i>&ensp;Swap Pools</h3>&ensp;<span
 					class="link-icon"><a data-scroll href="#pools"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">
-				Pool together with other miners and share the block rewards. For best efficiency use a pool that is
-				located near the miner.
+			<p class="lead p-1 centered-text text-center mx-auto">
+				Pool together with other miners and share the block rewards. Use a pool that is
+				geographically near the miner for the best efficiency.
 			</p>
 			<div class="row align-items-start justify-content-center text-center">
-				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+				<div class="col-12 col-sm-6 col-md-4">
 					<div class="feature-item">
 						<span class="wallet-icons"><i
 								class="featured-item-icon far fa-swimming-pool gradient-icon"></i></span>
@@ -1016,7 +1089,7 @@
 								Started&ensp;<i class="fas fa-arrow-circle-right"></i></a></p>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+				<div class="col-12 col-sm-6 col-md-4">
 					<div class="feature-item">
 						<span class="wallet-icons"><i class="featured-item-icon far fa-list gradient-icon"></i></span>
 						<h4 class="featured-item-title my-0 py-0">Pool List</h4>
@@ -1025,7 +1098,7 @@
 									class="fas fa-arrow-circle-right"></i></button></p>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+				<div class="col-12 col-sm-6 col-md-4">
 					<div class="feature-item">
 						<span class="wallet-icons"><i
 								class="featured-item-icon far fa-chart-bar gradient-icon"></i></span>
@@ -1046,6 +1119,7 @@
 						<div class="col-12 col-sm-6 col-md-4">
 							<span class="wallet-icons"><i class="far fa-globe-americas gradient-icon"></i></span>
 							<h4>North America</h4>
+							<p><a href="https://xwp.blockchainmeup.org/" rel="nofollow" target="_blank">Blockchain Me Up</a></p>
 							<p><a href="https://c3pool.com/" rel="nofollow" target="_blank">C3 Pool</a></p>
 							<p><a href="https://swap.fairpool.xyz/" rel="nofollow" target="_blank">Fair Pool</a></p>
 							<p><a href="http://swap.gxn-miningpool.com/" rel="nofollow" target="_blank">GXN Mining
@@ -1067,7 +1141,6 @@
 							<p><a href="https://swap.hashvault.pro/" rel="nofollow" target="_blank">Hashvault</a></p>
 							<p><a href="https://swap.herominers.com/" rel="nofollow" target="_blank">Hero Miners</a></p>
 							<p><a href="https://swap2.luckypool.io/" rel="nofollow" target="_blank">Lucky Pool</a></p>
-							<p><a href="http://m2pool.eu/SWAP/" rel="nofollow" target="_blank">M2 Pool</a></p>
 							<p><a href="https://swap.miningocean.org/" rel="nofollow" target="_blank">Mining Ocean</a>
 							</p>
 							<p><a href="https://moneroocean.stream/" rel="nofollow" target="_blank">Monero Ocean</a></p>
@@ -1098,7 +1171,7 @@
 				<h3><i class="far fa-shield-check gradient-icon"></i>&ensp;Milestones</h3>&ensp;<span
 					class="link-icon"><a data-scroll href="#milestones"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">Project milestones and future goals.</p>
+			<p class="lead p-1 centered-text text-center mx-auto">Project milestones and future goals.</p>
 			<section class="cd-timeline js-cd-timeline">
 				<div class="cd-timeline__container">
 					<div class="cd-timeline__block js-cd-block">
@@ -1281,7 +1354,7 @@
 							<div class="cd-timeline__date">Future Goal</div>
 							<span class="wallet-icons"><i class="far fa-atom-alt gradient-icon"></i></span>
 							<h4>Atomic Swaps to Bitcoin with Lightning Network</h4>
-							<p>The newest technology heading into the next year.</p>
+							<p>The newest technology heading into next year.</p>
 							<p>With atomic swaps comes the ability to directly send Swap between Bitcoin, Litecoin and
 								any crypto coins on the Lightning Network.</p>
 						</div>
@@ -1313,8 +1386,9 @@
 				<h3><i class="far fa-users gradient-icon"></i>&ensp;Team</h3>&ensp;<span class="link-icon"><a
 						data-scroll href="#team"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">
-				A community developed crypto coin with contributors from around the world.<br />
+			<p class="lead p-1 centered-text text-center mx-auto">
+				A community developed crypto coin with contributors from around the world.
+			</p>
 			<div class="text-center">
 				<!-- <button class="btn tablinkteam btn-outline-tab-dark btn-outline-tab2-dark mt-1" onclick="openTeam(event,'core')">Operations&ensp;<i class="fas fa-head-side-brain"></i></button> -->
 				<button
@@ -1325,7 +1399,6 @@
 					class="btn tablinkteam btn-outline-tab-dark btn-outline-tab-dark-end mt-1"
 					onclick="openTeam(event,'guest')">Special Thanks</button>
 			</div>
-			</p>
 			<div id="devs" class="team animate-opacity mt-5">
 				<div class="row align-items-start justify-content-center text-center">
 					<div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-5">
@@ -1750,14 +1823,15 @@
 				<h3><img src="images/logo/Swap_the_Bird_Grad_1.png" alt="Cuckoo" class="img-cuckaroo">&ensp;Cuckoo</h3>
 				&ensp;<span class="link-icon"><a data-scroll href="#cuckoo"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">
-				Swap is the first CryptoNote coin securing the network with Cuckoo.<br>
+			<div class="text-center center-text mx-auto">
+				<p class="lead p-1 centered-text text-center mx-auto">
+				Swap is the first CryptoNote coin securing the network with Cuckoo.</p>
 				<a href="https://github.com/tromp/cuckoo" class="btn btn-outline-secondary mt-3 mr-1" rel="nofollow"
 					target="_blank">Cuckoo Github&ensp;<i class="fas fa-arrow-circle-right"></i></a>
 				<a href="https://github.com/tromp/cuckoo/blob/master/doc/cuckoo.pdf"
 					class="btn btn-outline-secondary mt-3" rel="nofollow" target="_blank">Cuckoo Whitepaper&ensp;<i
 						class="fas fa-arrow-circle-right"></i></a>
-			</p>
+			</div>
 			<div class="row">
 				<div class="col-12 col-md-6">
 					<div class="faq__item">
@@ -1833,15 +1907,16 @@
 				<h3><i class="fas fa-mask gradient-icon"></i>&ensp;CryptoNote</h3>&ensp;<span class="link-icon"><a
 						data-scroll href="#cryptonote"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<p class="lead p-3 centered-text text-center mx-auto">
-				CryptoNote is a robust privacy protocol for blockchain.<br>
+			<div class="text-center center-text mx-auto">
+				<p class="lead p-1 centered-text text-center mx-auto">
+				CryptoNote is a robust privacy protocol for blockchain.</p>
 				<a href="https://cryptonote.org/whitepaper.pdf" class="btn btn-outline-secondary mt-3 mr-1"
 					rel="nofollow" target="_blank">CryptoNote Whitepaper&ensp;<i
 						class="fas fa-arrow-circle-right"></i></a>
 				<a href="https://downloads.getmonero.org/whitepaper_review.pdf"
 					class="btn btn-outline-secondary mt-3 mr-1" rel="nofollow" target="_blank">Whitepaper Review&ensp;<i
 						class="fas fa-arrow-circle-right"></i></a>
-			</p>
+			</div>
 			<div class="row">
 				<div class="col-12 col-md-6">
 					<div class="faq__item">
@@ -1893,13 +1968,14 @@
 					</div>
 				</div>
 				<div class="text-center center-text mx-auto my-3">
+					<h4>Monero Research Lab</h4>
 					<p class="p-1">
-						Swap is a derivitive of all academic studies from Monero Research Lab.
+						Swap is a derivative of all academic studies from Monero Research Lab.
 					</p>
 					<a href="https://lab.getmonero.org/pubs/MRL-0001.pdf" rel="nofollow" target="_blank"
 						class="btn btn-outline3 mt-2 mr-1">Chain Reactions in Traceability</a>
 					<a href="https://lab.getmonero.org/pubs/MRL-0002.pdf" rel="nofollow" target="_blank"
-						class="btn btn-outline3 mt-2 mr-1">Counterfeiting via Merkle Tree Exploits</i></a>
+						class="btn btn-outline3 mt-2 mr-1">Counterfeiting via Merkle Tree Exploits</a>
 					<a href="https://lab.getmonero.org/pubs/MRL-0003.pdf" rel="nofollow" target="_blank"
 						class="btn btn-outline3 mt-2 mr-1">Monero is Not That Mysterious</a>
 					<a href="https://lab.getmonero.org/pubs/MRL-0004.pdf" rel="nofollow" target="_blank"
@@ -1985,10 +2061,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	<!-- Plugin JS -->
 	<script src="js/plugins/all-plugins.js"></script>
-	<script src="js/custom.js?v=2.2"></script>
-	<script type="text/javascript"
-		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-	<script type="text/javascript">
+	<script src="js/custom.js?v=2.3"></script>
+	<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script>
 		function googleTranslateElementInit() {
 			new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
 		}
