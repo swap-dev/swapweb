@@ -195,10 +195,10 @@ function openMiner(evt, minerName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" btn-outline-tab2", " ");
+    tablinks[i].className = tablinks[i].className.replace(" btn-outline-tab2-dark", " ");
   }
   document.getElementById(minerName).style.display = "block"; 
-  evt.currentTarget.className += " btn-outline-tab2";
+  evt.currentTarget.className += " btn-outline-tab2-dark";
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -229,8 +229,8 @@ function openWallet(evt, walletName) {
   }
   tablinkswallet = document.getElementsByClassName("tablinkwallet");
   for (i = 0; i < x.length; i++) {
-    tablinkswallet[i].className = tablinkswallet[i].className.replace(" btn-outline-tab2", " ");
+    tablinkswallet[i].className = tablinkswallet[i].className.replace(" btn-outline-tab2-dark", " ");
   }
   document.getElementById(walletName).style.display = "block"; 
-  evt.currentTarget.className += " btn-outline-tab2";
+  evt.currentTarget.className += " btn-outline-tab2-dark";
 }
