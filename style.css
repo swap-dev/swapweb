@@ -9948,6 +9948,10 @@ a:hover {
   margin-bottom: 5rem;
 }
 
+.img-micropool {
+  width: 60%;
+}
+
 .graph {
   width: 100%;
 }
@@ -10280,6 +10284,9 @@ a:hover {
   }
 
   .exchange-logos img:hover {
+  }
+  .img-micropool {
+    width: 100%;
   }
 }
 
