@@ -417,20 +417,56 @@
 					Malkoha adds accelerated daemon sync speed, blockchain pruning, and openalias. 
 					Pruning shrinks local blockchain database by 50% and openalias enables linking domains to wallet addresses, like donate.xwp.fyi.
 				</p> -->
-			<p class="lead p-1 centered-text text-center mx-auto">
-				A variety of wallets for a variety of users.
-			</p>
 			<div class="text-center">
 				<button class="btn tablinkwallet btn-outline-tab-dark btn-outline-tab-dark-start btn-outline-tab2-dark mt-1"
-					onclick="openWallet(event,'gui')">GUI Wallet</button><button
-					class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'cli')">CLI
-					Wallet</button><button class="btn tablinkwallet btn-outline-tab-dark mt-1"
+					onclick="openWallet(event,'gui')">GUI Wallet</button><button class="btn tablinkwallet btn-outline-tab-dark mt-1"
 					onclick="openWallet(event,'lightWallet')">Web & Mobile Wallets</button><button
-					class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'bootstrap')">Blockchain
+					class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'cli')">CLI
+					Wallet</button><button class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'bootstrap')">Blockchain
 					Bootstrap</button><button class="btn tablinkwallet btn-outline-tab-dark btn-outline-tab-dark-end mt-1"
 					onclick="openWallet(event,'hardware')">Hardware Wallet</button>
 			</div>
 			<div id="gui" class="wallet animate-opacity mt-5">
+				<div id="myCarousel" class="carousel slide text-center mx-auto mb-4 mt-2" data-interval="10000" data-ride="carousel">
+					<!-- Wrapper for carousel items -->
+					<div class="carousel-inner">
+						<div class="carousel-item active mx-auto">
+							<img class="rounded img-micropool animate-opacity" src="images/media/swap2_gui_v3_1.png" alt="Swap GUI">
+						</div>
+						<div class="carousel-item">
+							<img class="rounded img-micropool animate-opacity" src="images/media/electron_gui_v3_1.png" alt="Swap Electron">
+						</div>
+					</div>			
+					<!-- Carousel indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+					</ol>
+					<!-- Carousel controls 
+					<button class="carousel-control left carousel-control-left carousel-control-prev" data-target="#myCarousel" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</button>
+					<button class="carousel-control right carousel-control-right carousel-control-next" data-target="#myCarousel" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</button> -->
+				</div>
+				<div class="row mt-5 align-items-start jjustify-content-around text-center">
+					<div class="col-md-2"></div>
+					<div class="col-12 col-sm-6 col-md-4 mb-4">
+						<img src="images/media/qt.png" alt="Qt logo" class="gui-logo mb-3" data-target="#myCarousel" data-slide-to="0">
+						<h4 class="featured-item-title">
+							Qt GUI Wallet</h4>
+						<p>Full functioning graphics user interface
+						</p>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 mb-4">
+						<img src="images/media/electron.png" alt="Electron logo" class="gui-logo mb-3" data-target="#myCarousel" data-slide-to="1">
+						<h4 class="featured-item-title">
+							Electron GUI Wallet</h4>
+						<p>User-friendly lightweight graphics user interface</p>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
 				<div class="row align-items-start justify-content-around text-center">
 					<div class="col-12 col-sm-6 col-md-4">
 						<div class="feature-item">
@@ -699,8 +735,7 @@
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-4">
 						<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;lolMiner</h4>
-						<p>This latest edition to Swap miners brings simple and efficient mining to AMD and Nvidia. Mine Swap on lolMiner
-							using CR29-32 as the algorithm parameter.
+						<p>Mine Swap on lolMiner using CR29-32 as the algorithm parameter.
 						</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
@@ -720,7 +755,7 @@
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-4">
 						<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GMiner</h4>
-						<p>A powerful Swap miner for Nvidia and the only Swap miner to support 4GB GPU Memory. Mining with 4GB
+						<p>The only Swap miner to support 4GB GPU Memory. Mining with 4GB
 							GPU memory is only supported on Windows 7 and Linux. For Windows 10 6GB of GPU memory is required.</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
@@ -743,9 +778,8 @@
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-4">
 						<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;NBMiner</h4>
-						<p>A powerful Swap miner for Nvidia GPUs. Windows 10 requires a minimum 6GB GPU Memory.
-							Use Windows 7 or Linux for 5GB GPU Memory support. Includes remote web monitoring.</p>
-						<p>Cuckaroo mining discontinued after version 35.2.</p>
+						<p>Windows 10 requires a minimum 6GB GPU Memory.
+							Use Windows 7 or Linux for 5GB GPU Memory support. Includes remote web monitoring. <b>Cuckaroo mining discontinued after version 35.2.</b></p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
 							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
@@ -766,7 +800,7 @@
 					<div class="col-lg-8 mb-4">
 						<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;GrinProMiner
 						</h4>
-						<p>The most powerful Swap miner for AMD GPUs. Supports remote web monitoring. Windows requires
+						<p>Supports remote web monitoring. Windows requires
 							.NET Core Build apps.</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
@@ -792,8 +826,7 @@
 					<div class="col-lg-8">
 						<h4 class="featured-item-title"><i class="fas fa-snowplow gradient-icon"></i>&ensp;Swap
 							Reference Miner</h4>
-						<p>Created by Swap developer Sebastian Green. Forked from Grin Gold Miner,
-							it is the first Swap miner and serves as an example for other miner developers.
+						<p>The first Swap miner and serves as an example for other miner developers.
 							Windows requires .NET Core Build apps. <b>This miner is inefficient and not recommended for
 								mining</b>.</p>
 						<div class="d-flex flex-row-stats">
@@ -823,12 +856,10 @@
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-4">
 						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;mmpOS</h4>
-						<p>Highly optimized, ubuntu based linux OS, booting right of an USB stick (min 4GB).</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2">AMD</div>
 							<div class="p-2">Nvidia</div>
 							<div class="p-2">Minimum 4GB GPU Memory</div>
-							<div class="p-2">Free up to 8 workers</div>
 						</div>
 						<p>
 							<a href="https://app.mmpos.eu/" rel="nofollow" target="_blank"
@@ -843,13 +874,10 @@
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8 mb-4">
 						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;RaveOS</h4>
-						<p>RaveOS Operating System allows you to configure, monitor, and manage your Rigs and ASICs.
-						</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2">AMD</div>
 							<div class="p-2">Nvidia</div>
 							<div class="p-2">Minimum 4GB GPU Memory</div>
-							<div class="p-2">Free up to 3 workers</div>
 						</div>
 						<p>
 							<a href="https://raveos.com/" rel="nofollow" target="_blank"
@@ -862,14 +890,10 @@
 					<div class="col-lg-2"></div>
 					<div class="col-lg-8">
 						<h4 class="featured-item-title"><i class="fab fa-linux gradient-icon"></i>&ensp;Hive OS</h4>
-						<p>Keep track of hashrates, online statuses, GPU errors, team activity, pool configurations &
-							power consumption.
-						</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2">AMD</div>
 							<div class="p-2">Nvidia</div>
 							<div class="p-2">Minimum 4GB GPU Memory</div>
-							<div class="p-2">Free up to 3 workers</div>
 						</div>
 						<p>
 							<a href="https://hiveos.farm/" rel="nofollow" target="_blank"
@@ -888,8 +912,7 @@
 						<h4 class="featured-item-title"><i
 								class="far fa-heart-rate gradient-icon"></i>&ensp;RainbowMiner</h4>
 						<p>A mining script with intelligent profit switching between mining pools, algorithms, and
-							miners.
-							Supports GrinProMiner, NBminer, and Gminer for Swap mining.</p>
+							miners.</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
 							<div class="p-2"><i class="fab fa-linux fa-lg"></i></div>
@@ -912,7 +935,7 @@
 					<div class="col-lg-8">
 						<h4 class="featured-item-title"><i
 								class="far fa-heart-rate gradient-icon"></i>&ensp;AwesomeMiner</h4>
-						<p>Mining manager for NBminer and Gminer. Pay to have more features or use the free edition with
+						<p>Pay to have more features or use the free edition with
 							rig monitoring and management.</p>
 						<div class="d-flex flex-row-stats">
 							<div class="p-2"><i class="fab fa-windows fa-lg"></i></div>
