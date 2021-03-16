@@ -7151,7 +7151,7 @@ button.close {
 }
 
 .carousel-indicators .active {
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .carousel-caption {
@@ -10972,6 +10972,7 @@ a:hover {
 .exchange-logos img {
   max-width: 15rem;
   max-height: 5rem;
+  margin: .5rem 0rem;
 }
 
 .exchange-logos1 img {
@@ -10980,10 +10981,6 @@ a:hover {
 }
 
 @media (max-width: 992px) {
-  .exchange-logos img {
-    padding: 0.6rem 1rem;
-  }
-
   .exchange-logos1 img {
     padding: 0.6rem 1rem;
   }
@@ -11351,13 +11348,6 @@ a:hover {
   padding: 0;
 }
 
-.gui-logo {
-  max-height: 4em;
-  height: auto;
-  padding: 0;
-  cursor: pointer;
-}
-
 .swap-cuckoo-logo {
   max-width: 100%;
   height: auto;
@@ -11693,23 +11683,26 @@ ul.countdown li p {
   filter: brightness(200%);
 }
 
+.gui-logo {
+  max-height: 4em;
+  height: auto;
+  padding: 0;
+}
+
 .carousel-indicators {
-  bottom: -0.5rem;
+  position: relative;
+  margin: 1rem 0;
 }
-.carousel-indicators li,
-.carousel-indicators li.active {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  margin: 1px 4px;
+.carousel-indicators div,
+.carousel-indicators div.active {
+  padding: 0;
+  margin: 1em 0;
 }
-.carousel-indicators li {
+.carousel-indicators div {
   background: transparent;
-  border: 2px solid #a9b3e5;
 }
-.carousel-indicators li.active {
-  background: #a9b3e5;
-  border-color: #a9b3e5;
+.carousel-indicators div.active {
+  background: #151933;
 }
 
 .carousel-control {
@@ -11734,4 +11727,9 @@ ul.countdown li p {
   .carousel-control-right {
     right: 20%;
   }
+}
+
+div.blueWrap {
+  height: auto;
+  cursor: pointer;
 }

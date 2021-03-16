@@ -413,35 +413,63 @@
 				<h3><i class="far fa-wallet gradient-icon"></i>&ensp;Wallets</h3>&ensp;<span class="link-icon"><a
 						data-scroll href="#wallets"><i class="fal fa-link fa-xs"></i></a></span>
 			</div>
-			<!-- <p class="lead p-3 centered-text text-center mx-auto">
-					Malkoha adds accelerated daemon sync speed, blockchain pruning, and openalias. 
-					Pruning shrinks local blockchain database by 50% and openalias enables linking domains to wallet addresses, like donate.xwp.fyi.
-				</p> -->
+			<p class="lead p-1 centered-text text-center mx-auto">
+				A variety of wallets for a variety of users.</p>
 			<div class="text-center">
 				<button class="btn tablinkwallet btn-outline-tab-dark btn-outline-tab-dark-start btn-outline-tab2-dark mt-1"
-					onclick="openWallet(event,'gui')">GUI Wallet</button><button class="btn tablinkwallet btn-outline-tab-dark mt-1"
-					onclick="openWallet(event,'lightWallet')">Web & Mobile Wallets</button><button
+					onclick="openWallet(event,'gui')">GUI Wallet</button><button
 					class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'cli')">CLI
-					Wallet</button><button class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'bootstrap')">Blockchain
+					Wallet</button><button class="btn tablinkwallet btn-outline-tab-dark mt-1"
+					onclick="openWallet(event,'lightWallet')">Web & Mobile Wallets</button><button class="btn tablinkwallet btn-outline-tab-dark mt-1" onclick="openWallet(event,'bootstrap')">Blockchain
 					Bootstrap</button><button class="btn tablinkwallet btn-outline-tab-dark btn-outline-tab-dark-end mt-1"
 					onclick="openWallet(event,'hardware')">Hardware Wallet</button>
 			</div>
-			<div id="gui" class="wallet animate-opacity mt-5">
+			<div id="gui" class="wallet animate-opacity mt-4">
 				<div id="myCarousel" class="carousel slide text-center mx-auto mb-4 mt-2" data-interval="10000" data-ride="carousel">
 					<!-- Wrapper for carousel items -->
-					<div class="carousel-inner">
+					<div class="carousel-inner mb-3">
 						<div class="carousel-item active mx-auto">
 							<img class="rounded img-micropool animate-opacity" src="images/media/swap2_gui_v3_1.png" alt="Swap GUI">
 						</div>
 						<div class="carousel-item">
 							<img class="rounded img-micropool animate-opacity" src="images/media/electron_gui_v3_1.png" alt="Swap Electron">
 						</div>
+					</div>
+				
+					<div class="carousel-indicators row align-items-start justify-content-around text-center">
+						<div class="active col-12 col-sm-6 col-md-4">
+							<div class="blueWrap" data-target="#myCarousel" data-slide-to="0">
+								<img src="images/media/qt.png" alt="Qt logo" class="gui-logo mb-3">
+								<h4 class="featured-item-title my-0 py-0">
+									Qt GUI Wallet</h4>
+								<p class="mb-0 py-0">Full functioning graphics user interface</p>
+							</div>
+							<div class="pt-3">
+								<a href="https://github.com/swap-dev/swap/releases" rel="nofollow"
+									target="_blank" class="btn btn-outline-secondary">Release Notes&ensp;<i
+										class="fab fa-github"></i></a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4">
+							<div class="blueWrap" data-target="#myCarousel" data-slide-to="1">
+								<img src="images/media/electron.png" alt="Electron logo" class="gui-logo mb-3">
+								<h4 class="featured-item-title my-0 py-0">
+									Electron GUI Wallet</h4>
+								<p class="mb-0 py-0">User-friendly lightweight graphics user interface</p>
+							</div>
+							<div class="pt-3">
+								<a href="https://github.com/swap-dev/swap-electron-gui-wallet/releases" rel="nofollow"
+									target="_blank" class="btn btn-outline-secondary">Release Notes&ensp;<i
+										class="fab fa-github"></i></a>
+							</div>
+						</div>
 					</div>			
-					<!-- Carousel indicators -->
+
+					<!-- Carousel indicators 
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
-					</ol>
+					</ol> -->
 					<!-- Carousel controls 
 					<button class="carousel-control left carousel-control-left carousel-control-prev" data-target="#myCarousel" data-slide="prev">
 						<i class="fa fa-angle-left"></i>
@@ -449,23 +477,6 @@
 					<button class="carousel-control right carousel-control-right carousel-control-next" data-target="#myCarousel" data-slide="next">
 						<i class="fa fa-angle-right"></i>
 					</button> -->
-				</div>
-				<div class="row mt-5 align-items-start jjustify-content-around text-center">
-					<div class="col-md-2"></div>
-					<div class="col-12 col-sm-6 col-md-4 mb-4">
-						<img src="images/media/qt.png" alt="Qt logo" class="gui-logo mb-3" data-target="#myCarousel" data-slide-to="0">
-						<h4 class="featured-item-title">
-							Qt GUI Wallet</h4>
-						<p>Full functioning graphics user interface
-						</p>
-					</div>
-					<div class="col-12 col-sm-6 col-md-4 mb-4">
-						<img src="images/media/electron.png" alt="Electron logo" class="gui-logo mb-3" data-target="#myCarousel" data-slide-to="1">
-						<h4 class="featured-item-title">
-							Electron GUI Wallet</h4>
-						<p>User-friendly lightweight graphics user interface</p>
-					</div>
-					<div class="col-md-2"></div>
 				</div>
 				<div class="row align-items-start justify-content-around text-center">
 					<div class="col-12 col-sm-6 col-md-4">
