@@ -358,6 +358,7 @@ ul.countdown li p {
 .carousel-indicators div.active {
     padding: 0;
     margin: 1em 0;
+    border-radius: 0.25rem;
 }
 
 .carousel-indicators div {
