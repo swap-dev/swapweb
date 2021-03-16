@@ -1,0 +1,398 @@
+/* Start Custom CSS */
+.image-icon {
+    max-width: 0.85em;
+}
+
+.swap-hero-logo {
+    max-width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.swap-logo1 {
+    max-width: 4em;
+    height: auto;
+    padding: 0;
+}
+
+.swap-cuckoo-logo {
+    max-width: 100%;
+    height: auto;
+    padding: 0 0px 0px 0;
+    margin: 0;
+}
+
+.copyleft {
+    height: 1em;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+.blue-icon i {
+    color: #1d244a;
+}
+
+.blue-icon-dark i {
+    color: #151933;
+}
+
+.wallet-icons {
+    font-size: 4em;
+}
+
+.gradient-icon {
+    background: linear-gradient(
+        45deg,
+        rgba(165, 97, 229, 1) 0%,
+        rgba(103, 122, 243, 1) 50%,
+        rgba(126, 222, 238, 1) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    display: initial;
+}
+
+.exchange-logo {
+    padding: 20px;
+    padding-left: 0px !important;
+}
+
+.media-logo {
+    height: 1em;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+.media-logo2:hover img {
+    filter: brightness(200%);
+}
+
+.media-logo3 img {
+    filter: brightness(200%);
+}
+
+.img-team {
+    border-radius: 50%;
+    max-width: 50%;
+    border: 0.25em solid #151933;
+    background: #151933;
+}
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .img-team {
+        max-width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .text-team {
+        text-align: left;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(165, 97, 229, 0.7) url(images/top-arrow.svg) no-repeat center
+        50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s, background-color 0.3s 0s;
+}
+
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+    transition: opacity 0.3s 0s, visibility 0s 0s, background-color 0.3s 0s;
+}
+
+.cd-top.cd-top--show {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top.cd-top--fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: 0.8;
+}
+
+.cd-top:hover {
+    background-color: rgb(165, 97, 229);
+    opacity: 1;
+}
+
+ul.countdown {
+    list-style: none;
+    margin: 25px 0px 0px;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+ul.countdown li {
+    display: inline-block;
+}
+
+ul.countdown li span {
+    font-size: 2.6em;
+    font-weight: 300;
+    line-height: 10px;
+}
+
+ul.countdown li.seperator {
+    font-size: 2.7em;
+    line-height: 10px;
+    vertical-align: top;
+}
+
+ul.countdown li p {
+    margin: 0px 0px 15px;
+    padding: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+/* Title Link icon */
+.link-icon i {
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.container-link-icon:hover .link-icon i {
+    opacity: 0.9;
+}
+
+.container-team {
+    position: relative;
+}
+
+.image-team {
+    display: block;
+}
+
+.overlay-team {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #1c2449;
+}
+
+.container-team:hover .overlay-team {
+    opacity: 0.9;
+}
+
+.text-team {
+    text-align: left;
+    padding: 5px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #151933;
+    border-radius: 0.25rem;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #a3acde;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    vertical-align: text-top;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#networkdiv div,
+#networkdiv2 div {
+    color: #a3acde;
+    font-size: 1rem;
+    border: 2px solid #1d244a;
+    background-color: #1d244a;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+.flags {
+    width: 1.2em;
+    filter: grayscale(70%);
+}
+
+.dropdown-item:hover .flags {
+    filter: grayscale(30%);
+}
+
+.animate-opacity {
+    animation: opac 0.8s;
+}
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.img-chart {
+    width: 30em;
+}
+
+.img-cuckaroo {
+    width: 1.5em;
+    vertical-align: inherit;
+}
+
+.img-cuckaroo2 {
+    width: 1.5em;
+    vertical-align: inherit;
+    margin: 11px 0 0;
+}
+
+.img-cuckaroo3 {
+    width: 5em;
+    vertical-align: text-bottom;
+    margin: 11px 0 0;
+}
+
+.img-cuckaroo4 {
+    width: 1em;
+    vertical-align: inherit;
+    margin: 0;
+}
+
+.img-cuckaroo5 {
+    width: 1.3em;
+    vertical-align: text-bottom;
+    margin: 0;
+}
+
+.dropdown-item:hover img {
+    filter: brightness(200%);
+}
+
+.gui-logo {
+    max-height: 4em;
+    height: auto;
+    padding: 0;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.carousel-indicators div,
+.carousel-indicators div.active {
+    padding: 0;
+    margin: 1em 0;
+    border-radius: 0.25rem;
+}
+
+.carousel-indicators div {
+    background: transparent;
+}
+
+.carousel-indicators div.active {
+    background: #151933;
+}
+
+.carousel-control {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 75%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.carousel-control i {
+    font-size: 3rem;
+    line-height: 3rem;
+    position: absolute;
+    color: #a9b3e5;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 996px) {
+    .carousel-control-left {
+        left: 20%;
+    }
+    .carousel-control-right {
+        right: 20%;
+    }
+}
+
+div.blueWrap {
+    height: auto;
+    cursor: pointer;
+}
