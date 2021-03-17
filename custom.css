@@ -41,14 +41,14 @@
 }
 
 .gradient-icon {
-    background: linear-gradient(
+    background: -webkit-linear-gradient(
         45deg,
         rgba(165, 97, 229, 1) 0%,
         rgba(103, 122, 243, 1) 50%,
         rgba(126, 222, 238, 1) 100%
     );
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: initial;
 }
 
