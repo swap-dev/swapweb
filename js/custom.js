@@ -127,8 +127,6 @@ request.send();
  
 request.onload = () => {
   if (request.status === 200) {
-    console.log("Success"); // So extract data from json and create table
-    
     //Extracting data
     var hashrate = JSON.parse(request.response).data.hash_rate;
     var difficulty = JSON.parse(request.response).data.difficulty;
@@ -163,13 +161,9 @@ request2.send();
  
 request2.onload = () => {
   if (request2.status === 200) {
-    console.log("Success"); // So extract data from json and create table
-    
     //Extracting data
     var coinbase = JSON.parse(request2.response).data.coinbase;
     var blocknumber = JSON.parse(request2.response).data.blk_no;
-    
-    console.log(new Intl.NumberFormat().format(coinbase));
     
     //Creating table
     var network3=
