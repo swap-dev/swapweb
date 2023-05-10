@@ -1,2 +1,2 @@
 # Swap (XWP) Website<br>
-https://swap.foundation<br>
+https://getswap.eu<br>
